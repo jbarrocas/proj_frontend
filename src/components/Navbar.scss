@@ -1,0 +1,91 @@
+@import '../abstract/colors';
+@import '../abstract/typography/typography';
+@import '../abstract/screensizes';
+
+.navbar{
+    background-color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 80px 12px 83px;
+
+    .logo{
+        width: 140px;
+        height: 25.35px;
+    }
+
+    .menu{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        position: relative;
+
+        @media screen and (max-width: $tablet-width) {
+            display: none;
+        }
+
+        .menu-item{
+            list-style: none;
+
+            a{
+                @include body-16;
+                text-decoration: none;
+                color: $light;
+            }
+        }
+
+        .menu-close-btn{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        .menu-expanded{
+            position: absolute;
+            top: 64px;
+            left: 0px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            width: 100%;
+            height: calc(100vh - 80px);
+            padding-top: 16px;
+            background-color: $light;
+
+            .menu-item{
+                list-style: none;
+
+                a{
+                    @include body-16;
+                    text-decoration: none;
+                    color: $black;
+                }
+            }
+
+            .menu-close-btn{
+                display: block;
+                width: 30px;
+                height: 30px;
+                border: 0;
+                background-color: $light;
+                color: $black;
+                cursor: pointer;
+            }
+        }
+    }    
+
+    .menu-btn{
+        width: 40px;
+        height: 40px;
+        border: 0;
+        background-color: $black;
+        color: $light;
+        cursor: pointer;
+        display: none;
+
+        @media screen and (max-width: $tablet-width) {
+            display: block;
+        }
+    }
+}

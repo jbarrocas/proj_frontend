@@ -1,9 +1,11 @@
 @import '../abstract/typography/typography';
+@import '../abstract/colors';
 
 .button{
-    background-color: yellow;
-    padding: 16px 48px;
-    font-size: 18px;
-    border: none;
+    background-color: $light;
     font-family: 'Sen-Bold';
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 48px;
+    border: none;
 }
