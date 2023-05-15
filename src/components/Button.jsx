@@ -3,11 +3,9 @@ import './Button.scss'
 
 function Button(props) {
   return (
-    <div>
-      <button className='button'>
+      <button className={props.className}>
           {props.text}
         </button>
-    </div>
   )
 }
 

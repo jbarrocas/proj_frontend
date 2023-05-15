@@ -14,17 +14,23 @@ function Navbar() {
             <ul className={
             isMenuExpanded ? "menu-expanded menu" : "menu"
             }>
-                <li className="menu-item">
+                <li className="menu-item" onClick={()=>{
+                setIsMenuExpanded(!isMenuExpanded)
+                }}>
                     <Link to="/">Home</Link>
                 </li>
-                <li className="menu-item">
+                <li className="menu-item" onClick={()=>{
+                setIsMenuExpanded(!isMenuExpanded)
+                }}>
                     <Link to="/Blog">Blog</Link>
                 </li>
-                <li className="menu-item">
+                <li className="menu-item" onClick={()=>{
+                setIsMenuExpanded(!isMenuExpanded)
+                }}>
                     <Link to="/Contact">Contact us</Link>
                 </li>
                 <li className="menu-item">
-                    <Button text="Subscribe"/>
+                    <Button className="white-button" text="Subscribe"/>
                 </li>
                 <button className="menu-close-btn" onClick={()=>{
                 setIsMenuExpanded(!isMenuExpanded)

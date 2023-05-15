@@ -1,11 +1,24 @@
 @import '../abstract/typography/typography';
 @import '../abstract/colors';
 
-.button{
+.white-button{
+    color: $black;
     background-color: $light;
     font-family: 'Sen-Bold';
     font-size: 18px;
     line-height: 24px;
     padding: 16px 48px;
+    cursor: pointer;
+    border: none;
+}
+
+.yellow-button{
+    color: $black;
+    background-color: $yellow;
+    font-family: 'Sen-Bold';
+    font-size: 18px;
+    line-height: 24px;
+    padding: 16px 48px;
+    cursor: pointer;
     border: none;
 }
