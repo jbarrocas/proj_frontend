@@ -32,8 +32,8 @@ function Footer() {
         </ul>
       </nav>
       <div className="subscribe-section">
-        <h2 className="sub-heading">Subscribe to our newsletter to get latest updates and news</h2>
-        <div className="sub-input">
+        <h2 className="subscribe-heading">Subscribe to our newsletter to get latest updates and news</h2>
+        <div className="subscribe-input">
           <input className="mail-input" type='mail' placeholder='Enter Your Email'></input>
           <Button className="yellow-button" text="Subscribe" />
         </div>

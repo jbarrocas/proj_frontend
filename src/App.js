@@ -10,12 +10,12 @@ function App() {
   return (
     <div className="App">
         <Navbar/>
-        <Footer/>
         <Routes>
           <Route path="/" exact element={<Home></Home>}></Route>
           <Route path="/Blog" exact element={<Blog></Blog>}></Route>
           <Route path="/Contact" exact element={<Contact></Contact>}></Route>
         </Routes>
+        <Footer/>
     </div>
   );
 }
