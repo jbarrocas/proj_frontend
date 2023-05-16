@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+
 import Button from "./Button";
+
 import Logo from '../assets/Finsweet-Logo.png';
 
 import "./Navbar.scss";

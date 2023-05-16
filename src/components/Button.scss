@@ -2,23 +2,27 @@
 @import '../abstract/colors';
 
 .white-button{
+    @include heading-18;
     color: $black;
     background-color: $light;
-    font-family: 'Sen-Bold';
-    font-size: 18px;
-    line-height: 24px;
     padding: 16px 48px;
     cursor: pointer;
     border: none;
+
+    &:hover{
+        background-color: $hoverYellow;
+    }
 }
 
 .yellow-button{
+    @include heading-18;
     color: $black;
     background-color: $yellow;
-    font-family: 'Sen-Bold';
-    font-size: 18px;
-    line-height: 24px;
     padding: 16px 48px;
     cursor: pointer;
     border: none;
+
+    &:hover{
+        background-color: $hoverYellow;
+    }
 }

@@ -49,10 +49,24 @@
     line-height: 32px;
 }
 
+// buttons font
+@mixin heading-18 {
+    font-family: Sen-Bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 @mixin heading-16 {
     font-family: Sen-Bold;
     font-size: 16px;
     line-height: 24px;
+}
+
+// menu hover font
+@mixin body-18 {
+    font-family: Sen-Regular;
+    font-size: 18px;
+    line-height: 28px;
 }
 
 @mixin body-16 {

@@ -20,6 +20,10 @@
     .logo{
         width: 140px;
         height: 25.35px;
+
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 
     .menu{
@@ -39,6 +43,10 @@
                 @include body-16;
                 text-decoration: none;
                 color: $light;
+
+                &:hover{
+                    color: $hoverYellow;
+                }
             }
         }
 
@@ -68,6 +76,12 @@
                     @include body-16;
                     text-decoration: none;
                     color: $black;
+
+                    &:hover{
+                        color: $black;
+                        font-weight: 700;
+                        @include body-18;
+                    }
                 }
             }
 
