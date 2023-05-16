@@ -44,10 +44,10 @@ function Footer() {
           <p>Hello@finsweet.com  020 7993 2905</p>
         </address>
         <div className="social-media">
-        <img className="facebook-icon" src={FacebookIcon} alt="Facebook Icon"></img>
-        <img className="twitter-icon" src={TwitterIcon} alt="Twitter Icon"></img>
-        <img className="instagram-icon" src={InstagramIcon} alt="Instagram Icon"></img>
-        <img className="linkedin-icon" src={LinkedinIcon} alt="LinkedIn Icon"></img>
+          <Link to="#"><img className="facebook-icon" src={FacebookIcon} alt="Facebook Icon"></img></Link>
+          <Link to="#"><img className="twitter-icon" src={TwitterIcon} alt="Twitter Icon"></img></Link>
+          <Link to="#"><img className="instagram-icon" src={InstagramIcon} alt="Instagram Icon"></img></Link>
+          <Link to="#"><img className="linkedin-icon" src={LinkedinIcon} alt="LinkedIn Icon"></img></Link>
         </div>
       </div>
     </footer>
