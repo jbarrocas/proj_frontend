@@ -56,9 +56,10 @@
             align-items: center;
             gap: 16px;
             width: 100%;
-            height: calc(100vh - 98px);
+            height: 100vh;
             padding-top: 16px;
-            background-color: $light;
+            background-color: $black;
+            z-index: 1;
 
             .menu-item{
                 list-style: none;
@@ -66,7 +67,7 @@
                 a{
                     @include body-16;
                     text-decoration: none;
-                    color: $black;
+                    color: $light;
 
                     &:hover{
                         color: $black;
