@@ -25,22 +25,27 @@ function Navbar() {
                     <li className="menu-item" onClick={()=>{
                     setIsMenuExpanded(!isMenuExpanded)
                     }}>
-                        <Link to="/Blog">Blog</Link>
+                        <Link to="/blog">Blog</Link>
                     </li>
                     <li className="menu-item" onClick={()=>{
                     setIsMenuExpanded(!isMenuExpanded)
                     }}>
-                        <Link to="/Contact">Contact us</Link>
+                        <Link to="/about">About Us</Link>
+                    </li>
+                    <li className="menu-item" onClick={()=>{
+                    setIsMenuExpanded(!isMenuExpanded)
+                    }}>
+                        <Link to="/contact">Contact us</Link>
                     </li>
                     <li className="menu-item">
-                        <Button className="white-button" text="Subscribe"/>
+                        <a href="#footer"><Button className="white-button" text="Subscribe"/></a>
                     </li>
                     <button className="menu-close-btn" onClick={()=>{
                     setIsMenuExpanded(!isMenuExpanded)
                     }}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
                     </button>
                 </ul>
                 <button className="menu-btn" onClick={()=>{

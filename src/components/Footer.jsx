@@ -14,23 +14,26 @@ import './Footer.scss';
 function Footer() {
   return (
     <footer>
-      <nav className="footer-navbar">
+      <div className="footer-navbar" id='footer'>
         <Link to="/"><img className="logo" src={Logo} alt="Logo"></img></Link>
         <ul className="footer-menu">
           <li className="menu-item">
             <Link to="/">Home</Link>
           </li>
           <li className="menu-item">
-            <Link to="/Blog">Blog</Link>
+            <Link to="/blog">Blog</Link>
           </li>
           <li className="menu-item">
-            <Link to="/Contact">Contact us</Link>
+            <Link to="/about">About Us</Link>
           </li>
           <li className="menu-item">
-            <Link to="#">Privacy Policy</Link>
+            <Link to="/contact">Contact us</Link>
+          </li>
+          <li className="menu-item">
+            <Link to="/privacy">Privacy Policy</Link>
           </li>
         </ul>
-      </nav>
+      </div>
       <div className="subscribe-section">
         <h2 className="subscribe-heading">Subscribe to our newsletter to get latest updates and news</h2>
         <div className="subscribe-input">
