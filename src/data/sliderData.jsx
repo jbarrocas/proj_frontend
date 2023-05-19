@@ -1,8 +1,9 @@
 export const SliderData = [
     {
         id: 0,
-        title: "Design tips for designers that cover everything you need",
+        title: "Design tips for designers that cover everything you need.",
         url: "./images/pexels-andrea-piacquadio-3771790-1580w.jpg",
+        urlOverlay: "./images/Overlay.png",
         alt: "",
         author: "John Doe",
         date: "April 21, 2022",
@@ -11,8 +12,9 @@ export const SliderData = [
     },
     {
         id: 1,
-        title: "Step-by-step guide to choosing great font pairs",
+        title: "Step-by-step guide to choosing amazing font pairs.",
         url: "./images/pexels-andrea-piacquadio-941555-1580w.jpg",
+        urlOverlay: "./images/Overlay.png",
         alt: "Woman with computer sitted on the floor comemorating",
         author: "James West",
         date: "May 23, 2022",
@@ -21,8 +23,9 @@ export const SliderData = [
     },
     {
         id: 2,
-        title: "How to build rapport with your web design clients",
+        title: "How to build rapport with your web design clients and partners.",
         url: "./images/pexels-andrea-piacquadio-3813341-1580w.jpg",
+        urlOverlay: "./images/Overlay.png",
         alt: "",
         author: "Linda East",
         date: "March 11, 2022",
@@ -31,8 +34,9 @@ export const SliderData = [
     },
     {
         id: 3,
-        title: "8 Figma design systems you can download for free today",
+        title: "8 Figma amazing design systems you can download for free today.",
         url: "./images/pexels-andrew-neel-3954635-1580w.jpg",
+        urlOverlay: "./images/Overlay.png",
         alt: "",
         author: "Julia Penny",
         date: "April 21, 2022",
@@ -41,8 +45,9 @@ export const SliderData = [
     },
     {
         id: 4,
-        title: "Logo design trends to avoid in 2023",
+        title: "Logo design trends to avoid in 2023.",
         url: "./images/pexels-yan-krukau-4458420-1580w.jpg",
+        urlOverlay: "./images/Overlay.png",
         alt: "",
         author: "Sandra Green",
         date: "March 11, 2022",

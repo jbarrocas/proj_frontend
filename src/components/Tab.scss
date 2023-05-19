@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    color: $black;
     background-color: $lavender;
 
     .tabs{
@@ -21,9 +22,10 @@
             @include heading-18;
             width: 33.33%;
             padding: 8px 0;
-            background-color: $yellow;
-            border-left: 1px solid $lavender;
+            color: $light;
+            background-color: $black;
             text-align: center;
+            border-bottom: none;
             cursor: pointer;
 
             @media screen and (max-width: $mobile-width) {
@@ -32,8 +34,9 @@
         }
 
         .selected-tab{
+            color: $black;
             background-color: $lavender;
-            border-left: none;
+            border: $lavender;
         }
     }
 

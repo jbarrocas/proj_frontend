@@ -28,20 +28,23 @@ const ImageSlider = ({ data }) => {
 
   return (
     <div className='slider'>
+      {/* <img src="./images/Overlay.jpg" alt="Overlay" className="overlay"></img> */}
       {data.map((item, id)=>{
         return (
           <div className='slider-wrapper'>
-            <img src={item.url} alt={item.alt} key={id} className={ image === id ? "slider-image" : "slider-image hidden" }></img>
+            <div className='image-wrapper'>
+              <img src={item.urlOverlay} alt={item.alt} key={id} className={ image === id ? "overlay" : "overlay hidden" }></img>
+              <img src={item.url} alt={item.alt} key={id} className={ image === id ? "slider-image" : "slider-image hidden" }></img>            
+            </div>
             <div className='text-wrapper'>
               <p className={ image === id ? "image-tag" : "image-tag hidden" }>Posted on <strong>{item.tag}</strong></p>
               <h1 className={ image === id ? "image-title" : "image-title hidden" }>{item.title}</h1>
               <div className='author-date-wrapper'>
-                <p className={ image === id ? "image-author" : "image-author hidden" }>By</p>
-                <p className={ image === id ? "image-author highlight" : "image-author highlight hidden" }> {item.author}</p>
-                <p className={ image === id ? "image-date" : "image-date hidden" }>| {item.date}</p>
+                <p className={ image === id ? "image-author" : "image-author hidden" }>By <span>{item.author}</span> | {item.date}</p>
               </div>              
               <p className={ image === id ? "image-text" : "image-text hidden" }>{item.text}</p>
               <Button className={ image === id ? "yellow-button" : "yellow-button hidden" } text="Read More >" />
+              
             </div> 
           </div>
         )
