@@ -1,0 +1,116 @@
+@import '../abstract/typography/typography';
+@import '../abstract/colors';
+@import '../abstract/screensizes';
+
+.container{
+    max-width: 1280px;
+    width: 88.889vw;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: $lavender;
+
+    .tabs{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        color: $black;
+
+        .tab{
+            @include heading-18;
+            width: 33.33%;
+            padding: 8px 0;
+            background-color: $yellow;
+            border-left: 1px solid $lavender;
+            text-align: center;
+            cursor: pointer;
+
+            @media screen and (max-width: $mobile-width) {
+                @include heading-16;
+            }
+        }
+
+        .selected-tab{
+            background-color: $lavender;
+            border-left: none;
+        }
+    }
+
+    .tab-content{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        margin: 96px 80px 80px 80px;
+
+        @media screen and (max-width: $tablet-width) {
+            flex-direction: column;
+            gap: 30px;
+            margin: 48px 40px 40px 40px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            flex-direction: column;
+            margin: 24px 20px 20px 20px;
+        }
+
+        .wrapper{
+            display: flex;
+            flex-direction: column;
+            max-width: 515px;
+            gap: 24px;
+
+            @media screen and (max-width: $tablet-width) {
+                max-width: 80vw;
+                gap: 18px;
+            }
+
+            @media screen and (max-width: $mobile-width) {
+                max-width: 80vw;
+                gap: 12px;
+            }
+
+            .tab-tag{
+                @include heading-16;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                margin-bottom: 8px;
+            }
+
+            .tab-title{
+                @include heading-36;
+                letter-spacing: -2px;
+                max-width: 494px;
+
+                @media screen and (max-width: $mobile-width) {
+                    line-height: 40px;
+                }
+            }
+
+            .tab-text{
+                color: $mediumGrey;
+            }
+
+            .tab-link{
+                @include heading-18;
+                line-height: 32px;
+                color: $purple;
+            }
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        .tab-image{
+            max-width: 515px;
+            background-size: contain;
+            background-repeat: no-repeat;
+
+            @media screen and (max-width: $tablet-width) {
+                max-width: 80vw;
+            }
+        }
+    }
+}
+
