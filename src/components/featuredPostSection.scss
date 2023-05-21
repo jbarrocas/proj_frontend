@@ -1,6 +1,4 @@
-@import '../abstract/colors';
-@import '../abstract/screensizes';
-@import '../abstract/typography/typography';
+@import '../abstract/main';
 
 .posts-section{
     display: flex;
@@ -25,7 +23,7 @@
             align-items: center;
         }
 
-        .tag{
+        .fp-tag{
             @include heading-36;
             letter-spacing: -2px;
             margin-bottom: 2rem;
@@ -35,7 +33,7 @@
             }
         }
     
-        .container{
+        .fp-wrapper{
             max-width: 669px;
             padding: 32px;
     
@@ -44,7 +42,7 @@
                 margin-bottom: 2rem;
             }
         
-            .author-date{
+            .fp-author-date{
                 @include body-14;
                 color: $darkGrey;
                 margin-bottom: 1rem;
@@ -82,7 +80,7 @@
         align-items: baseline;
         justify-content: space-between;
 
-            .tag{
+            .ap-tag{
                 @include heading-36;
                 letter-spacing: -2px;
                 margin-bottom: 2rem;

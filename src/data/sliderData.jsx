@@ -1,7 +1,7 @@
 export const SliderData = [
     {
         id: 0,
-        title: "Design tips for designers that cover everything you need.",
+        title: "Design tips for designers that cover everything you need and more.",
         url: "./images/pexels-andrea-piacquadio-3771790-1580w.jpg",
         urlOverlay: "./images/Overlay.png",
         alt: "",
@@ -12,7 +12,7 @@ export const SliderData = [
     },
     {
         id: 1,
-        title: "Step-by-step guide to choosing amazing font pairs.",
+        title: "Step-by-step guide to choosing amazing and mindblower font pairs.",
         url: "./images/pexels-andrea-piacquadio-941555-1580w.jpg",
         urlOverlay: "./images/Overlay.png",
         alt: "Woman with computer sitted on the floor comemorating",
