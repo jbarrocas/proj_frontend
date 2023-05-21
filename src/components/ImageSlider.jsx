@@ -37,12 +37,12 @@ const ImageSlider = ({ data }) => {
               <img src={item.url} alt={item.alt} key={id} className={ image === id ? "slider-image" : "slider-image hidden" }></img>            
             </div>
             <div className='text-wrapper'>
-              <p className={ image === id ? "image-tag" : "image-tag hidden" }>Posted on <strong>{item.tag}</strong></p>
-              <h1 className={ image === id ? "image-title" : "image-title hidden" }>{item.title}</h1>
-              <div className='author-date-wrapper'>
-                <p className={ image === id ? "image-author" : "image-author hidden" }>By <span>{item.author}</span> | {item.date}</p>
+              <p className={ image === id ? "tag" : "tag hidden" }>Posted on <strong>{item.tag}</strong></p>
+              <h1 className={ image === id ? "title" : "title hidden" }>{item.title}</h1>
+              <div className='author-date'>
+                <p className={ image === id ? "author" : "author hidden" }>By <span>{item.author}</span> | {item.date}</p>
               </div>              
-              <p className={ image === id ? "image-text" : "image-text hidden" }>{item.text}</p>
+              <p className={ image === id ? "text" : "text hidden" }>{item.text}</p>
               <Button className={ image === id ? "yellow-button" : "yellow-button hidden" } text="Read More >" />
               
             </div> 

@@ -2,46 +2,51 @@
 @import '../abstract/screensizes';
 @import '../abstract/typography/typography';
 
-.feature-post-section{
+.posts-section{
     display: flex;
-    gap: 4rem;
-    max-width: 1280px;
-    max-height: 804px;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-    color: $black;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 128px 78px 128px 80px;
 
-    @media screen and (max-width: $tablet-width) {
-        flex-direction: column;
+    @media screen and (max-width: $mobile-width) {
+        max-width: 95vw;
         align-items: center;
-        max-height: none;
+        margin: 0 auto;
+        padding: 32px 20px 32px 20px;
     }
 
     .feature-post{
         display: flex;
         flex-direction: column;
         max-width: 733px;
-        width: 50.903vw;
+
+        @media screen and (max-width: $mobile-width) {
+            align-items: center;
+        }
 
         .tag{
             @include heading-36;
             letter-spacing: -2px;
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
+
+            @media screen and (max-width: $mobile-width) {
+                margin-bottom: 1rem;
+            }
         }
     
         .container{
-            max-width: 733px;
-            width: 50.903vw;
-            padding: 0 2rem 0 2rem;
-            background-color: $light;
+            max-width: 669px;
+            padding: 32px;
     
             .image{
-                max-width: 700px;
+                max-width: 669px;
                 margin-bottom: 2rem;
             }
         
             .author-date{
                 @include body-14;
+                color: $darkGrey;
                 margin-bottom: 1rem;
         
                 span{
@@ -58,6 +63,7 @@
             .text{
                 @include body-16;
                 margin-bottom: 2rem;
+                color: $mediumGrey;
             }
     
             .yellow-button{
@@ -66,51 +72,51 @@
         }
     }
 
-    .scroll-section{
+    .all-posts-section{
         max-width: 517px;
-        width: 35.903vw;
-        display: flex;
-        flex-direction: column
-    }
+        max-height: 804px;
 
-    .all-posts{
+
+        .all-posts-header{
         display: flex;
         align-items: baseline;
         justify-content: space-between;
 
-        .tag{
-            @include heading-36;
-            letter-spacing: -2px;
-            margin-bottom: 2rem;
-        }
-
-        .view-all-btn{
-            color: $purple;
-        }
-    }
-
-    .posts-scroll{
-        display: flex;
-        flex-direction: column;
-        overflow-y: scroll;
-        
-
-        .post-wrapper{
-            display: flex;
-            flex-direction: column;
-            padding: 2rem 7.25rem 2rem 2rem;
-
-            .author-date{
-                @include body-14;
-                margin-bottom: 0.5rem;
-
-                span{
-                    color: $purple;
-                }
+            .tag{
+                @include heading-36;
+                letter-spacing: -2px;
+                margin-bottom: 2rem;
             }
 
-            .title{
-                @include heading-24;
+            .view-all-btn{
+                color: $purple;
+            }
+        }
+
+        .scroll-section{
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            max-height: 724px;
+
+
+            .post-wrapper{
+                display: flex;
+                flex-direction: column;
+                padding: 2rem 7.25rem 1.56rem 2rem;
+
+                .author-date{
+                    @include body-14;
+                    margin-bottom: 0.5rem;
+
+                    span{
+                        color: $purple;
+                    }
+                }
+
+                .title{
+                    @include heading-24;
+                }
             }
         }
     }

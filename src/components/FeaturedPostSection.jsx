@@ -2,12 +2,12 @@ import React from 'react';
 
 import Button from './Button';
 
-import './/featuredPostSection.scss';
+import './/FeaturedPostSection.scss';
 
 const FeaturedPostSection = ({ data }) => {
 
   return (
-    <div className='feature-post-section'>
+    <div className='posts-section'>
       <div className='feature-post'>
         <h2 className='tag'>Featured Post</h2>
         <div className='container'>
@@ -18,12 +18,12 @@ const FeaturedPostSection = ({ data }) => {
           <Button className="yellow-button" text="Read More >"></Button>
         </div>
       </div>
-      <div className='scroll-section'>
-        <div className='all-posts'>
+      <div className='all-posts-section'>
+        <div className='all-posts-header'>
           <h2 className='tag'>All Posts</h2>
           <p className='view-all-btn'>View All</p>
         </div>
-        <div className='posts-scroll'>
+        <div className='scroll-section'>
           {data.map((item, id)=>{
             return (
               <div className='post-wrapper'>
