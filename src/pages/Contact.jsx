@@ -1,9 +1,10 @@
 import React from "react";
+import WhyWeStarted from "../components/WhyWeStarted";
 
 function Contact() {
     return(
         <div>
-            <h1>Contact</h1>
+            <WhyWeStarted></WhyWeStarted>
         </div>
     )
 }
