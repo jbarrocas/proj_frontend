@@ -6,11 +6,9 @@
     .slider-wrapper{
         display: flex;
         align-items: center;
-        // position: relative;
 
         .image-wrapper{
             position: relative;
-            // width: 1440px;
 
             .overlay{
                 position: absolute;
@@ -115,7 +113,12 @@
             }
 
             .yellow-button{
-                max-width: 204px;
+                max-width: 108px;
+
+                a{
+                    text-decoration: none;
+                    color: $black;
+                }
 
                 @media screen and (max-width: $mobile-width) {
                     display: none;
@@ -134,10 +137,12 @@
         padding: 16px;
 
         .slide-btn{
-            width: 26px;
-            height: 26px;
-            color: $black;
+            @include heading-24;
+            width: 32px;
+            margin: 0 1rem;
             border: none;
+            color: $black;
+            background-color: $light;
             cursor: pointer;
         }
 

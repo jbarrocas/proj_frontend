@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from './Button';
-
 import Logo from '../assets/Finsweet-Logo.png';
 import FacebookIcon from '../assets/social_media_icons/Facebook.svg';
 import TwitterIcon from '../assets/social_media_icons/Twitter.svg';
@@ -38,7 +36,9 @@ function Footer() {
         <h2 className='subscribe-heading'>Subscribe to our newsletter to get latest updates and news</h2>
         <div className='subscribe-input'>
           <input className='mail-input' type='mail' placeholder='Enter Your Email'></input>
-          <Button className='yellow-button' text='Subscribe' />
+          <div className='yellow-button'>
+            <Link to='/#'>Subscribe</Link>
+          </div>
         </div>
       </div>
       <div className='address-social'>

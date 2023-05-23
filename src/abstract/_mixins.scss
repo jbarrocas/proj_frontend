@@ -1,0 +1,28 @@
+@mixin white-button {
+    @include heading-18;
+    color: $black;
+    background-color: $light;
+    padding: 1rem 3rem;
+
+    &:hover {
+        background-color: $yellow;
+        color: $black;
+    }
+}
+
+@mixin yellow-button {
+    @include heading-18;
+    color: $black;
+    background-color: $yellow;
+    padding: 1rem 3rem;
+
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+
+    &:hover {
+        background-color: $hoverYellow;
+        color: $black;
+    }
+}

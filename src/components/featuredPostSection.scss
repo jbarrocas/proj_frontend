@@ -2,22 +2,22 @@
 
 .posts-section{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
     gap: 2rem;
     padding: 128px 78px 128px 80px;
 
-    @media screen and (max-width: $mobile-width) {
-        max-width: 95vw;
+    @media screen and (max-width: $tablet-width) {
+        flex-direction: column;
         align-items: center;
-        margin: 0 auto;
+    }
+
+    @media screen and (max-width: $mobile-width) {
         padding: 32px 20px 32px 20px;
     }
 
     .feature-post{
-        display: flex;
-        flex-direction: column;
         max-width: 733px;
+        margin: 0 auto;
 
         @media screen and (max-width: $mobile-width) {
             align-items: center;
@@ -26,20 +26,32 @@
         .fp-tag{
             @include heading-36;
             letter-spacing: -2px;
-            margin-bottom: 2rem;
+            margin-bottom: 4rem;
 
             @media screen and (max-width: $mobile-width) {
                 margin-bottom: 1rem;
             }
         }
+
+        .hidden{
+            display: none;
+        }
     
         .fp-wrapper{
             max-width: 669px;
-            padding: 32px;
+            margin: 0 2rem;
     
             .image{
                 max-width: 669px;
                 margin-bottom: 2rem;
+
+                @media screen and (max-width: $tablet-width) {
+                    max-width: 100%;
+                }
+            }
+
+            .hidden{
+                display: none;
             }
         
             .fp-author-date{
@@ -65,7 +77,8 @@
             }
     
             .yellow-button{
-                max-width: 204px;
+                @include yellow-button;
+                max-width: 108px;
             }
         }
     }
@@ -102,6 +115,11 @@
                 display: flex;
                 flex-direction: column;
                 padding: 2rem 7.25rem 1.56rem 2rem;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $yellow;
+                }
 
                 .author-date{
                     @include body-14;

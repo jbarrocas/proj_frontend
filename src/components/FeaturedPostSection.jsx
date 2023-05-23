@@ -1,22 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Button from './Button';
-
-import './/FeaturedPostSection.scss';
+import './FeaturedPostSection.scss';
 
 const FeaturedPostSection = ({ data }) => {
+
+  const featuredPost = data.length - 1;
+  
 
   return (
     <div className='posts-section'>
       <div className='feature-post'>
-        <h2 className='fp-tag'>Featured Post</h2>
-        <div className='fp-wrapper'>
-          <img className='image' src='../images/white-concrete-building-1838640.png' alt='White Concrete Building'></img>
-          <p className='fp-author-date'>By <span>John Doe</span> | May 23, 2022</p>
-          <h3 className='title'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h3>
-          <p className='text'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
-          <Button className='yellow-button' text='Read More '></Button>
-        </div>
+        {data.map((item, id) => {
+          return (
+            <>
+              <h2 className={ featuredPost === id ? 'fp-tag' : 'fp-tag hidden' }>Featured Post</h2>
+              <div className='fp-wrapper'>
+                <img className={ featuredPost === id ? 'image' : 'image hidden' } src={item.url} alt={item.alt}></img>
+                <p className={ featuredPost === id ? 'fp-author-date' : 'fp-author-date hidden' } >By <span>{item.author}</span> | {item.date}</p>
+                <h3 className={ featuredPost === id ? 'title' : 'title hidden' }>{item.title}</h3>
+                <p className={ featuredPost === id ? 'text' : 'text hidden' }>{item.text}</p>
+                <div className={ featuredPost === id ? 'yellow-button' : 'yellow-button hidden' }>
+                  <Link to='/#'>Read More &#62;</Link>
+                </div>  
+              </div>
+            </>
+          )
+        })}
+
       </div>
       <div className='all-posts-section'>
         <div className='all-posts-header'>

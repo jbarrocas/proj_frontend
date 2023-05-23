@@ -58,9 +58,10 @@
         .button{
             @include heading-24;
             width: 32px;
+            margin: 0 1rem;
             border: none;
             color: $black;
-            background-color: $lightYellow;
+            background-color: $light;
         }
     }
 }

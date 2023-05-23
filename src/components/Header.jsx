@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Button from './Button';
-
 import Logo from '../assets/Finsweet-Logo.png';
 
 import './Header.scss';
@@ -38,7 +36,9 @@ function Navbar() {
                         <Link to='/contact'>Contact us</Link>
                     </li>
                     <li className='menu-item'>
-                        <a href='#footer'><Button className='white-button' text='Subscribe'/></a>
+                        <div className='subscribe-button'>
+                            <a href='#footer'>Subscribe</a>
+                        </div>
                     </li>
                     <button className='menu-close-btn' onClick={()=>{
                     setIsMenuExpanded(!isMenuExpanded)

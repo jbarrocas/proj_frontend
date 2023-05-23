@@ -28,6 +28,14 @@
         .menu-item{
             list-style: none;
 
+            .subscribe-button{
+                margin: 0.75rem 0;
+
+                a{
+                    @include white-button;
+                }
+            }
+
             a{
                 @include body-16;
                 text-decoration: none;

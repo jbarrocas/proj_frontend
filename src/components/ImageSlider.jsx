@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-
-import Button from './Button';
+import { Link } from 'react-router-dom';
 
 import './ImageSlider.scss';
 
@@ -42,18 +41,15 @@ const ImageSlider = ({ data }) => {
                 <p className={ image === id ? 'author' : 'author hidden' }>By <span>{item.author}</span> | {item.date}</p>
               </div>              
               <p className={ image === id ? 'text' : 'text hidden' }>{item.text}</p>
-              <Button className={ image === id ? 'yellow-button' : 'yellow-button hidden' } text='Read More >' />
-              
+              <div className={ image === id ? 'yellow-button' : 'yellow-button hidden' } text='Read More >'>
+                <Link to='/#'>Read More &#62;</Link>
+              </div>              
             </div> 
           </div>
         )
       })}
       <div className='controls-wrapper'>
-        <button className='slide-btn previous-slide-btn' onClick={previousImage}>
-          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
-          <path stroke-linecap='round' stroke-linejoin='round' d='M15.75 19.5L8.25 12l7.5-7.5' />
-          </svg>
-        </button>
+        <button className='slide-btn previous-slide-btn' onClick={previousImage}>&#60;</button>
         <div className='slider-indicators'>
           {data.map((item, id)=>{
             return (
@@ -61,11 +57,7 @@ const ImageSlider = ({ data }) => {
             )
           })}
         </div>
-        <button className='slide-btn next-slide-btn' onClick={nextImage}>
-          <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor' class='w-6 h-6'>
-          <path stroke-linecap='round' stroke-linejoin='round' d='M8.25 4.5l7.5 7.5-7.5 7.5' />
-          </svg>
-        </button>
+        <button className='slide-btn next-slide-btn' onClick={nextImage}>&#62;</button>
       </div>
     </div>
   )

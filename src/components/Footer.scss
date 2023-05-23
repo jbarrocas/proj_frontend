@@ -112,6 +112,10 @@ footer{
                     width: 180px;
                 }
             }
+
+            .yellow-button{
+                @include yellow-button;
+            }
         }
     }
 
