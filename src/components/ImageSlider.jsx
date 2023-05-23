@@ -28,7 +28,7 @@ const ImageSlider = ({ data }) => {
 
   return (
     <div className='slider'>
-      {data.map((item, id)=>{
+      {data.map((item, id) => {
         return (
           <div className='slider-wrapper'>
             <div className='image-wrapper'>

@@ -1,4 +1,4 @@
-export const SliderData = [
+export const sliderData = [
     {
         id: 0,
         title: "Design tips for designers that cover everything you need and more.",

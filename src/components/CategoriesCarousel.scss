@@ -1,0 +1,66 @@
+@import '../abstract/main';
+
+
+
+.carousel-container{
+    max-width: 1280px;
+    margin: 4rem 5rem;
+
+    .carousel-title{
+        @include heading-36;
+        letter-spacing: -2px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .categories-carousel{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 0.5rem;
+
+        @media screen and (max-width: $tablet-width) {
+            flex-wrap: wrap;
+        }
+
+        .data-card{
+            max-width: 296px;
+            border: 1px solid $categoryCarouselBorder;
+            padding: 32px;
+
+            &:hover{
+                background-color: $yellow;
+            }
+
+            .image{
+                margin-bottom: 1rem;
+            }
+
+            .category{
+                @include heading-28;
+                margin-bottom: 0.25rem;
+            }
+
+            .text{
+                color: $mediumGrey;
+            }
+        }
+
+        .hidden{
+            display: none;
+        }
+    }
+
+    .carousel-buttons{
+        display: flex;
+        justify-content: space-between;
+
+        .button{
+            @include heading-24;
+            width: 32px;
+            border: none;
+            color: $black;
+            background-color: $lightYellow;
+        }
+    }
+}
