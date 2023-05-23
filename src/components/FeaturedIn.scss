@@ -1,0 +1,39 @@
+@import '../abstract/main';
+
+.featured-in-section{
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem 5rem;
+
+    @media screen and (max-width: $tablet-width) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .featured-in{
+        color: $mediumGrey;
+
+        .text{
+            @include body-14;
+        }
+
+        .heading{
+            @include heading-24;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .logos-section{
+        display: flex;
+        gap: 5rem;
+
+         @media screen and (max-width: $tablet-width) {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+}

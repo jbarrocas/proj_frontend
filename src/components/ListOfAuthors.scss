@@ -1,0 +1,53 @@
+@import '../abstract/main';
+
+.authors-section{
+    max-width: 1280px;
+    margin: 2rem auto;
+
+    .title{
+        @include heading-36;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .card{
+            width: 216px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: $lightGrey;
+            padding: 2.5rem 2.5rem;
+
+            &:hover{
+                cursor: pointer;
+                background-color: $lightYellow;
+            }
+
+            .avatar{
+                margin-bottom: 1.25rem
+            }
+
+            .name{
+                @include heading-28;
+                letter-spacing: -1px
+            }
+
+            .label{
+                @include body-14;
+                color: $mediumGrey;
+                margin-bottom: 1.25rem;
+            }
+
+            .social-wrapper{
+                display: flex;
+                gap: 1rem;
+            }
+        }
+    }
+}

@@ -5,7 +5,7 @@ export const sliderData = [
         url: "./images/pexels-andrea-piacquadio-3771790-1580w.jpg",
         urlOverlay: "./images/Overlay.png",
         alt: "",
-        author: "John Doe",
+        author: "Floyd Miles",
         date: "April 21, 2022",
         tag: "Startup",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -16,7 +16,7 @@ export const sliderData = [
         url: "./images/pexels-andrea-piacquadio-941555-1580w.jpg",
         urlOverlay: "./images/Overlay.png",
         alt: "Woman with computer sitted on the floor comemorating",
-        author: "James West",
+        author: "Diana Russel",
         date: "May 23, 2022",
         tag: "Startup",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -27,7 +27,7 @@ export const sliderData = [
         url: "./images/pexels-andrea-piacquadio-3813341-1580w.jpg",
         urlOverlay: "./images/Overlay.png",
         alt: "",
-        author: "Linda East",
+        author: "Jenny Wilson",
         date: "March 11, 2022",
         tag: "Business",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -38,7 +38,7 @@ export const sliderData = [
         url: "./images/pexels-andrew-neel-3954635-1580w.jpg",
         urlOverlay: "./images/Overlay.png",
         alt: "",
-        author: "Julia Penny",
+        author: "Leslie Alexander",
         date: "April 21, 2022",
         tag: "Tecnology",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
@@ -49,7 +49,7 @@ export const sliderData = [
         url: "./images/pexels-yan-krukau-4458420-1580w.jpg",
         urlOverlay: "./images/Overlay.png",
         alt: "",
-        author: "Sandra Green",
+        author: "Jenny Wilson",
         date: "March 11, 2022",
         tag: "Startup",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
