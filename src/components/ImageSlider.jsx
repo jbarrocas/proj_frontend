@@ -29,23 +29,42 @@ const ImageSlider = ({ data }) => {
     <div className='slider'>
       {data.map((item, id) => {
         return (
-          <div className='slider-wrapper'>
-            <div className='image-wrapper'>
-              <img src={item.urlOverlay} alt={item.alt} key={id} className={ image === id ? 'overlay' : 'overlay hidden' }></img>
-              <img src={item.url} alt={item.alt} key={id} className={ image === id ? 'slider-image' : 'slider-image hidden' }></img>            
+          <>
+            <div className='slider-wrapper'>
+              <div className='image-wrapper'>
+                <img src={item.urlOverlay} alt={item.alt} key={id} className={ image === id ? 'overlay' : 'overlay hidden' }></img>
+                <img src={item.url} alt={item.alt} key={id} className={ image === id ? 'slider-image' : 'slider-image hidden' }></img>            
+              </div>
+              <div className='text-wrapper'>
+                <p className={ image === id ? 'tag' : 'tag hidden' }>Posted on <strong>{item.tag}</strong></p>
+                <h1 className={ image === id ? 'title' : 'title hidden' }>{item.title}</h1>
+                <div className='author-date'>
+                  <p className={ image === id ? 'author' : 'author hidden' }>By <span>{item.author}</span> | {item.date}</p>
+                </div>              
+                <p className={ image === id ? 'text' : 'text hidden' }>{item.text}</p>
+                <div className={ image === id ? 'button' : 'button hidden' } text='Read More >'>
+                  <Link to='/#'>Read More &#62;</Link>
+                </div>              
+              </div> 
             </div>
-            <div className='text-wrapper'>
-              <p className={ image === id ? 'tag' : 'tag hidden' }>Posted on <strong>{item.tag}</strong></p>
-              <h1 className={ image === id ? 'title' : 'title hidden' }>{item.title}</h1>
-              <div className='author-date'>
-                <p className={ image === id ? 'author' : 'author hidden' }>By <span>{item.author}</span> | {item.date}</p>
-              </div>              
-              <p className={ image === id ? 'text' : 'text hidden' }>{item.text}</p>
-              <div className={ image === id ? 'yellow-button' : 'yellow-button hidden' } text='Read More >'>
-                <Link to='/#'>Read More &#62;</Link>
-              </div>              
-            </div> 
-          </div>
+            <div className='slider-wrapper-mobile'>
+              <div className='image-wrapper'>
+                <img src={item.urlOverlayMobile} alt={item.alt} key={id} className={ image === id ? 'overlay' : 'overlay hidden' }></img>
+                <img src={item.urlMobile} alt={item.alt} key={id} className={ image === id ? 'slider-image' : 'slider-image hidden' }></img>            
+              </div>
+              <div className='text-wrapper'>
+                <p className={ image === id ? 'tag' : 'tag hidden' }>Posted on <strong>{item.tag}</strong></p>
+                <h1 className={ image === id ? 'title' : 'title hidden' }>{item.title}</h1>
+                <div className='author-date'>
+                  <p className={ image === id ? 'author' : 'author hidden' }>By <span>{item.author}</span> | {item.date}</p>
+                </div>              
+                <p className={ image === id ? 'text' : 'text hidden' }>{item.text}</p>
+                <div className={ image === id ? 'yellow-button' : 'yellow-button hidden' } text='Read More >'>
+                  <Link to='/#'>Read More &#62;</Link>
+                </div>              
+              </div> 
+            </div>
+          </>
         )
       })}
       <div className='controls-wrapper'>

@@ -1,0 +1,42 @@
+[
+    {
+        "id": "1",
+        "name": "Floyd Miles",
+        "image": "./assets/images/authors/Floyd.png",
+        "position": "Content Writer @Company",
+        "icon1": "./assets/social_media_icons/Facebook.svg",
+        "icon2": "./assets/social_media_icons/Twitter.svg",
+        "icon3": "./assets/social_media_icons/Instagram.svg",
+        "icon4": "./assets/social_media_icons/Linkedin.svg"
+    },
+    {
+        "id": "2",
+        "name": "Dianne Russel",
+        "image": "./assets/images/authors/Diane.png",
+        "position": "Content Writer @Company",
+        "icon1": "./assets/social_media_icons/Facebook.svg",
+        "icon2": "./assets/social_media_icons/Twitter.svg",
+        "icon3": "./assets/social_media_icons/Instagram.svg",
+        "icon4": "./assets/social_media_icons/Linkedin.svg"
+    },
+    {
+        "id": "3",
+        "name": "Jenny Wilson",
+        "image": "./assets/images/authors/Jenny.png",
+        "position": "Content Writer @Company",
+        "icon1": "./assets/social_media_icons/Facebook.svg",
+        "icon2": "./assets/social_media_icons/Twitter.svg",
+        "icon3": "./assets/social_media_icons/Instagram.svg",
+        "icon4": "./assets/social_media_icons/Linkedin.svg"
+    },
+    {
+        "id": "4",
+        "name": "Leslie Alexander",
+        "image": "./assets/images/authors/Leslie.png",
+        "position": "Content Writer @Company",
+        "icon1": "./assets/social_media_icons/Facebook.svg",
+        "icon2": "./assets/social_media_icons/Twitter.svg",
+        "icon3": "./assets/social_media_icons/Instagram.svg",
+        "icon4": "./assets/social_media_icons/Linkedin.svg"
+    }
+]

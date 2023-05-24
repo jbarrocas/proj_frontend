@@ -47,6 +47,13 @@
             .social-wrapper{
                 display: flex;
                 gap: 1rem;
+
+                .social-icon{
+
+                    &:hover{
+                        transform: scale(1.3);
+                    }
+                }
             }
         }
     }

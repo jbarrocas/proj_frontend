@@ -30,7 +30,7 @@ const Testimonials = ({ data }) => {
                                 <img className='avatar' src={item.image} alt="" />
                                 <div className='identity'>
                                     <h4 className='name'>{item.name}</h4>
-                                    <p className='location'>{item.city} {item.country}</p>
+                                    <p className='location'>{item.city}, {item.country}</p>
                                 </div>
                             </div>
 
