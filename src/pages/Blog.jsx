@@ -1,9 +1,12 @@
 import React from "react";
 
+import FeaturedPostBlog from "../components/FeaturedPostBlog";
+import { sliderData } from '../data/SliderData';
+
 function Blog() {
     return(
         <div>
-            <h1>Blog</h1>
+            <FeaturedPostBlog data={ sliderData}></FeaturedPostBlog>
         </div>
 
     )

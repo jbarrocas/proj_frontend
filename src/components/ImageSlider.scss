@@ -139,12 +139,20 @@
                 strong{
                     font-weight: 900;
                 }
+
+                @media screen and (max-width: 400px) {
+                    display: none;
+                }
             }
 
             .title{
                 @include heading-36;
                 letter-spacing: -2px;
                 margin-bottom: 1rem;
+
+                @media screen and (max-width: 400px) {
+                    line-height: 36px;
+                }
             }
 
             .author-date{
@@ -157,11 +165,14 @@
 
             .text{
                 margin-bottom: 0.5rem;
+
+                @media screen and (max-width: 400px) {
+                    line-height: 24px;
+                }
             }
 
             .yellow-button{
-                @include yellow-button;
-                max-width: 108px;
+                display: none;
             }
         }
 
