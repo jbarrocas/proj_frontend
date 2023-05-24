@@ -1,7 +1,7 @@
 import React from 'react';
 
 import ImageSlider from '../components/ImageSlider';
-import { sliderData } from '../data/SliderData';
+import { postsData } from '../data/PostsData';
 import Tab from '../components/Tab';
 import FeaturedPostSection from '../components/FeaturedPostSection';
 import CategoriesCarousel from '../components/CategoriesCarousel';
@@ -18,8 +18,8 @@ function Home() {
   return (
     <div>
       <div className='image-slider'>
-        <ImageSlider data={sliderData}></ImageSlider>
-        <FeaturedPostSection data={sliderData}></FeaturedPostSection>
+        <ImageSlider data={postsData}></ImageSlider>
+        <FeaturedPostSection data={postsData}></FeaturedPostSection>
         <Tab></Tab>
         <CategoriesCarousel data={categories}></CategoriesCarousel>
         <WhyWeStarted></WhyWeStarted>

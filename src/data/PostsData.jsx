@@ -1,4 +1,4 @@
-export const sliderData = [
+export const postsData = [
     {
         id: 0,
         title: "Design tips for designers that cover everything you need and more.",
@@ -62,6 +62,58 @@ export const sliderData = [
         author: "Jenny Wilson",
         date: "March 11, 2022",
         tag: "Startup",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+        id: 5,
+        title: "Design tips for designers that cover everything you need and more.",
+        url: "./images/image6.jpg",
+        urlMobile: "./images/mobile/mobile_pexels-andrea-piacquadio-3771790-792w.jpg",
+        urlOverlay: "./images/Overlay.png",
+        urlOverlayMobile: "./images/mobile/Overlay mobile.png",
+        alt: "",
+        author: "Floyd Miles",
+        date: "April 21, 2022",
+        tag: "Startup",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+        id: 6,
+        title: "Step-by-step guide to choosing amazing and mindblower font pairs.",
+        url: "./images/image7.jpg",
+        urlMobile: "./images/mobile/mobile_pexels-andrea-piacquadio-941555-792w.jpg",
+        urlOverlay: "./images/Overlay.png",
+        urlOverlayMobile: "./images/mobile/Overlay mobile.png",
+        alt: "Woman with computer sitted on the floor comemorating",
+        author: "Diana Russel",
+        date: "May 23, 2022",
+        tag: "Startup",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+        id: 7,
+        title: "How to build rapport with your web design clients and partners.",
+        url: "./images/image8.jpg",
+        urlMobile: "./images/mobile/mobile_pexels-andrea-piacquadio-3813341-792w.jpg",
+        urlOverlay: "./images/Overlay.png",
+        urlOverlayMobile: "./images/mobile/Overlay mobile.png",
+        alt: "",
+        author: "Jenny Wilson",
+        date: "March 11, 2022",
+        tag: "Business",
+        text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
+    },
+    {
+        id: 8,
+        title: "8 Figma amazing design systems you can download for free today.",
+        url: "./images/image9.jpg",
+        urlMobile: "./images/mobile/mobile_pexels-andrew-neel-3954635-792w.jpg",
+        urlOverlay: "./images/Overlay.png",
+        urlOverlayMobile: "./images/mobile/Overlay mobile.png",
+        alt: "",
+        author: "Leslie Alexander",
+        date: "April 21, 2022",
+        tag: "Tecnology",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
     }
 ];

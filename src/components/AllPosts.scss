@@ -1,0 +1,66 @@
+@import '../abstract/main';
+
+.all-posts-blog{
+    padding: 4rem 13.25rem 4rem 5rem;
+
+    .section-title{
+        @include heading-48;
+        margin-bottom: 2rem;
+    }
+
+    .horiz-line{
+        height: 0;
+        border: 1px solid $mediumGrey;
+        opacity: 0.32;
+        margin-bottom: 4rem;
+    }
+
+    .post-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+        
+        .image{
+            max-width: 490px;
+        }
+
+        .text-wrapper{
+            max-width: 624px;
+
+            .label{
+                @include heading-16;
+                color: $purple;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                line-height: 20px;
+                margin-bottom: 1.25rem;
+            }
+
+            .title{
+                @include heading-36;
+                margin-bottom: 1rem;
+            }
+
+            .text{
+                color: $mediumGrey;
+            }
+        }
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        @include heading-24;
+        color: $mediumGrey;
+
+        .button{
+            cursor: pointer;
+        }
+    }
+}
