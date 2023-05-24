@@ -1,0 +1,26 @@
+@import '../abstract/main';
+
+.join-section{
+    max-width: 414px;
+    margin: 8rem auto;
+    text-align: center;
+
+    .heading{
+        @include heading-36;
+        letter-spacing: -2px;
+        margin-bottom: 1rem;
+    }
+
+    .text{
+        @include body-16;
+        color: $mediumGrey;
+        margin-bottom: 2rem;
+    }
+
+    .button{
+        @include yellow-button;
+        max-width: 174px;
+        margin: 0 auto;
+        cursor: pointer;
+    }
+}

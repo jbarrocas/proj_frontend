@@ -1,0 +1,138 @@
+@import '../abstract/main';
+
+.testimonials-section{
+    max-width: 1280px;
+    margin: 4rem auto;
+    display: flex;
+    background-color: $lightYellow;
+
+    @media screen and (max-width: $tablet-width) {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .testimonials-text{
+        min-width: 350px;
+        padding: 5.75rem 5.25rem 5.75rem 7rem;
+
+        @media screen and (max-width: $mobile-width) {
+            min-width: 200px;
+            padding: 3rem 2rem;
+        }
+
+        .tag{
+            @include heading-16;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 0.75rem;
+        }
+
+        .title{
+            @include heading-36;
+            letter-spacing: -2px;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .vertical-line{
+        width: 0;
+        height: 310px;
+        border-left: 1px solid $mediumGrey;
+        margin-top: 5rem;
+        opacity: 0.4;
+
+        @media screen and (max-width: $tablet-width) {
+            width: 80%;
+            height: 0;
+            border-top: 1px solid $mediumGrey;
+            margin: 0 auto;
+
+        }
+    }
+
+    .testimonials-carousel{
+        padding: 5rem 6rem;
+
+        @media screen and (max-width: $mobile-width) {
+            padding: 3rem 2rem;
+        }
+
+        .testimonial{
+            @include heading-24;
+            margin-right: 7rem;
+            margin-bottom: 7.25rem;
+
+            @media screen and (max-width: $mobile-width) {
+                text-align: center;
+                margin: 0 auto 5rem auto;
+            }
+        }
+
+        .avatar-arrows{
+            display: flex;
+            justify-content: space-between;
+
+            @media screen and (max-width: $mobile-width) {
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+            }
+
+            .avatar-wrapper{
+                display: flex;
+                gap: 1rem;
+
+                .avatar{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%
+                }
+    
+                .identity{
+    
+                    .name{
+                        @include heading-24;
+                    }
+    
+                    .location{
+                        color: $mediumGrey;
+                    }
+                }    
+
+            }
+
+            .arrows{
+                display: flex;
+                gap: 1rem;
+
+                .left-arrow{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+
+                    &:hover{
+                        color: $light;
+                        background-color: $black;
+                        cursor: pointer;
+                    }
+                }
+
+                .right-arrow{
+                    width: 48px;
+                    height: 48px;
+                    border-radius: 50%;
+
+                    &:hover{
+                        color: $light;
+                        background-color: $black;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .hidden{
+        display: none;
+    }
+}

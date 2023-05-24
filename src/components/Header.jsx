@@ -5,7 +5,7 @@ import Logo from '../assets/Finsweet-Logo.png';
 
 import './Header.scss';
 
-function Navbar() {
+function Header() {
     const [isMenuExpanded, setIsMenuExpanded] = useState(false);
 
     return(
@@ -60,4 +60,4 @@ function Navbar() {
     )
 }
 
-export default Navbar;
+export default Header;

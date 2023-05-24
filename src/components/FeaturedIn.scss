@@ -6,9 +6,10 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2rem 5rem;
+    margin: 4rem 5rem;
 
     @media screen and (max-width: $tablet-width) {
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
     }

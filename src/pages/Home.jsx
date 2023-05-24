@@ -9,6 +9,9 @@ import { categories } from '../data/CategoriesData';
 import WhyWeStarted from '../components/WhyWeStarted';
 import ListOfAuthors from '../components/ListOfAuthors';
 import FeaturedIn from '../components/FeaturedIn';
+import Testimonials from '../components/Testimonials';
+import { testimonials } from '../data/Testimonials';
+import JoinOurTeam from '../components/JoinOurTeam';
 
 function Home() {
   return (
@@ -21,6 +24,8 @@ function Home() {
         <WhyWeStarted></WhyWeStarted>
         <ListOfAuthors></ListOfAuthors>
         <FeaturedIn></FeaturedIn>
+        <Testimonials data={testimonials}></Testimonials>
+        <JoinOurTeam></JoinOurTeam>
       </div>
     </div>
   )
