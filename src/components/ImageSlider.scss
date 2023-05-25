@@ -84,6 +84,7 @@
 
             .text{
                 max-width: 600px;
+                max-height: 40px;
                 margin-bottom: 48px;
 
                 @media screen and (max-width: $tablet-width) {

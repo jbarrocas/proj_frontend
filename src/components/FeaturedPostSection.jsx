@@ -11,7 +11,7 @@ const FeaturedPostSection = ({ data }) => {
     <div className='posts-section'>
       <div className='feature-post'>
         {data.map((item, id) => {
-          const linkTo = `/BlogPost${id}`;
+          const linkTo = `/blogpost/${id}`;
 
           return (
             <div key={id} className='fp-container'>
@@ -37,16 +37,12 @@ const FeaturedPostSection = ({ data }) => {
         </div>
         <div className='scroll-section'>
           {data.map((item, id)=>{
-            const linkTo = `/BlogPost${id}`;
+            const linkTo = `/blogpost/${id}`;
             return (
-              <>
-                <Link to={linkTo}>
-                <div className='post-wrapper'>
-                  <p className='author-date'>By <span>{item.author}</span> | {item.date}</p>
-                  <h4 className='title'>{item.title}</h4>
-                </div>
-                </Link>
-              </>
+              <div className='post-card-wrapper'>
+                <p className='author-date'>By <span>{item.author}</span> | {item.date}</p>
+                <h4 className='title'><Link to={linkTo}>{item.title}</Link></h4>
+              </div>
             )
           })}
         </div>

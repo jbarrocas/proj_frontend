@@ -28,6 +28,7 @@ const ImageSlider = ({ data }) => {
   return (
     <div className='slider'>
       {data.map((item, id) => {
+        const linkTo = `/blogpost/${id}`;
         return (
           <div className='slider-wrapper' key={id}>
             <div className='image-wrapper'>
@@ -42,7 +43,7 @@ const ImageSlider = ({ data }) => {
               </div>              
               <p className={ image === id ? 'text' : 'text hidden' }>{item.text}</p>
               <div className={ image === id ? 'button' : 'button hidden' } text='Read More >'>
-                <Link to='/#'>Read More &#62;</Link>
+                <Link to={linkTo}>Read More &#62;</Link>
               </div>              
             </div> 
           </div>

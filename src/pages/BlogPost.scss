@@ -1,0 +1,89 @@
+@import '../abstract/main';
+
+.post-wrapper{
+    max-width: 1280px;
+    margin: 8rem auto;
+
+    @media screen and (max-width: $tablet-width) {
+        max-width: 80%;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        max-width: 90%;
+    }
+
+    .post-header-wrapper{
+        max-width: calc(100% - 32rem);
+        margin: 0 auto;
+
+        @media screen and (max-width: $tablet-width) {
+            max-width: 90%;
+        }
+
+        .post-author-details{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+
+            .author-image{
+                max-width: 48px;
+                max-height: 48px;
+            }
+
+            .post-author{
+                @include heading-28;
+                letter-spacing: -1px;
+                color: $purple;
+            }
+
+            .post-date{
+                color: $mediumGrey;
+            }
+        }
+
+        .post-heading{
+            @include heading-48;
+            letter-spacing: -2px;
+            margin-bottom: 2.125rem;
+        }
+
+        .post-tag{
+            @include heading-24;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .post-hero-image{
+        margin-bottom: 4rem;
+    }
+
+    .post-content{
+        max-width: 844px;
+        margin: 0 auto;
+
+        @media screen and (max-width: $tablet-width) {
+            max-width: 90%;
+        }
+
+        .post-subtitle{
+            @include heading-36;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .post-text{
+            color: $mediumGrey;
+            margin-bottom: 1.5rem;
+        }
+
+        .post-list{
+            @include heading-24;
+            list-style-position: inside;
+            margin-bottom: 24px;
+        }
+    }
+
+
+}
+

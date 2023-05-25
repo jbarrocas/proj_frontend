@@ -25,21 +25,39 @@ function App() {
           <Route path='/about' exact element={<AboutUs></AboutUs>}></Route>
           <Route path='/contact' exact element={<Contact></Contact>}></Route>
           <Route path='/privacy' exact element={<PrivacyPolicy></PrivacyPolicy>}></Route>
-          {/* <Route path='/BlogPost' exact element={<BlogPost></BlogPost>}></Route> */}
 
           <>
             { postsData.map((item, id) => {
-              const linkTo = `/BlogPost${id}`;
+              const linkTo = `/BlogPost/${id}`;
 
               return (
                 <Route key={id} path={linkTo} exact element={
-                <BlogPost title={item.title} image={item.url} text={item.text} alt={item.alt}></BlogPost>}>
-
+                  <BlogPost 
+                  authorPhoto={item.authorPhoto}
+                  author={item.author}
+                  date={item.date}
+                  title={item.title} 
+                  tag={item.tag}
+                  url={item.url} 
+                  alt={item.alt}
+                  subtitle1={item.subtitle1}
+                  subtitle2={item.subtitle2}
+                  subtitle3={item.subtitle3}
+                  text={item.text}
+                  text1={item.text1} 
+                  text2={item.text2} 
+                  text3={item.text3} 
+                  text4={item.text4}
+                  list1={item.list1}
+                  list2={item.list2}
+                  list3={item.list3}
+                  >
+                  </BlogPost>}>
                 </Route>
               )
             })}
-
           </>
+
         </Routes>
         <Footer/>
       </Router>

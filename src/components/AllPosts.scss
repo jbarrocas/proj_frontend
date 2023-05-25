@@ -3,6 +3,10 @@
 .all-posts-blog{
     padding: 4rem 13.25rem 4rem 5rem;
 
+    @media screen and (max-width: $tablet-width) {
+        padding: 4rem 1rem;
+    }
+
     .section-title{
         @include heading-48;
         margin-bottom: 2rem;
@@ -20,13 +24,34 @@
         align-items: center;
         gap: 2rem;
         margin-bottom: 4rem;
+
+        @media screen and (max-width: $tablet-width) {
+            flex-direction: column;
+
+        }
         
         .image{
             max-width: 490px;
+
+            @media screen and (max-width: $tablet-width) {
+                max-width: 80%;
+            }
+
+            @media screen and (max-width: $mobile-width) {
+                max-width: 90%;
+            }
         }
 
         .text-wrapper{
             max-width: 624px;
+
+            @media screen and (max-width: $tablet-width) {
+                max-width: 80%;
+            }
+
+            @media screen and (max-width: $mobile-width) {
+                max-width: 90%;
+            }
 
             .label{
                 @include heading-16;
@@ -37,9 +62,16 @@
                 margin-bottom: 1.25rem;
             }
 
+            a{
+                text-decoration: none;
+                color: $black;
+            }
+
             .title{
                 @include heading-36;
                 margin-bottom: 1rem;
+
+
             }
 
             .text{

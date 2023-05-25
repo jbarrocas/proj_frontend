@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './AllPosts.scss';
 
@@ -29,12 +30,13 @@ const AllPosts = ({ data }) => {
         <div className='horiz-line'></div>
         <div className='posts'>
           {data.map((item, id)=>{
+            const linkTo = `/blogpost/${id}`;
             return (
               <div key={id} className={ posts === id || posts === id + 1 || posts === id + 2 || posts === id + 3 || posts === id + 4 ? 'post-wrapper' : 'post-wrapper hidden'}>
                 <img className='image' src={item.url} alt={item.alt}></img>
                 <div className='text-wrapper'>
                     <p className='label'>{item.tag}</p>
-                    <h4 className='title'>{item.title}</h4>
+                    <Link to={linkTo}><h4 className='title'>{item.title}</h4></Link>
                     <p className='text'>{item.text}</p>
                 </div>
               </div>
