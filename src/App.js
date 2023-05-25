@@ -5,6 +5,10 @@ import Blog from './pages/Blog';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import BlogPost from './pages/BlogPost';
+
+import { postsData } from './data/PostsData';
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.scss';
@@ -21,6 +25,21 @@ function App() {
           <Route path='/about' exact element={<AboutUs></AboutUs>}></Route>
           <Route path='/contact' exact element={<Contact></Contact>}></Route>
           <Route path='/privacy' exact element={<PrivacyPolicy></PrivacyPolicy>}></Route>
+          {/* <Route path='/BlogPost' exact element={<BlogPost></BlogPost>}></Route> */}
+
+          <>
+            { postsData.map((item, id) => {
+              const linkTo = `/BlogPost${id}`;
+
+              return (
+                <Route key={id} path={linkTo} exact element={
+                <BlogPost title={item.title} image={item.url} text={item.text} alt={item.alt}></BlogPost>}>
+
+                </Route>
+              )
+            })}
+
+          </>
         </Routes>
         <Footer/>
       </Router>

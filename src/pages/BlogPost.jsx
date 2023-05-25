@@ -1,9 +1,18 @@
 import React from 'react';
 
-function Blog_Post() {
+
+
+
+const BlogPost = (props) => {
+
   return (
-    <div>Blog_Post</div>
+    <div>
+        <h1>{props.title}</h1>
+        <img src={props.image} alt={props.alt} />
+        <p>{props.text}</p>
+    </div>
   )
 }
 
-export default Blog_Post;
+export default BlogPost;
+

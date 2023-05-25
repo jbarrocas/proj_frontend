@@ -30,13 +30,11 @@ const CategoriesCarousel = ({ data }) => {
         <div className='categories-carousel'>
             {data.map((item, id) => {
                 return (
-                  <>
-                      <div key={id} className={ card === id || card === id + 1 || card === id + 2 || card === id + 3 ? 'data-card' : 'data-card hidden'}>
-                      <img className='image' src={item.url} alt={item.alt}></img>
-                      <h3 className='category' >{item.category}</h3>
-                      <p className='text' >{item.text}</p>
+                  <div key={id} className={ card === id || card === id + 1 || card === id + 2 || card === id + 3 ? 'card' : 'card hidden'}>
+                    <img className='image' src={item.url} alt={item.alt}></img>
+                    <h3 className='category' >{item.category}</h3>
+                    <p className='text' >{item.text}</p>
                   </div>
-                  </>
                 )
             })}
         </div>
