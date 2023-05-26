@@ -1,7 +1,7 @@
 export const postsData = [
     {
         id: 0,
-        title: "Design tips for designers that cover everything you need and more.",
+        title: "Design tips for designers that cover everything you need.",
         subtitle1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
@@ -25,7 +25,7 @@ export const postsData = [
     },
     {
         id: 1,
-        title: "Step-by-step guide to choosing amazing and mindblower font pairs.",
+        title: "Step-by-step guide to choosing font pairs.",
         subtitle1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
@@ -39,13 +39,16 @@ export const postsData = [
         date: "May 23, 2022",
         tag: "Startup",
         text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+        text1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
+        text3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
+        text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
         list3: "Neque egestas congue quisque egestas"
     },
     {
         id: 2,
-        title: "How to build rapport with your web design clients and partners.",
+        title: "How to build rapport with your web design clients.",
         subtitle1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
@@ -69,7 +72,7 @@ export const postsData = [
     },
     {
         id: 3,
-        title: "8 Figma amazing design systems you can download for free today.",
+        title: "8 Figma design systems you can download for free today.",
         subtitle1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle2: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
         subtitle3: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",

@@ -1,6 +1,10 @@
 import React from 'react';
 
+import { postsData } from '../data/PostsData';
+
 import './BlogPost.scss';
+import ReadNext from '../components/ReadNext';
+import JoinOurTeam from '../components/JoinOurTeam';
 
 
 
@@ -37,6 +41,9 @@ const BlogPost = (props) => {
         <p className='post-text'>{props.text4}</p>
       </div>
     </div>
+    
+    <ReadNext data={ postsData }></ReadNext>
+    <JoinOurTeam></JoinOurTeam>
     </>
   )
 }

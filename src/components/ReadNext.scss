@@ -1,0 +1,85 @@
+@import '../abstract/main';
+
+.read-next-wrapper{
+    max-width: 1280px;
+    margin: 0 auto 8rem auto;
+
+    @media screen and (max-width: $desktop-width) {
+        max-width: 80%;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        max-width: 85%;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        max-width: 90%;
+    }
+
+    .read-title{
+        @include heading-36;
+
+        letter-spacing: -2px;
+        margin-bottom: 4rem;
+
+        @media screen and (max-width: $tablet-width) {
+            text-align: center;
+        }
+    }
+
+    .read-posts{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 4rem;
+
+        @media screen and (max-width: $tablet-width) {
+            flex-wrap: wrap;
+        }
+
+        .read-post-card{
+            width: 100%;
+
+            @media screen and (max-width: $tablet-width) {
+                width: 45%;
+            }
+
+            @media screen and (max-width: $mobile-width) {
+                width: 90%;
+            }
+        }
+
+        .read-post-image{
+            margin-bottom: 2rem;
+        }
+
+        .read-post-date{
+            @include body-14;
+            color: $darkGrey;
+            margin-bottom: 1rem;
+
+            span{
+                color: $purple;
+            }
+        }
+
+        .read-post-title{
+            @include heading-28;
+            letter-spacing: -1px;
+            margin-bottom: 1rem;
+        }
+
+        .read-post-text{
+            opacity: 0.7;
+        }
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+.horiz-line{
+    border-top: 1px solid $mediumGrey;
+    opacity: 0.3;
+}

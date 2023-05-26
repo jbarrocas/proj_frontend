@@ -51,6 +51,7 @@ function App() {
                   list1={item.list1}
                   list2={item.list2}
                   list3={item.list3}
+                  linkTo={{linkTo}}
                   >
                   </BlogPost>}>
                 </Route>

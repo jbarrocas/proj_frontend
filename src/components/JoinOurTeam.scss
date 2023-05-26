@@ -2,7 +2,7 @@
 
 .join-section{
     max-width: 414px;
-    margin: 8rem auto;
+    margin: 0 auto 8rem auto;
     text-align: center;
 
     .heading{
@@ -19,7 +19,7 @@
 
     .button{
         @include yellow-button;
-        max-width: 174px;
+        max-width: 78px;
         margin: 0 auto;
         cursor: pointer;
     }
