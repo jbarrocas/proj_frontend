@@ -43,10 +43,10 @@ function Footer() {
           <p>Hello@finsweet.com  020 7993 2905</p>
         </address>
         <div className='social-media'>
-          <Link to='/#'><img className='facebook-icon' src='./assets/social_media_icons/Facebook.svg' alt='Facebook Icon'></img></Link>
-          <Link to='/#'><img className='twitter-icon' src='./assets/social_media_icons/Twitter.svg' alt='Twitter Icon'></img></Link>
-          <Link to='/#'><img className='instagram-icon' src='./assets/social_media_icons/Instagram.svg' alt='Instagram Icon'></img></Link>
-          <Link to='/#'><img className='linkedin-icon' src='./assets/social_media_icons/Linkedin.svg' alt='LinkedIn Icon'></img></Link>
+          <Link to='/#'><img className='facebook-icon' src='../assets/social_media_icons/Facebook.svg' alt='Facebook Icon'></img></Link>
+          <Link to='/#'><img className='twitter-icon' src='../assets/social_media_icons/Twitter.svg' alt='Twitter Icon'></img></Link>
+          <Link to='/#'><img className='instagram-icon' src='../assets/social_media_icons/Instagram.svg' alt='Instagram Icon'></img></Link>
+          <Link to='/#'><img className='linkedin-icon' src='../assets/social_media_icons/Linkedin.svg' alt='LinkedIn Icon'></img></Link>
         </div>
       </div>
     </footer>

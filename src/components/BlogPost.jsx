@@ -3,8 +3,8 @@ import React from 'react';
 import { postsData } from '../data/PostsData';
 
 import './BlogPost.scss';
-import ReadNext from '../components/ReadNext';
-import JoinOurTeam from '../components/JoinOurTeam';
+import ReadNext from './ReadNext';
+import JoinOurTeam from './JoinOurTeam';
 
 
 

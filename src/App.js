@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -5,11 +7,9 @@ import Blog from './pages/Blog';
 import AboutUs from './pages/AboutUs';
 import Contact from './pages/Contact';
 import PrivacyPolicy from './pages/PrivacyPolicy';
-import BlogPost from './pages/BlogPost';
+import BlogPost from './components/BlogPost';
 
 import { postsData } from './data/PostsData';
-
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import './App.scss';
 

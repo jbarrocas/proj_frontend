@@ -82,16 +82,6 @@
                     }
                 }
             }
-
-            .menu-close-btn{
-                display: block;
-                width: 30px;
-                height: 30px;
-                border: 0;
-                background-color: $light;
-                color: $black;
-                cursor: pointer;
-            }
         }
     }
 
@@ -114,5 +104,9 @@
         @media screen and (max-width: $tablet-width) {
             display: block;
         }
+    }
+
+    .hidden{
+        display: none;
     }
 }
