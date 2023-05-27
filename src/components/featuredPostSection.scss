@@ -1,144 +1,62 @@
 @import '../abstract/main';
 
-.posts-section{
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    padding: 128px 78px 128px 80px;
+.featured-home-container{
+    max-width: 733px;
+    margin: 8rem 2rem 8rem 5rem;
 
-    @media screen and (max-width: $tablet-width) {
-        flex-direction: column;
-        align-items: center;
+    .heading{
+        @include heading-36;
+        letter-spacing: -2px;
+        margin-bottom: 2rem;
     }
 
-    @media screen and (max-width: $mobile-width) {
-        padding: 32px 20px 32px 20px;
+    .featured-post-wrapper{
+        padding: 2rem;
+
+
     }
 
-    .feature-post{
-        max-width: 733px;
-        margin: 0 auto;
+    .post-image{
+        margin-bottom: 2rem;
+    }
 
-        @media screen and (max-width: $mobile-width) {
-            align-items: center;
-        }
+    .author-date{
+        @include body-14;
+        margin-bottom: 1rem;
 
-        .fp-tag{
-            @include heading-36;
-            letter-spacing: -2px;
-            margin-bottom: 4rem;
-
-            @media screen and (max-width: $mobile-width) {
-                margin-bottom: 1rem;
-            }
-        }
-
-        .hidden{
-            display: none;
-        }
-    
-        .fp-wrapper{
-            max-width: 669px;
-            margin: 0 2rem;
-    
-            .image{
-                max-width: 669px;
-                margin-bottom: 2rem;
-
-                @media screen and (max-width: $tablet-width) {
-                    max-width: 100%;
-                }
-            }
-
-            .hidden{
-                display: none;
-            }
-        
-            .fp-author-date{
-                @include body-14;
-                color: $darkGrey;
-                margin-bottom: 1rem;
-        
-                span{
-                    color: $purple;
-                }
-            }
-        
-            .title{
-                @include heading-28;
-                letter-spacing: -1px;
-                margin-bottom: 1rem;
-            }
-        
-            .text{
-                @include body-16;
-                margin-bottom: 2rem;
-                color: $mediumGrey;
-            }
-    
-            .button{
-                @include yellow-button;
-                max-width: 108px;
-            }
+        span{
+            color: $purple;
         }
     }
 
-    .all-posts-section{
-        max-width: 517px;
-        max-height: 804px;
+    .title{
+        @include heading-28;
+        letter-spacing: -1px;
+        margin-bottom: 1rem;
+    }
 
+    .text{
+        color: $mediumGrey;
+        margin-bottom: 2rem;
+    }
 
-        .all-posts-header{
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
+    a{
+        text-decoration: none
+    }
 
-            .ap-tag{
-                @include heading-36;
-                letter-spacing: -2px;
-                margin-bottom: 2rem;
-            }
+    .button{
+        @include yellowButton;
+        max-width: 108px;
+    }
 
-            .view-all-btn{
-                color: $purple;
-            }
-        }
-
-        .scroll-section{
-            display: flex;
-            flex-direction: column;
-            overflow-y: scroll;
-            max-height: 724px;
-
-            a{
-                text-decoration: none;
-                color: $black;
-            }
-
-
-            .post-card-wrapper{
-                display: flex;
-                flex-direction: column;
-                padding: 2rem 7.25rem 1.56rem 2rem;
-                cursor: pointer;
-
-                &:hover{
-                    background-color: $yellow;
-                }
-
-                .author-date{
-                    @include body-14;
-                    margin-bottom: 0.5rem;
-
-                    span{
-                        color: $purple;
-                    }
-                }
-
-                .title{
-                    @include heading-24;
-                }
-            }
-        }
+    .hidden{
+        display: none;
     }
 }
+
+
+
+
+
+
+

@@ -24,10 +24,6 @@
             }
         }
 
-        .hidden{
-            display: none;
-        }
-
         .text-wrapper{
             @include body-14;
             position: absolute;
@@ -93,7 +89,7 @@
             }
 
             .button{
-                @include yellow-button;
+                @include yellowButton;
                 max-width: 108px;
 
                 a{
@@ -103,7 +99,10 @@
             }
         }
     }
-    
+
+    .hidden{
+        display: none;
+    }    
 
     .slider-wrapper-mobile{
         display: flex;
@@ -119,10 +118,6 @@
             .overlay{
                 position: absolute;
             }
-        }
-
-        .hidden{
-            display: none;
         }
 
         .text-wrapper{
@@ -175,6 +170,10 @@
             }
         }
 
+    }
+
+    .hidden{
+        display: none;
     }
 
     .controls-wrapper{

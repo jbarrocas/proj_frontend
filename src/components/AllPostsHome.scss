@@ -1,0 +1,59 @@
+@import '../abstract/main';
+
+.all-posts-home{
+    max-width: 517px;
+    margin: 8rem 0 8rem 0;
+
+
+    .heading-wrapper{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    }
+
+    .heading{
+        @include heading-36;
+        letter-spacing: -2px;
+        margin-bottom: 2rem;
+    }
+
+    .view-all-button{
+        color: $purple;
+    }
+
+    .scroll-section{
+        overflow-y: scroll;
+        max-height: 724px;
+
+        a{
+            text-decoration: none;
+            color: $black;
+        }
+    }
+
+    .post-card{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 7.25rem 1.56rem 2rem;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $lightYellow;
+        }
+
+    }
+
+    .author-date{
+        @include body-14;
+        margin-bottom: 0.5rem;
+
+        span{
+            color: $purple;
+        }
+    }
+
+    .title{
+        @include heading-24;
+    }
+}

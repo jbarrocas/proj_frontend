@@ -18,7 +18,7 @@
     }
 
     .button{
-        @include yellow-button;
+        @include yellowButton;
         max-width: 78px;
         margin: 0 auto;
         cursor: pointer;

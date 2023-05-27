@@ -30,54 +30,52 @@ const ImageSlider = ({ data }) => {
       {data.map((item, id) => {
         const linkTo = `/blogpost/${id}`;
         return (
-          <div className='slider-wrapper' key={id}>
+          <>
+          <div key={id} className={ image === id ? 'slider-wrapper' : 'slider-wrapper hidden'}>
             <div className='image-wrapper'>
-              <img src={item.urlOverlay} alt={item.alt} className={ image === id ? 'overlay' : 'overlay hidden' }></img>
-              <img src={item.url} alt={item.alt} className={ image === id ? 'slider-image' : 'slider-image hidden' }></img>            
+              <img className='overlay' src={item.urlOverlay} alt={item.alt}></img>
+              <img className='slider-image' src={item.url} alt={item.alt}></img>            
             </div>
             <div className='text-wrapper'>
-              <p className={ image === id ? 'tag' : 'tag hidden' }>Posted on <strong>{item.tag}</strong></p>
-              <h1 className={ image === id ? 'title' : 'title hidden' }>{item.title}</h1>
+              <p className='tag'>Posted on <strong>{item.tag}</strong></p>
+              <h1 className='title'>{item.title}</h1>
               <div className='author-date'>
-                <p className={ image === id ? 'author' : 'author hidden' }>By <span>{item.author}</span> | {item.date}</p>
+                <p className='author'>By <span>{item.author}</span> | {item.date}</p>
               </div>              
-              <p className={ image === id ? 'text' : 'text hidden' }>{item.text}</p>
-              <div className={ image === id ? 'button' : 'button hidden' } text='Read More >'>
+              <p className='text'>{item.text}</p>
+              <div className='button'>
                 <Link to={linkTo}>Read More &#62;</Link>
               </div>              
             </div> 
           </div>
+          <div className='slider-mobile'>
+            <div className={ image === id ? 'slider-wrapper-mobile' : 'slider-wrapper-mobile hidden'}>
+              <div className='image-wrapper'>
+                <img className='overlay' src={item.urlOverlayMobile} alt={item.alt}></img>
+                <img className='slider-image' src={item.urlMobile} alt={item.alt}></img>            
+              </div>
+              <div className='text-wrapper'>
+                <p className='tag'>Posted on <strong>{item.tag}</strong></p>
+                <h1 className='title'>{item.title}</h1>
+                <div className='author-date'>
+                  <p className='author'>By <span>{item.author}</span> | {item.date}</p>
+                </div>              
+                <p className='text'>{item.text}</p>
+                <div className='button'>
+                  <Link to='/#'>Read More &#62;</Link>
+                </div>
+              </div>            
+            </div>
+          </div>
+          </>
         )
       })}
-          <div className='slider-mobile'>
-            {data.map((item, id) => {
-              return (
-                <div className='slider-wrapper-mobile'>
-                  <div className='image-wrapper'>
-                    <img src={item.urlOverlayMobile} alt={item.alt} className={ image === id ? 'overlay' : 'overlay hidden' }></img>
-                    <img src={item.urlMobile} alt={item.alt} className={ image === id ? 'slider-image' : 'slider-image hidden' }></img>            
-                  </div>
-                  <div className='text-wrapper'>
-                    <p className={ image === id ? 'tag' : 'tag hidden' }>Posted on <strong>{item.tag}</strong></p>
-                    <h1 className={ image === id ? 'title' : 'title hidden' }>{item.title}</h1>
-                    <div className='author-date'>
-                      <p className={ image === id ? 'author' : 'author hidden' }>By <span>{item.author}</span> | {item.date}</p>
-                    </div>              
-                    <p className={ image === id ? 'text' : 'text hidden' }>{item.text}</p>
-                    <div className={ image === id ? 'button' : 'button hidden' } text='Read More >'>
-                      <Link to='/#'>Read More &#62;</Link>
-                    </div>
-                  </div>            
-                </div>
-              )
-            })}
-          </div>
           <div className='controls-wrapper'>
             <div className='slide-btn previous-slide-btn' onClick={previousImage}>&#60;</div>
             <div className='slider-indicators'>
               {data.map((item, id)=>{
                 return (
-                  <button className={ image === id ? 'indicator' : 'indicator inactive-indicator'} onClick={()=> setImage(id)}></button>
+                  <div key={id} className={ image === id ? 'indicator' : 'indicator inactive-indicator'} onClick={()=> setImage(id)}></div>
                 )
               })}
             </div>
