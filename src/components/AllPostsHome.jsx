@@ -15,12 +15,14 @@ const AllPostsHome = ({data}) => {
       {data.map((item, id)=>{
         const linkTo = `/blogpost/${id}`;
         return (
-        <Link to={linkTo}>
-            <div key={id} className='post-card'>
-              <p className='author-date'>By <span>{item.author}</span> | {item.date}</p>
-              <h4 className='title'>{item.title}</h4>
-            </div>
-        </Link>
+          <div key={id} className='post-card-container'>
+            <Link to={linkTo}>
+              <div className='post-card'>
+                <p className='author-date'>By <span>{item.author}</span> | {item.date}</p>
+                <h4 className='title'>{item.title}</h4>
+              </div>
+            </Link>
+          </div>
         )
       })}
     </div>

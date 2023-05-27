@@ -30,29 +30,11 @@ const ImageSlider = ({ data }) => {
       {data.map((item, id) => {
         const linkTo = `/blogpost/${id}`;
         return (
-          <>
-          <div key={id} className={ image === id ? 'slider-wrapper' : 'slider-wrapper hidden'}>
-            <div className='image-wrapper'>
-              <img className='overlay' src={item.urlOverlay} alt={item.alt}></img>
-              <img className='slider-image' src={item.url} alt={item.alt}></img>            
-            </div>
-            <div className='text-wrapper'>
-              <p className='tag'>Posted on <strong>{item.tag}</strong></p>
-              <h1 className='title'>{item.title}</h1>
-              <div className='author-date'>
-                <p className='author'>By <span>{item.author}</span> | {item.date}</p>
-              </div>              
-              <p className='text'>{item.text}</p>
-              <div className='button'>
-                <Link to={linkTo}>Read More &#62;</Link>
-              </div>              
-            </div> 
-          </div>
-          <div className='slider-mobile'>
-            <div className={ image === id ? 'slider-wrapper-mobile' : 'slider-wrapper-mobile hidden'}>
+          <div key={id} className='sliders-container'>
+            <div className={ image === id ? 'slider-wrapper' : 'slider-wrapper hidden'}>
               <div className='image-wrapper'>
-                <img className='overlay' src={item.urlOverlayMobile} alt={item.alt}></img>
-                <img className='slider-image' src={item.urlMobile} alt={item.alt}></img>            
+                <img className='overlay' src={item.urlOverlay} alt={item.alt}></img>
+                <img className='slider-image' src={item.url} alt={item.alt}></img>            
               </div>
               <div className='text-wrapper'>
                 <p className='tag'>Posted on <strong>{item.tag}</strong></p>
@@ -62,12 +44,30 @@ const ImageSlider = ({ data }) => {
                 </div>              
                 <p className='text'>{item.text}</p>
                 <div className='button'>
-                  <Link to='/#'>Read More &#62;</Link>
+                  <Link to={linkTo}>Read More &#62;</Link>
+                </div>              
+              </div> 
+            </div>
+            <div className='slider-mobile'>
+              <div className={ image === id ? 'slider-wrapper-mobile' : 'slider-wrapper-mobile hidden'}>
+                <div className='image-wrapper'>
+                  <img className='overlay' src={item.urlOverlayMobile} alt={item.alt}></img>
+                  <img className='slider-image' src={item.urlMobile} alt={item.alt}></img>            
                 </div>
-              </div>            
+                <div className='text-wrapper'>
+                  <p className='tag'>Posted on <strong>{item.tag}</strong></p>
+                  <h1 className='title'>{item.title}</h1>
+                  <div className='author-date'>
+                    <p className='author'>By <span>{item.author}</span> | {item.date}</p>
+                  </div>              
+                  <p className='text'>{item.text}</p>
+                  <div className='button'>
+                    <Link to='/#'>Read More &#62;</Link>
+                  </div>
+                </div>            
+              </div>
             </div>
           </div>
-          </>
         )
       })}
           <div className='controls-wrapper'>

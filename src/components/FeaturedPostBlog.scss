@@ -1,6 +1,6 @@
 @import '../abstract/main';
 
-.featured-post{
+.featured-post-blog{
     background-color: $lavender;
     padding: 5rem;
 
@@ -12,7 +12,7 @@
         padding: 1rem;
     }
 
-    .fp-wrapper{
+    .post-content{
         display: flex;
         align-items: center;
         gap: 8.185rem;

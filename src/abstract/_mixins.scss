@@ -1,3 +1,7 @@
+a{
+    text-decoration: none
+}
+
 @mixin whiteButton {
     @include heading-18;
     color: $black;
