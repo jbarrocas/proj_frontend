@@ -102,113 +102,45 @@
 
     .hidden{
         display: none;
-    }    
-
-    .slider-wrapper-mobile{
-        display: flex;
-        align-items: center;
-
-        @media screen and (min-width: $mobile-width) {
-            display: none;
-        }
-
-        .image-wrapper{
-            position: relative; 
-
-            .overlay{
-                position: absolute;
-            }
-        }
-
-        .text-wrapper{
-            position: absolute;
-            color: $light;
-            margin: 1rem 1rem;
-
-            .tag{
-                letter-spacing: 3px;
-                text-transform: uppercase;
-                margin-bottom: 0.5rem;
-
-                strong{
-                    font-weight: 900;
-                }
-
-                @media screen and (max-width: 400px) {
-                    display: none;
-                }
-            }
-
-            .title{
-                @include heading-36;
-                letter-spacing: -2px;
-                margin-bottom: 1rem;
-
-                @media screen and (max-width: 400px) {
-                    line-height: 36px;
-                }
-            }
-
-            .author-date{
-                margin-bottom: 0.5rem;
-            }
-
-            span{
-                color: $yellow;
-            }
-
-            .text{
-                margin-bottom: 0.5rem;
-
-                @media screen and (max-width: 400px) {
-                    line-height: 24px;
-                }
-            }
-
-            .button{
-                display: none;
-            }
-        }
-
     }
+}
 
-    .hidden{
+.controls-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+
+    @media screen and (max-width: $mobile-width) {
         display: none;
     }
 
-    .controls-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px;
+    .slide-btn{
+        @include heading-24;
+        width: 32px;
+        margin: 0 1rem;
+        border: none;
+        color: $black;
+        background-color: $light;
+        cursor: pointer;
+    }
 
-        .slide-btn{
-            @include heading-24;
-            width: 32px;
-            margin: 0 1rem;
+    .slider-indicators{
+        display: flex;
+        gap: 16px;
+        bottom: 16px;
+
+        .indicator{
+            background-color: $hoverYellow;
+            width: 8px;
+            height: 8px;
+            border-radius: 100%;
             border: none;
-            color: $black;
-            background-color: $light;
             cursor: pointer;
         }
-
-        .slider-indicators{
-            display: flex;
-            gap: 16px;
-            bottom: 16px;
-    
-            .indicator{
-                background-color: $hoverYellow;
-                width: 8px;
-                height: 8px;
-                border-radius: 100%;
-                border: none;
-                cursor: pointer;
-            }
-            
-            .inactive-indicator{
-                background-color: $black;
-            }
+        
+        .inactive-indicator{
+            background-color: $black;
         }
     }
 }

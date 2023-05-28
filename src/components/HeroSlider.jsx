@@ -1,8 +1,7 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/components/ImageSlider.scss';
+import '../styles/components/HeroSlider.scss';
 
 const ImageSlider = ({ data }) => {
   const [image, setImage] = useState(0);
@@ -47,25 +46,6 @@ const ImageSlider = ({ data }) => {
                   <Link to={linkTo}>Read More &#62;</Link>
                 </div>              
               </div> 
-            </div>
-            <div className='slider-mobile'>
-              <div className={ image === id ? 'slider-wrapper-mobile' : 'slider-wrapper-mobile hidden'}>
-                <div className='image-wrapper'>
-                  <img className='overlay' src={item.urlOverlayMobile} alt={item.alt}></img>
-                  <img className='slider-image' src={item.urlMobile} alt={item.alt}></img>            
-                </div>
-                <div className='text-wrapper'>
-                  <p className='tag'>Posted on <strong>{item.tag}</strong></p>
-                  <h1 className='title'>{item.title}</h1>
-                  <div className='author-date'>
-                    <p className='author'>By <span>{item.author}</span> | {item.date}</p>
-                  </div>              
-                  <p className='text'>{item.text}</p>
-                  <div className='button'>
-                    <Link to='/#'>Read More &#62;</Link>
-                  </div>
-                </div>            
-              </div>
             </div>
           </div>
         )

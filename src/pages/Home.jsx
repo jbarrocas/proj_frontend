@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ImageSlider from '../components/ImageSlider';
+import HeroSlider from '../components/HeroSlider';
 import { postsData } from '../data/PostsData';
 import Tab from '../components/Tab';
 import FeaturedPostSection from '../components/FeaturedPostSection';
@@ -16,11 +16,13 @@ import { testimonials } from '../data/Testimonials';
 import JoinOurTeam from '../components/JoinOurTeam';
 
 import '../styles/pages/Home.scss';
+import HeroSliderMobile from '../components/HeroSliderMobile';
 
 function Home() {
   return (
     <div>
-      <ImageSlider data={postsData}></ImageSlider>
+      <HeroSlider className='hero-slider' data={postsData}></HeroSlider>
+      <HeroSliderMobile className='hero-slider-mobile' data={postsData}></HeroSliderMobile>
       <div className='featured-post-section'>
         <FeaturedPostSection data={postsData}></FeaturedPostSection>
         <AllPostsHome data={postsData}></AllPostsHome>

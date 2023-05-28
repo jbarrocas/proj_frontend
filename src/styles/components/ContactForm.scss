@@ -23,6 +23,10 @@
 
     .message{
         height: 144px;
+
+        @media screen and (max-width: $mobile-width) {
+            height: 100px;
+        }
     }
 
 }
