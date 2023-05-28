@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import AboutUs from './pages/AboutUs';
-import Contact from './pages/Contact';
+import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import BlogPost from './components/BlogPost';
 
@@ -23,7 +23,7 @@ function App() {
           <Route path='/' exact element={<Home></Home>}></Route>
           <Route path='/blog' exact element={<Blog></Blog>}></Route>
           <Route path='/about' exact element={<AboutUs></AboutUs>}></Route>
-          <Route path='/contact' exact element={<Contact></Contact>}></Route>
+          <Route path='/contact' exact element={<ContactUs></ContactUs>}></Route>
           <Route path='/privacy' exact element={<PrivacyPolicy></PrivacyPolicy>}></Route>
 
           <>

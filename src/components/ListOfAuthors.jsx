@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './ListOfAuthors.scss';
+import '../styles/components/ListOfAuthors.scss';
 
 const ListOfAuthors = ({ data }) => {
 

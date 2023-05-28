@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Logo from '../assets/Finsweet-Logo.png';
 
-import './Footer.scss';
+import '../styles/components/Footer.scss';
 
 function Footer() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './FeaturedIn.scss';
+import '../styles/components/FeaturedIn.scss';
 
 function FeaturedIn() {
   return (

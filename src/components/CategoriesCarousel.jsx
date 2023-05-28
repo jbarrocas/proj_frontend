@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './CategoriesCarousel.scss';
+import '../styles/components/CategoriesCarousel.scss';
 
 
 const CategoriesCarousel = ({ data }) => {

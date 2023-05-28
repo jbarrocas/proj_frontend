@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import './Tab.scss';
+import '../styles/components/Tab.scss';
 
 const Tab = () => {
     const [tab, setTab] = useState('aboutUs');

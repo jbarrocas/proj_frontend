@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 
-import './FeaturedPostBlog.scss';
+import '../styles/components/FeaturedPostBlog.scss';
 
 const FeaturedPostBlog = ({ data }) => {
 

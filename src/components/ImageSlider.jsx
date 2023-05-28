@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import './ImageSlider.scss';
+import '../styles/components/ImageSlider.scss';
 
 const ImageSlider = ({ data }) => {
   const [image, setImage] = useState(0);

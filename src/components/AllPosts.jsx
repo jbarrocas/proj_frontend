@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import './AllPosts.scss';
+import '../styles/components/AllPosts.scss';
 
 const AllPosts = ({ data }) => {
     const [posts, setPosts] = useState(4);

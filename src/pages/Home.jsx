@@ -15,7 +15,7 @@ import Testimonials from '../components/Testimonials';
 import { testimonials } from '../data/Testimonials';
 import JoinOurTeam from '../components/JoinOurTeam';
 
-import './Home.scss';
+import '../styles/pages/Home.scss';
 
 function Home() {
   return (

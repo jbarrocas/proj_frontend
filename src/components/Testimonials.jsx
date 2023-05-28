@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import './Testimonials.scss';
+import '../styles/components/Testimonials.scss';
 
 const Testimonials = ({ data }) => {
     const [testimonial, setTestimonial] = useState(0);

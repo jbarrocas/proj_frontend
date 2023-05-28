@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './AllPostsHome.scss';
+import '../styles/components/AllPostsHome.scss';
 
 const AllPostsHome = ({data}) => {
 

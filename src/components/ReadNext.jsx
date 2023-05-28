@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-import './ReadNext.scss';
+import '../styles/components/ReadNext.scss';
 
 const ReadNext = ({ data }) => {  
 

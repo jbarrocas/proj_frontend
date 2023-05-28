@@ -2,7 +2,7 @@ import React from 'react';
 
 import { postsData } from '../data/PostsData';
 
-import './BlogPost.scss';
+import '../styles/components/BlogPost.scss';
 import ReadNext from './ReadNext';
 import JoinOurTeam from './JoinOurTeam';
 

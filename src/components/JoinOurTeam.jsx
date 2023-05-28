@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './JoinOurTeam.scss';
+import '../styles/components/JoinOurTeam.scss';
 
 const JoinOurTeam = () => {
   return (

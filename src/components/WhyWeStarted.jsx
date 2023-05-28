@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './WhyWeStarted.scss';
+import '../styles/components/WhyWeStarted.scss';
 
 function WhyWeStarted() {
   return (
