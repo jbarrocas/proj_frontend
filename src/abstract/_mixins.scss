@@ -2,7 +2,7 @@
     @include heading-18;
     color: $black;
     background-color: $light;
-    padding: 1rem 3rem;
+    padding: 16px 48px;
 
     &:hover {
         background-color: $yellow;
@@ -13,7 +13,7 @@
     @include heading-18;
     color: $black;
     background-color: $yellow;
-    padding: 1rem 3rem;
+    padding: 16px 48px;
 
     &:hover {
         background-color: $hoverYellow;

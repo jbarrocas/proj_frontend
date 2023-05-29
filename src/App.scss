@@ -4,6 +4,7 @@
 .App{
     @include body-16;
     max-width: 1440px;
-    margin: 0 auto;
+    margin: auto;
     color: $black;
+    padding-top: 80px;
 }

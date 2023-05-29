@@ -27,23 +27,24 @@ const HeroSliderMobile = ({data}) => {
   return (
     <div className='slider-mobile'>
         {data.map((item, id) => {
-            return (
-                <div key={id} className={ image === id ? 'slider-wrapper-mobile' : 'slider-wrapper-mobile hidden'}>
-                    <div className='image-wrapper'>
-                        <img className='overlay' src={item.urlOverlayMobile} alt={item.alt}></img>
-                        <img className='slider-image' src={item.urlMobile} alt={item.alt}></img>            
-                    </div>
-                    <div className='text-wrapper'>
-                        <p className='tag'>Posted on <strong>{item.tag}</strong></p>
-                        <h1 className='title'>{item.title}</h1>
-                        <p className='author'>By <span>{item.author}</span> | {item.date}</p>            
-                        <p className='text'>{item.text}</p>
-                        <Link to='/#'>
-                            <div className='button'>Read More &#62;</div>
-                        </Link>
-                    </div>            
-                </div>
-            )
+          const linkTo = `/blogpost/${id}`;
+          return (
+              <div key={id} className={ image === id ? 'slider-wrapper-mobile' : 'slider-wrapper-mobile hidden'}>
+                  <div className='image-wrapper'>
+                      <img className='overlay' src={item.urlOverlayMobile} alt={item.alt}></img>
+                      <img className='slider-image' src={item.urlMobile} alt={item.alt}></img>            
+                  </div>
+                  <div className='text-wrapper'>
+                      <p className='tag'>Posted on <strong>{item.tag}</strong></p>
+                      <h1 className='title'>{item.title}</h1>
+                      <p className='author'>By <span>{item.author}</span> | {item.date}</p>            
+                      <p className='text'>{item.text}</p>
+                      <Link to={linkTo}>
+                          <div className='button'>Read More &#62;</div>
+                      </Link>
+                  </div>            
+              </div>
+          )
         })}
         <div className='controls-wrapper-mobile'>
             <div className='slide-btn previous-slide-btn' onClick={previousImage}>

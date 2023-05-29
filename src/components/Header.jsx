@@ -13,7 +13,7 @@ function Header() {
     const splitLocation = pathname.split('/');
 
     return(
-        <header>
+        <header className='header'>
             <nav className='navbar'>
                 <Link to='/'><img className='logo' src={Logo} alt='Logo'></img></Link>
                 <ul className={

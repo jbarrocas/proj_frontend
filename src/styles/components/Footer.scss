@@ -4,30 +4,30 @@
 
 .footer{
     background-color: $black;
-    padding: 3.75rem 5rem;
+    padding: 60px 80px;
 
     @media screen and (max-width: $tablet-width) {
-        padding: 3rem 4rem;
+        padding: 48px 64px;
     }
 
     @media screen and (max-width: $mobile-width) {
-        padding: 2rem 3rem;
+        padding: 32px 32px;
     }
 
     .footer-navbar{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 3.5rem;
+        margin-bottom: 56px;
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
-            gap: 1.5rem;
-            margin-bottom: 3rem;
+            gap: 24px;
+            margin-bottom: 48px;
         }
 
         @media screen and (max-width: $mobile-width) {
-            margin-bottom: 2rem;
+            margin-bottom: 32px;
         }
     }
 
@@ -38,7 +38,7 @@
         @media screen and (max-width: $mobile-width) {
             flex-direction: column;
             align-items: center;
-            gap: 1rem;
+            gap: 16px;
         }
     }
 
@@ -63,21 +63,21 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 4rem;
+        gap: 64px;
         background-color: $subscribeSectionGrey;
         max-width: 1280px;
-        padding: 5rem 4rem;
+        padding: 80px 64px;
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
             align-items: center;
-            gap: 3rem;
-            padding: 4rem 3rem;
+            gap: 48px;
+            padding: 64px 48px;
         }
 
         @media screen and (max-width: $mobile-width) {
-            gap: 2rem;
-            padding: 2.5rem 1rem;
+            gap: 32px;
+            padding: 40px 16px;
         }
     }
 
@@ -96,7 +96,7 @@
     .subscribe-input{
         display: flex;
         justify-content: space-between;
-        gap: 1.5rem;
+        gap: 24px;
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
@@ -109,14 +109,14 @@
         border: 1px solid $darkGrey;
         color: $light;
         width: 323px;
-        padding-left: 1.5rem;
+        padding-left: 24px;
 
         @media screen and (max-width: $tablet-width) {
             height: 56px;
         }
 
         @media screen and (max-width: $mobile-width) {
-            width: 256px;
+            max-width: 212px;
         }
     }
 
@@ -129,12 +129,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 3rem;
+        margin-top: 48px;
 
         @media screen and (max-width: $mobile-width) {
             flex-direction: column;
-            margin-top: 2rem;
-            gap: 2.5rem;
+            margin-top: 32px;
+            gap: 40px;
         }
     }
 
@@ -150,7 +150,7 @@
 
     .social-media{
         display: flex;
-        gap: 1.75rem;
+        gap: 28px;
     }
 
     img{
