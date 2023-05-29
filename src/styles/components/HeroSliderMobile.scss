@@ -13,6 +13,7 @@
 
         .overlay{
             position: absolute;
+            width: 100%;
         }
     }
 
@@ -20,52 +21,45 @@
         position: absolute;
         color: $light;
         margin: 1rem 1rem;
+    }
 
-        .tag{
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
+    .tag{
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
 
-            strong{
-                font-weight: 900;
-            }
-
-            @media screen and (max-width: 400px) {
-                display: none;
-            }
-        }
-
-        .title{
-            @include heading-36;
-            letter-spacing: -2px;
-            margin-bottom: 1rem;
-
-            @media screen and (max-width: 400px) {
-                line-height: 36px;
-            }
-        }
-
-        .author-date{
-            margin-bottom: 0.5rem;
-        }
-
-        span{
-            color: $yellow;
-        }
-
-        .text{
-            margin-bottom: 0.5rem;
-
-            @media screen and (max-width: 400px) {
-                line-height: 24px;
-            }
-        }
-
-        .button{
-            display: none;
+        strong{
+            font-weight: 900;
         }
     }
 
+    .title{
+        @include heading-36;
+        line-height: 42px;
+        letter-spacing: -2px;
+        margin-bottom: 1rem;
+    }
+
+    .author{
+        margin-bottom: 1rem;
+    }
+
+    span{
+        color: $yellow;
+    }
+
+    .text{
+        margin-bottom: 1rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .button{
+        @include yellowButton;
+        max-width: 108px
+    }
 }
 
 .hidden{
@@ -96,18 +90,18 @@
         display: flex;
         gap: 16px;
         bottom: 16px;
+    }
 
-        .indicator{
-            background-color: $hoverYellow;
-            width: 8px;
-            height: 8px;
-            border-radius: 100%;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .inactive-indicator{
-            background-color: $black;
-        }
+    .indicator{
+        background-color: $hoverYellow;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .inactive-indicator{
+        background-color: $black;
     }
 }

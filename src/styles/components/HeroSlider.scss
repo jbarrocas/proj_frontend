@@ -8,100 +8,106 @@
         @media screen and (max-width: $mobile-width) {
             display: none;
         }
+    }
 
-        .image-wrapper{
-            position: relative;
+    .image-wrapper{
+        position: relative;
 
-            .overlay{
-                position: absolute;
-                z-index: 1;
-            }
-    
-            .slider-image{
-                left: 0px;
-                width: 100%;
-                z-index: 0;
-            }
+        .overlay{
+            position: absolute;
+            width: 100%;
+            z-index: 1;
         }
 
-        .text-wrapper{
-            @include body-14;
-            position: absolute;
-            z-index: 2;
-            color: $light;
-            display: flex;
-            flex-direction: column;
-            margin: 128px 16px 192px 80px;
-
-            @media screen and (max-width: $tablet-width) {
-                margin: 60px 16px 60px 32px;
-                gap: 0.75rem;
-            }
-
-            .tag{
-                letter-spacing: 3px;
-                text-transform: uppercase;
-                margin-bottom: 24px;
-                
-                @media screen and (max-width: $tablet-width) {
-                    margin-bottom: 0px;
-                }
-
-                strong{
-                    font-weight: 900;
-                }
-            }
-
-            .title{
-                @include display;
-                letter-spacing: -2px;
-                max-width: 803px;
-                margin-bottom: 24px;
-
-                @media screen and (max-width: $tablet-width) {
-                    @include heading-36;
-                    max-width: 720px;
-                    margin-bottom: 0px;
-                    line-height: 36px;
-                }
-            }
-
-            .author-date{
-                margin-bottom: 16px;
-
-                @media screen and (max-width: $tablet-width) {
-                    margin-bottom: 8px;
-                }
-
-                span{
-                    color: $yellow;
-                }
-            }
-
-            .text{
-                max-width: 600px;
-                max-height: 40px;
-                margin-bottom: 48px;
-
-                @media screen and (max-width: $tablet-width) {
-                    margin-bottom: 0px;
-                }
-            }
-
-            .button{
-                @include yellowButton;
-                max-width: 108px;
-
-                a{
-                    text-decoration: none;
-                    color: $black;
-                }
-            }
+        .slider-image{
+            left: 0px;
+            z-index: 0;
         }
     }
 
     .hidden{
         display: none;
+    }
+
+    .text-wrapper{
+        @include body-14;
+        position: absolute;
+        z-index: 2;
+        color: $light;
+        display: flex;
+        flex-direction: column;
+        margin: 8rem 1rem 12rem 5rem;
+
+        @media screen and (max-width: $tablet-width) {
+            margin: 7rem 1rem 7rem 4rem;
+            gap: 1rem;
+        }
+
+        @media screen and (max-width: $small-tablet-width) {
+            gap: 0.5rem;
+            margin: 3rem 1rem 3rem 4rem;
+        }
+    }
+
+    .tag{
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 24px;
+        
+        @media screen and (max-width: $tablet-width) {
+            margin-bottom: 0px;
+        }
+
+        strong{
+            font-weight: 900;
+        }
+    }
+
+    .title{
+        @include display;
+        letter-spacing: -2px;
+        max-width: 803px;
+        margin-bottom: 1.5rem;
+
+        @media screen and (max-width: $tablet-width) {
+            max-width: 720px;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: $small-tablet-width) {
+            @include heading-36;
+        }
+    }
+
+    .author-date{
+        margin-bottom: 1rem;
+
+        @media screen and (max-width: $tablet-width) {
+            margin-bottom: 0.5rem;
+        }
+
+        span{
+            color: $yellow;
+        }
+    }
+
+    .text{
+        max-width: 600px;
+        max-height: 40px;
+        margin-bottom: 3rem;
+
+        @media screen and (max-width: $tablet-width) {
+            margin-bottom: 0;
+        }
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .button{
+        @include yellowButton;
+        max-width: 108px;
     }
 }
 
@@ -109,7 +115,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 1rem;
 
     @media screen and (max-width: $mobile-width) {
         display: none;
@@ -117,7 +123,7 @@
 
     .slide-btn{
         @include heading-24;
-        width: 32px;
+        width: 26px;
         margin: 0 1rem;
         border: none;
         color: $black;
@@ -129,19 +135,18 @@
         display: flex;
         gap: 16px;
         bottom: 16px;
+    }
 
-        .indicator{
-            background-color: $hoverYellow;
-            width: 8px;
-            height: 8px;
-            border-radius: 100%;
-            border: none;
-            cursor: pointer;
-        }
-        
-        .inactive-indicator{
-            background-color: $black;
-        }
+    .indicator{
+        background-color: $hoverYellow;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .inactive-indicator{
+        background-color: $black;
     }
 }
-
