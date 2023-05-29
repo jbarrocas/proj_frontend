@@ -2,156 +2,161 @@
 
 
 
-footer{
-    display: flex;
-    flex-direction: column;
+.footer{
     background-color: $black;
-    padding: 61px 80px 56px 80px;
+    padding: 3.75rem 5rem;
 
     @media screen and (max-width: $tablet-width) {
-        padding: 52px 60px 48px 60px;
+        padding: 3rem 4rem;
     }
 
     @media screen and (max-width: $mobile-width) {
-        padding: 32px 40px 32px 40px;
+        padding: 2rem 3rem;
     }
 
     .footer-navbar{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 56px;
+        margin-bottom: 3.5rem;
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
-            gap: 24px;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
         }
 
-        .footer-menu{
-            display: flex;
-            gap: 24px;
-
-            @media screen and (max-width: $mobile-width) {
-                flex-direction: column;
-                align-items: center;
-                gap: 24px;
-            }
-
-            .menu-item{   
-                list-style: none;             
-                
-                a{
-                    text-decoration: none;
-                    color: $light;
-
-                    &:hover{
-                        color: $hoverYellow
-                    }
-                }
-            }
+        @media screen and (max-width: $mobile-width) {
+            margin-bottom: 2rem;
         }
+    }
+
+    .footer-menu{
+        display: flex;
+        gap: 1.5rem;
+
+        @media screen and (max-width: $mobile-width) {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+
+    .menu-item{   
+        list-style: none;         
+    }
+
+    a{
+        text-decoration: none;
+        color: $light;
+
+        &:hover{
+            color: $hoverYellow
+        }
+    }
+
+    .active{
+        color: $hoverYellow;
     }
 
     .subscribe-section{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 64px;
+        gap: 4rem;
         background-color: $subscribeSectionGrey;
         max-width: 1280px;
-        padding: 80px 64px 80px 64px;
+        padding: 5rem 4rem;
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
             align-items: center;
-            padding: 60px 48px 60px 48px;
+            gap: 3rem;
+            padding: 4rem 3rem;
         }
 
         @media screen and (max-width: $mobile-width) {
-            padding: 40px 28px 40px 28px;
+            gap: 2rem;
+            padding: 2.5rem 1rem;
+        }
+    }
+
+    .subscribe-heading{
+        @include heading-36;
+        letter-spacing: -2px;
+        color: $light;
+        max-width: 562px;
+
+        @media screen and (max-width: $tablet-width) {
+            text-align: center;
         }
 
-        .subscribe-heading{
-            @include heading-36;
-            letter-spacing: -2px;
-            color: $light;
-            max-width: 562px;
+    }
 
-            @media screen and (max-width: $tablet-width) {
-                text-align: center;
-            }
+    .subscribe-input{
+        display: flex;
+        justify-content: space-between;
+        gap: 1.5rem;
 
-            @media screen and (max-width: $mobile-width) {
-                @include heading-28;
-            }
+        @media screen and (max-width: $tablet-width) {
+            flex-direction: column;
+        }
+    }
+
+    .mail-input{
+        display: flex;
+        background-color: transparent;
+        border: 1px solid $darkGrey;
+        color: $light;
+        width: 323px;
+        padding-left: 1.5rem;
+
+        @media screen and (max-width: $tablet-width) {
+            height: 56px;
         }
 
-        .subscribe-input{
-            display: flex;
-            justify-content: space-between;
-            gap: 24px;
-
-            @media screen and (max-width: $tablet-width) {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            .mail-input{
-                display: flex;
-                background-color: transparent;
-                border: 1px solid $darkGrey;
-                color: $light;
-                width: 323px;
-                padding-left: 25px;
-
-                @media screen and (max-width: $tablet-width) {
-                    height: 56px;
-                }
-
-                @media screen and (max-width: $mobile-width) {
-                    width: 180px;
-                }
-            }
-
-            .yellow-button{
-                @include yellowButton;
-            }
+        @media screen and (max-width: $mobile-width) {
+            width: 256px;
         }
+    }
+
+    .yellow-button{
+        @include yellowButton;
+        text-align: center;
     }
 
     .address-social{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 48px;
+        margin-top: 3rem;
 
         @media screen and (max-width: $mobile-width) {
             flex-direction: column;
-            gap: 48px;
+            margin-top: 2rem;
+            gap: 2.5rem;
         }
+    }
 
-        .address{
-            display: flex;
-            flex-direction: column;
-            @include body-16;
-            color: $light;
-            opacity: 0.7;
+    .address{
+        @include body-16;
+        color: $light;
+        opacity: 0.7;
 
-            @media screen and (max-width: $mobile-width) {
-                text-align: center;
-            }
+        @media screen and (max-width: $mobile-width) {
+            text-align: center;
         }
+    }
 
-        .social-media{
-            display: flex;
-            gap: 27px;
+    .social-media{
+        display: flex;
+        gap: 1.75rem;
+    }
 
-            img{
+    img{
 
-                &:hover{
-                    filter: brightness(3);
-                }
-            }
+        &:hover{
+            filter: brightness(3);
         }
     }
 }
