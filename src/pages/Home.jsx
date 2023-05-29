@@ -3,7 +3,7 @@ import React from 'react';
 import HeroSlider from '../components/HeroSlider';
 import { postsData } from '../data/PostsData';
 import Tab from '../components/Tab';
-import FeaturedPostSection from '../components/FeaturedPostSection';
+import FeaturedPostHome from '../components/FeaturedPostHome';
 import AllPostsHome from '../components/AllPostsHome';
 import CategoriesCarousel from '../components/CategoriesCarousel';
 import { categories } from '../data/CategoriesData';
@@ -24,7 +24,7 @@ function Home() {
       <HeroSlider className='hero-slider' data={postsData}></HeroSlider>
       <HeroSliderMobile className='hero-slider-mobile' data={postsData}></HeroSliderMobile>
       <div className='featured-post-section'>
-        <FeaturedPostSection data={postsData}></FeaturedPostSection>
+        <FeaturedPostHome data={postsData}></FeaturedPostHome>
         <AllPostsHome data={postsData}></AllPostsHome>
       </div>
       <Tab></Tab>

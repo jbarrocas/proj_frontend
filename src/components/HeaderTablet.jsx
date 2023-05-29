@@ -1,16 +1,12 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import Logo from '../assets/Finsweet-Logo.png';
 
-import '../styles/components/Header.scss';
+import '../styles/components/HeaderTablet.scss';
 
-function Header() {
+function HeaderTablet() {
     const [isMenuExpanded, setIsMenuExpanded] = useState(false);
-
-    const location = useLocation();
-    const { pathname } = location;
-    const splitLocation = pathname.split('/');
 
     return(
         <header>
@@ -19,26 +15,26 @@ function Header() {
                 <ul className={
                 isMenuExpanded ? 'menu-expanded menu' : 'menu'
                 }>
-                    <Link to='/'>
-                        <li className={splitLocation[1] === '' ? 'menu-item active' : 'menu-item'} onClick={()=>{
-                        setIsMenuExpanded(!isMenuExpanded)
-                        }}>Home</li>
-                    </Link>
-                    <Link to='/blog'>
-                        <li className={splitLocation[1] === 'blog' ? 'menu-item active' : 'menu-item'} onClick={()=>{
-                        setIsMenuExpanded(!isMenuExpanded)
-                        }}>Blog</li>
-                    </Link>
-                    <Link to='/about'>
-                        <li className={splitLocation[1] === 'about' ? 'menu-item active' : 'menu-item'} onClick={()=>{
-                        setIsMenuExpanded(!isMenuExpanded)
-                        }}>About Us</li>
-                    </Link>
-                    <Link to='/contact'>
-                        <li className={splitLocation[1] === 'contact' ? 'menu-item active' : 'menu-item'} onClick={()=>{
-                        setIsMenuExpanded(!isMenuExpanded)
-                        }}>Contact Us</li>
-                    </Link>
+                    <li className='menu-item' onClick={()=>{
+                    setIsMenuExpanded(!isMenuExpanded)
+                    }}>
+                        <Link to='/'>Home</Link>
+                    </li>
+                    <li className='menu-item' onClick={()=>{
+                    setIsMenuExpanded(!isMenuExpanded)
+                    }}>
+                        <Link to='/blog'>Blog</Link>
+                    </li>
+                    <li className='menu-item' onClick={()=>{
+                    setIsMenuExpanded(!isMenuExpanded)
+                    }}>
+                        <Link to='/about'>About Us</Link>
+                    </li>
+                    <li className='menu-item' onClick={()=>{
+                    setIsMenuExpanded(!isMenuExpanded)
+                    }}>
+                        <Link to='/contact'>Contact us</Link>
+                    </li>
                     <li className='menu-item'>
                         <div className='subscribe-button'>
                             <a href='#footer'>Subscribe</a>
@@ -64,4 +60,4 @@ function Header() {
     )
 }
 
-export default Header;
+export default HeaderTablet;

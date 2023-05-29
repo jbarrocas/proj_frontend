@@ -24,33 +24,33 @@
         @media screen and (max-width: $tablet-width) {
             display: none;
         }
-    }
 
-    .menu-item{
-        list-style: none;
-        color: $light;
+        .menu-item{
+            list-style: none;
 
-        &:hover{
-            color: $hoverYellow;
+            .subscribe-button{
+                margin: 0.75rem 0;
+
+                a{
+                    @include whiteButton;
+                }
+            }
+
+            a{
+                @include body-16;
+                text-decoration: none;
+                color: $light;
+
+                &:hover{
+                    color: $hoverYellow;
+                }
+            }
+        }
+
+        .menu-close-btn{
+            display: none;
         }
     }
-
-    .active{
-        color: $hoverYellow;
-    }
-
-    .subscribe-button{
-        margin: 0.75rem 0;
-
-        a{
-            @include whiteButton;
-        }
-    }
-
-    .menu-close-btn{
-        display: none;
-    }
-    
 
     @media screen and (max-width: $tablet-width) {
         .menu-expanded{
@@ -66,13 +66,29 @@
             padding-top: 16px;
             background-color: $black;
             z-index: 10;
-        }        
+
+            .menu-item{
+                list-style: none;
+
+                a{
+                    @include body-16;
+                    text-decoration: none;
+                    color: $light;
+
+                    &:hover{
+                        color: $black;
+                        font-weight: 700;
+                        @include body-18;
+                    }
+                }
+            }
+        }
     }
 
     @media screen and (max-width: $mobile-width) {
         .menu-expanded{
             top: 64px;
-            height: 100vh;
+            height: calc(100vh - 106px);
         }
     }
 

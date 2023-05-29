@@ -42,9 +42,9 @@ const ImageSlider = ({ data }) => {
                   <p className='author'>By <span>{item.author}</span> | {item.date}</p>
                 </div>              
                 <p className='text'>{item.text}</p>
-                <div className='button'>
-                  <Link to={linkTo}>Read More &#62;</Link>
-                </div>              
+                <Link to={linkTo}>
+                  <div className='button'>Read More &#62;</div>
+                </Link>        
               </div> 
             </div>
           </div>

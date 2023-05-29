@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/components/FeaturedPostSection.scss';
+import '../styles/components/FeaturedPostHome.scss';
 
 const FeaturedPostSection = ({ data }) => {
 
