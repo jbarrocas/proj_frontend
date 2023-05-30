@@ -22,7 +22,7 @@
     }
 
     @media screen and (max-width: $mobile-width) {
-        padding: 12px 32px;
+        padding: 6px 32px;
     }
 
     a{
@@ -74,7 +74,7 @@
     
 
     @media screen and (max-width: $tablet-width) {
-        .menu-expanded{
+        .expanded-menu{
             position: absolute;
             top: 72px;
             left: 0;

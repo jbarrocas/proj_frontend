@@ -17,7 +17,7 @@ function Header() {
             <nav className='navbar'>
                 <Link to='/'><img className='logo' src={Logo} alt='Logo'></img></Link>
                 <ul className={
-                isMenuExpanded ? 'menu-expanded menu' : 'menu'
+                isMenuExpanded ? 'expanded-menu menu' : 'menu'
                 }>
                     <Link to='/'>
                         <li className={splitLocation[1] === '' ? 'menu-item active' : 'menu-item'} onClick={()=>{

@@ -1,15 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 import Logo from '../assets/Finsweet-Logo.png';
 
 import '../styles/components/Footer.scss';
 
-function Footer() {
+const Footer = () => {
   const location = useLocation();
   const { pathname } = location;
   const splitLocation = pathname.split('/');
+
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
   
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  };
+
+  const validEmail = () => {
+    const regex = /[a-zA-Z0-9.!#$&'*/=?^_`%+-{|}~]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}(.[a-zA-Z{2,8}])?/g;
+    if(regex.test(email)) {
+      setMessage('Subscription succeed.');
+      setEmail('');
+    }
+    else {
+      setMessage('Please, insert a valid e-mail adress.');
+    }
+  };
+
   return (
     <footer className='footer'>
       <div className='footer-navbar' id='footer'>
@@ -40,11 +58,14 @@ function Footer() {
       <div className='subscribe-section'>
         <h2 className='subscribe-heading'>Subscribe to our newsletter to get latest updates and news</h2>
         <div className='subscribe-input'>
-          <input className='mail-input' type='mail' placeholder='Enter Your Email'></input>
+          <input className='mail-input' type='mail' placeholder='Enter Your Email' value={email} onChange={handleEmail}></input>
           <Link to=''>
-            <div className='yellow-button'>Subscribe
+            <div className='yellow-button' onClick={validEmail}>Subscribe
             </div>
           </Link>
+          <div className='email-messages'>
+            <p className={message === 'Subscription succeed.' ? 'success-message' : 'error-message'}>{message}</p>
+          </div>
         </div>
       </div>
       <div className='address-social'>

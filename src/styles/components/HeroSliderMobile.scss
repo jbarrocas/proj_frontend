@@ -77,11 +77,8 @@
     }
 
     .slide-btn{
-        @include heading-24;
         width: 32px;
-        margin: 0 16px;
-        color: $black;
-        background-color: $light;
+        margin: 0 12px;
         cursor: pointer;
     }
 

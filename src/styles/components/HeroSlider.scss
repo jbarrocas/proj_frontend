@@ -1,7 +1,7 @@
 @import '../../abstract/main';
 .slider{
 
-    .slider-wrapper{
+    .slide-wrapper{
         display: flex;
         align-items: center;
 
@@ -39,8 +39,8 @@
         }
 
         @media screen and (max-width: $small-tablet-width) {
+            margin: 48px 16px 48px 48px;
             gap: 8px;
-            margin: 48px 16px 48px 64px;
         }
     }
 
@@ -50,11 +50,7 @@
         margin-bottom: 24px;
         
         @media screen and (max-width: $tablet-width) {
-            margin-bottom: 0;
-        }
-
-        @media screen and (max-width: $small-tablet-width) {
-            display: none;
+            margin-bottom: 0px;
         }
 
         strong{
@@ -76,7 +72,7 @@
 
         @media screen and (max-width: $small-tablet-width) {
             @include heading-36;
-            line-height: 42px;
+            line-height: 38px;
         }
     }
 
@@ -85,6 +81,10 @@
 
         @media screen and (max-width: $tablet-width) {
             margin-bottom: 8px;
+        }
+
+        @media screen and (max-width: $small-tablet-width) {
+            margin-bottom: 4px;
         }
 
         span{
@@ -122,17 +122,13 @@
         display: none;
     }
 
-    .slide-btn{
-        @include heading-24;
+    .slide-btn{        
         width: 26px;
         margin: 0 16px;
-        border: none;
-        color: $black;
-        background-color: $light;
         cursor: pointer;
     }
 
-    .slider-indicators{
+    .slide-indicators{
         display: flex;
         gap: 24px;
     }
@@ -141,7 +137,7 @@
         background-color: $hoverYellow;
         width: 8px;
         height: 8px;
-        border-radius: 100%;
+        border-radius: 50%;
         border: none;
         cursor: pointer;
     }
