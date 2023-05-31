@@ -1,0 +1,5 @@
+@import '../../abstract/main';
+
+.section-title{
+    @include heading-36;
+}

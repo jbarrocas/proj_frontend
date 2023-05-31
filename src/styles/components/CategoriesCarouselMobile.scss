@@ -2,12 +2,16 @@
 
 
 
-.carousel-container{
-    max-width: 1280px;
-    margin: 128px 80px;
+.carousel-container-mobile{
+    max-width: 90%;
+    margin: 64px auto;
 
-    @media screen and (max-width: $small-tablet-width) {
+    @media screen and (min-width: $small-tablet-width) {
         display: none;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        margin: 32px auto;
     }
 
     .section-title{
@@ -15,17 +19,14 @@
         letter-spacing: -2px;
         text-align: center;
         margin-bottom: 48px;
+
+        @media screen and (max-width: $mobile-width) {
+            margin-bottom: 32px;
+        }
     }
 
     .categories-carousel{
-        display: flex;
-        justify-content: center;
-        gap: 32px;
         margin-bottom: 8px;
-
-        @media screen and (max-width: $tablet-width) {
-            flex-wrap: wrap;
-        }
 
         .hidden{
             display: none;
@@ -36,9 +37,11 @@
         max-width: 232px;
         border: 1px solid $categoryCarouselBorder;
         padding: 32px;
+        margin: 0 auto;
 
         &:hover{
             background-color: $yellow;
+            cursor: pointer;
         }
 
         .image{
@@ -58,10 +61,12 @@
     .carousel-buttons{
         display: flex;
         justify-content: space-between;
+        max-width: 232px;
+        margin: 16px auto;
+
     }
 
     .button{
         width: 26px;
-        margin: 16px 16px;
     }
 }

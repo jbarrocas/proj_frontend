@@ -6,6 +6,7 @@ import Tab from '../components/Tab';
 import FeaturedPostHome from '../components/FeaturedPostHome';
 import AllPostsHome from '../components/AllPostsHome';
 import CategoriesCarousel from '../components/CategoriesCarousel';
+import CategoriesCarouselMobile from '../components/CategoriesCarouselMobile';
 import { categories } from '../data/CategoriesData';
 import WhyWeStarted from '../components/WhyWeStarted';
 import ListOfAuthors from '../components/ListOfAuthors';
@@ -31,6 +32,7 @@ function Home() {
       </div>
       <Tab></Tab>
       <CategoriesCarousel data={categories}></CategoriesCarousel>
+      <CategoriesCarouselMobile data={categories}></CategoriesCarouselMobile>
       <WhyWeStarted></WhyWeStarted>
       <ListOfAuthors data={authors}></ListOfAuthors>
       <FeaturedIn></FeaturedIn>

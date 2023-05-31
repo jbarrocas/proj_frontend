@@ -2,13 +2,17 @@
 
 .container{
     max-width: 1280px;
-    width: 88.889vw;
+    width: 80%;
     min-height: 500px;
     display: flex;
     flex-direction: column;
-    margin: 64px auto;
+    margin: 128px auto;
     color: $black;
     background-color: $lavender;
+
+    @media screen and (max-width: $mobile-width) {
+        margin: 32px auto;
+    }
 
     .tabs{
         width: 100%;

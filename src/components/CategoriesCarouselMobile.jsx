@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import SectionTitle from './SectionTitle';
 
-import '../styles/components/CategoriesCarousel.scss';
+import '../styles/components/CategoriesCarouselMobile.scss';
 
 
-const CategoriesCarousel = ({ data }) => {
-    const [card, setCard] = useState(3);
+const CategoriesCarouselMobile = ({ data }) => {
+    const [card, setCard] = useState(1);
 
     function nextCard() {
         if(card === data.length - 1){
@@ -17,7 +17,7 @@ const CategoriesCarousel = ({ data }) => {
       };
     
       function previousCard() {
-        if(card === 3){
+        if(card === 1){
           return;
         }
         else{
@@ -26,12 +26,12 @@ const CategoriesCarousel = ({ data }) => {
       };
 
     return (
-      <div className='carousel-container'>
+      <div className='carousel-container-mobile'>
         <SectionTitle title='Choose A Category'></SectionTitle>
-        <div className='categories-carousel'>
+        <div className='categories-carousel-mobile'>
             {data.map((item, id) => {
                 return (
-                  <div key={id} className={ card === id || card === id + 1 || card === id + 2 || card === id + 3 ? 'card' : 'card hidden'}>
+                  <div key={id} className={ card === id ? 'card' : 'card hidden'}>
                     <img className='image' src={item.url} alt={item.alt}></img>
                     <h3 className='category' >{item.category}</h3>
                     <p className='text' >{item.text}</p>
@@ -55,4 +55,4 @@ const CategoriesCarousel = ({ data }) => {
     )
 }
 
-export default CategoriesCarousel;
+export default CategoriesCarouselMobile;
