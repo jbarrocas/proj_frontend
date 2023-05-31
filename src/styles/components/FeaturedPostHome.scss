@@ -2,27 +2,46 @@
 
 .featured-home-container{
     max-width: 733px;
-    margin: 8rem 2rem 8rem 5rem;
+    margin: 64px 16px 64px 80px;
+
+    @media screen and (max-width: $small-tablet-width) {
+        @include smallTabletWidth;
+        margin: 48px auto 24px auto;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        @include mobileWidth;
+    }
 
     .heading{
         @include heading-36;
         letter-spacing: -2px;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: $small-tablet-width) {
+            margin-bottom: 32px;
+        }
     }
 
     .featured-post-wrapper{
-        padding: 2rem;
+        padding: 32px;
 
-
+        @media screen and (max-width: $mobile-width) {
+            padding: 0px;
+        }
     }
 
     .post-image{
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
+
+        @media screen and (max-width: $mobile-width) {
+            margin-bottom: 8px;
+        }
     }
 
     .author-date{
         @include body-14;
-        margin-bottom: 1rem;
+        margin-bottom: 16px;
 
         span{
             color: $purple;
@@ -32,12 +51,12 @@
     .title{
         @include heading-28;
         letter-spacing: -1px;
-        margin-bottom: 1rem;
+        margin-bottom: 16px;
     }
 
     .text{
         color: $mediumGrey;
-        margin-bottom: 2rem;
+        margin-bottom: 16px;
     }
 
     a{

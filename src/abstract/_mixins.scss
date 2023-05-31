@@ -1,4 +1,4 @@
-@mixin whiteButton {
+@mixin whiteButton{
     @include heading-18;
     color: $black;
     background-color: $light;
@@ -9,7 +9,7 @@
     }
 }
 
-@mixin yellowButton {
+@mixin yellowButton{
     @include heading-18;
     color: $black;
     background-color: $yellow;
@@ -18,4 +18,16 @@
     &:hover {
         background-color: $hoverYellow;
     }
+}
+
+@mixin tabletWidth{
+    max-width: 80%;
+}
+
+@mixin smallTabletWidth{
+    max-width: 85%;
+}
+
+@mixin mobileWidth{
+    max-width: 90%;
 }

@@ -15,6 +15,7 @@ import './App.scss';
 
 
 function App() {
+
   return (
     <div className='App'>
       <Router>
@@ -25,7 +26,6 @@ function App() {
           <Route path='/about' exact element={<AboutUs></AboutUs>}></Route>
           <Route path='/contact' exact element={<ContactUs></ContactUs>}></Route>
           <Route path='/privacy' exact element={<PrivacyPolicy></PrivacyPolicy>}></Route>
-
           <>
             { postsData.map((item, id) => {
               const linkTo = `/BlogPost/${id}`;

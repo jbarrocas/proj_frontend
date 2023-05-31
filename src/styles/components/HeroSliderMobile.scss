@@ -2,7 +2,7 @@
 
 .slider-wrapper-mobile{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 
     @media screen and (min-width: $mobile-width) {
         display: none;
@@ -20,7 +20,7 @@
     .text-wrapper{
         position: absolute;
         color: $light;
-        margin: 16px 16px;
+        margin: 24px 16px;
     }
 
     .tag{

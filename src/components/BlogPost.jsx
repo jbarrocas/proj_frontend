@@ -5,6 +5,7 @@ import { postsData } from '../data/PostsData';
 import '../styles/components/BlogPost.scss';
 import ReadNext from './ReadNext';
 import JoinOurTeam from './JoinOurTeam';
+import ScrollToTop from './ScrollToTop';
 
 
 
@@ -12,6 +13,7 @@ const BlogPost = (props) => {
 
   return (
     <>
+    <ScrollToTop></ScrollToTop>
     <div className='post-wrapper'>
       <div className='post-header-wrapper'>
         <div className='post-author-details'>

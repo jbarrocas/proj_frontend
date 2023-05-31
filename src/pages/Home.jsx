@@ -14,13 +14,15 @@ import FeaturedIn from '../components/FeaturedIn';
 import Testimonials from '../components/Testimonials';
 import { testimonials } from '../data/Testimonials';
 import JoinOurTeam from '../components/JoinOurTeam';
+import ScrollToTop from '../components/ScrollToTop';
 
 import '../styles/pages/Home.scss';
 import HeroSliderMobile from '../components/HeroSliderMobile';
 
 function Home() {
   return (
-    <div>
+    <>
+      <ScrollToTop></ScrollToTop>
       <HeroSlider className='hero-slider' data={postsData}></HeroSlider>
       <HeroSliderMobile className='hero-slider-mobile' data={postsData}></HeroSliderMobile>
       <div className='featured-post-section'>
@@ -34,7 +36,7 @@ function Home() {
       <FeaturedIn></FeaturedIn>
       <Testimonials data={testimonials}></Testimonials>
       <JoinOurTeam></JoinOurTeam>
-    </div>
+    </>
   )
 }
 

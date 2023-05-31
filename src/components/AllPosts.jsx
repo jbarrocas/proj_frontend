@@ -25,9 +25,9 @@ const AllPosts = ({ data }) => {
     }
 
   return (
-      <div className='all-posts-blog'>
+      <div id='allPosts' className='all-posts-blog'>
         <h1 className='section-title'>All Posts</h1>
-        <div className='horiz-line'></div>
+        <hr className='horizontal-line' />
         <div className='posts'>
           {data.map((item, id)=>{
             const linkTo = `/blogpost/${id}`;

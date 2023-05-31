@@ -27,56 +27,55 @@
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
-
         }
-        
-        .image{
-            max-width: 490px;
+    }
 
-            @media screen and (max-width: $tablet-width) {
-                max-width: 80%;
-            }
+    .image{
+        max-width: 490px;
 
-            @media screen and (max-width: $mobile-width) {
-                max-width: 90%;
-            }
+        @media screen and (max-width: $tablet-width) {
+            max-width: 80%;
         }
 
-        .text-wrapper{
-            max-width: 624px;
+        @media screen and (max-width: $mobile-width) {
+            max-width: 90%;
+        }
+    }
 
-            @media screen and (max-width: $tablet-width) {
-                max-width: 80%;
-            }
+    .text-wrapper{
+        max-width: 624px;
 
-            @media screen and (max-width: $mobile-width) {
-                max-width: 90%;
-            }
+        @media screen and (max-width: $tablet-width) {
+            max-width: 80%;
+        }
 
-            .label{
-                @include heading-16;
-                color: $purple;
-                text-transform: uppercase;
-                letter-spacing: 3px;
-                line-height: 20px;
-                margin-bottom: 1.25rem;
-            }
+        @media screen and (max-width: $mobile-width) {
+            max-width: 90%;
+        }
 
-            a{
-                text-decoration: none;
-                color: $black;
-            }
+        .label{
+            @include heading-16;
+            color: $purple;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 20px;
+            margin-bottom: 1.25rem;
+        }
 
-            .title{
-                @include heading-36;
-                margin-bottom: 1rem;
+        a{
+            text-decoration: none;
+            color: $black;
+        }
+
+        .title{
+            @include heading-36;
+            margin-bottom: 1rem;
 
 
-            }
+        }
 
-            .text{
-                color: $mediumGrey;
-            }
+        .text{
+            color: $mediumGrey;
         }
     }
 
@@ -90,9 +89,9 @@
         gap: 1rem;
         @include heading-24;
         color: $mediumGrey;
+    }
 
-        .button{
-            cursor: pointer;
-        }
+    .button{
+        cursor: pointer;
     }
 }

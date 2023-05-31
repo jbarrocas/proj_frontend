@@ -3,10 +3,13 @@ import React from 'react';
 import ContactForm from '../components/ContactForm';
 
 import '../styles/pages/ContactUs.scss';
+import ScrollToTop from '../components/ScrollToTop';
 
 
 function ContactUs() {
     return(
+        <>
+        <ScrollToTop></ScrollToTop>
         <div className='contact-wrapper'>
             <div className='contact-header'>
                 <p className='label'>Contact us</p>
@@ -30,6 +33,7 @@ function ContactUs() {
             </div>
             <ContactForm></ContactForm>        
         </div>
+        </>
     )
 }
 

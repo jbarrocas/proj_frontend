@@ -2,7 +2,16 @@
 
 .all-posts-home{
     max-width: 517px;
-    margin: 8rem 0 8rem 0;
+    margin: 64px 80px 64px 16px;
+
+    @media screen and (max-width: $small-tablet-width) {
+        @include smallTabletWidth;
+        margin: 36px auto;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        @include mobileWidth;
+    }
 
 
     .heading-wrapper{
@@ -15,16 +24,26 @@
     .heading{
         @include heading-36;
         letter-spacing: -2px;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
+    }
+
+    a{
+        text-decoration: none;
     }
 
     .view-all-button{
         color: $purple;
+
+
     }
 
     .scroll-section{
         overflow-y: scroll;
         max-height: 724px;
+
+        @media screen and (max-width: $small-tablet-width) {
+            margin-bottom: 24px;
+        }
 
         a{
             text-decoration: none;
@@ -35,8 +54,12 @@
     .post-card{
         display: flex;
         flex-direction: column;
-        padding: 2rem 7.25rem 1.56rem 2rem;
+        margin: 32px 116px 50px 32px;
         cursor: pointer;
+
+        @media screen and (max-width: $mobile-width)  {
+            margin: 32px 32px 50px 32px;
+        }
 
         &:hover{
             background-color: $lightYellow;
@@ -46,7 +69,7 @@
 
     .author-date{
         @include body-14;
-        margin-bottom: 0.5rem;
+        margin-bottom: 8px;
 
         span{
             color: $purple;
