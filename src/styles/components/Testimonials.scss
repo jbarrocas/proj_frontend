@@ -17,7 +17,7 @@
 
         @media screen and (max-width: $mobile-width) {
             min-width: 200px;
-            padding: 3rem 2rem;
+            padding: 48px 32px;
         }
     }
 
@@ -25,20 +25,20 @@
         @include heading-16;
         letter-spacing: 3px;
         text-transform: uppercase;
-        margin-bottom: 0.75rem;
+        margin-bottom: 12px;
     }
 
     .title{
         @include heading-36;
         letter-spacing: -2px;
-        margin-bottom: 1rem;
+        margin-bottom: 16px;
     }
 
     .vertical-line{
         width: 0;
         height: 310px;
         border-left: 1px solid $mediumGrey;
-        margin-top: 5rem;
+        margin-top: 80px;
         opacity: 0.4;
 
         @media screen and (max-width: $tablet-width) {
@@ -51,38 +51,33 @@
     }
 
     .testimonials-carousel{
-        padding: 5rem 6rem;
+        padding: 80px 96px 80px 96px;
 
         @media screen and (max-width: $mobile-width) {
-            padding: 3rem 2rem;
+            padding: 48px 32px;
         }
     }
 
     .testimonial{
         @include heading-24;
-        margin-right: 7rem;
-        margin-bottom: 7.25rem;
+        margin-bottom: 116px;
 
         @media screen and (max-width: $mobile-width) {
             text-align: center;
-            margin: 0 auto 5rem auto;
-        }
-    }
-
-    .avatar-arrows{
-        display: flex;
-        justify-content: space-between;
-
-        @media screen and (max-width: $mobile-width) {
-            flex-direction: column;
-            align-items: center;
-            gap: 2rem;
+            margin: 0 auto 80px auto;
         }
     }
 
     .avatar-wrapper{
         display: flex;
-        gap: 1rem;
+        align-items: center;
+        gap: 16px;
+
+        @media screen and (max-width: $mobile-width) {
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
     }
 
     .avatar{
@@ -100,8 +95,23 @@
     }
 
     .arrows{
+        position: relative;
+        left: -140px;
         display: flex;
-        gap: 1rem;
+        gap: 16px;
+        align-self: flex-end;
+        padding: 0 0 80px  0;
+
+        @media screen and (max-width: $tablet-width) {
+            position: static;
+            align-self: flex-start;
+            padding: 0 0 80px  96px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            align-self: center;;
+            padding: 0 0 32px 0;
+        }
     }
 
     .left-arrow{
