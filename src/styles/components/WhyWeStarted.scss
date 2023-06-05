@@ -2,7 +2,7 @@
 
 .why-section{
     max-width: 1280px;
-    margin: 2rem auto;
+    margin: 128px auto;
 
 
     .section-wrapper{
@@ -11,56 +11,60 @@
 
         @media screen and (max-width: $tablet-width) {
             position: static;
-            margin: 1rem 1rem;
+            margin: 16px;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+    }
 
-        .text-wrapper{
-            max-width: 546px;
-            padding: 5rem;
-            position: absolute;
-            top: 121px;
-            right: 80px;
-            background-color: $light;
+    .text-wrapper{
+        max-width: 546px;
+        padding: 80px;
+        position: absolute;
+        top: 121px;
+        right: 80px;
+        background-color: $light;
 
-            @media screen and (max-width: $tablet-width) {
-                position: static;
-                max-width: 90%;
-                padding: 4rem;
-            }
-
-            @media screen and (max-width: $mobile-width) {
-                max-width: 95%;
-                padding: 1rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .tag{
-                @include heading-16;
-                text-transform: uppercase;
-                margin: 1.5rem 0;
-            }
-
-            .title{
-                @include heading-48;
-                letter-spacing: -2px;
-                margin-bottom: 1rem;
-            }
-
-            .text{
-                color: $mediumGrey;
-                margin-bottom: 2rem;
-            }
-
-            .button{
-                @include yellowButton;
-                width: 173px;
-            }
+        @media screen and (max-width: $tablet-width) {
+            position: static;
+            max-width: 90%;
+            padding: 64px;
         }
+
+        @media screen and (max-width: $mobile-width) {
+            max-width: 95%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .tag{
+        @include heading-16;
+        text-transform: uppercase;
+        margin: 1.5rem 0;
+    }
+
+    .title{
+        @include heading-48;
+        letter-spacing: -2px;
+        margin-bottom: 1rem;
+    }
+
+    .text{
+        color: $mediumGrey;
+        margin-bottom: 2rem;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .button{
+        @include yellowButton;
+        width: 173px;
     }
 }
 

@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin: 4rem 5rem;
+    margin: 64px 80px;
 
     @media screen and (max-width: $tablet-width) {
         flex-direction: column;
@@ -16,25 +16,25 @@
 
     .featured-in{
         color: $mediumGrey;
+    }
 
-        .text{
-            @include body-14;
-        }
+    .text{
+        @include body-14;
+    }
 
-        .heading{
-            @include heading-24;
-            margin-bottom: 1rem;
-        }
+    .heading{
+        @include heading-24;
+        margin-bottom: 16px;
     }
 
     .logos-section{
         display: flex;
-        gap: 5rem;
+        gap: 80px;
 
          @media screen and (max-width: $tablet-width) {
             flex-wrap: wrap;
             justify-content: center;
-            gap: 2rem;
+            gap: 32px;
         }
     }
 }

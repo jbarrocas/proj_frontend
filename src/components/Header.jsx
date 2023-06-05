@@ -40,7 +40,7 @@ function Header() {
                         }}>Contact Us</li>
                     </Link>
                     <li className='menu-item'>
-                        <div className='subscribe-button'>
+                        <div className='button'>
                             <a href='#footer'>Subscribe</a>
                         </div>
                     </li>

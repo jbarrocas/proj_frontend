@@ -1,12 +1,14 @@
 import React from 'react';
 
+import SectionTitle from './SectionTitle';
+
 import '../styles/components/ListOfAuthors.scss';
 
 const ListOfAuthors = ({ data }) => {
 
     return (
       <div className='authors-section'>
-          <h2 className='title'>List of Authors</h2>
+          <SectionTitle title='List of Authors'></SectionTitle>
           <div className='cards'>
             {data.map((item, id) => {
                 return (

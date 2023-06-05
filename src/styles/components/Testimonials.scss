@@ -2,7 +2,7 @@
 
 .testimonials-section{
     max-width: 1280px;
-    margin: 4rem auto;
+    margin: 64px auto 128px auto;
     display: flex;
     background-color: $lightYellow;
 
@@ -13,25 +13,25 @@
 
     .testimonials-text{
         min-width: 350px;
-        padding: 5.75rem 5.25rem 5.75rem 7rem;
+        padding: 92px 84px 92px 112px;
 
         @media screen and (max-width: $mobile-width) {
             min-width: 200px;
             padding: 3rem 2rem;
         }
+    }
 
-        .tag{
-            @include heading-16;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            margin-bottom: 0.75rem;
-        }
+    .tag{
+        @include heading-16;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+    }
 
-        .title{
-            @include heading-36;
-            letter-spacing: -2px;
-            margin-bottom: 1rem;
-        }
+    .title{
+        @include heading-36;
+        letter-spacing: -2px;
+        margin-bottom: 1rem;
     }
 
     .vertical-line{
@@ -56,79 +56,75 @@
         @media screen and (max-width: $mobile-width) {
             padding: 3rem 2rem;
         }
+    }
 
-        .testimonial{
-            @include heading-24;
-            margin-right: 7rem;
-            margin-bottom: 7.25rem;
+    .testimonial{
+        @include heading-24;
+        margin-right: 7rem;
+        margin-bottom: 7.25rem;
 
-            @media screen and (max-width: $mobile-width) {
-                text-align: center;
-                margin: 0 auto 5rem auto;
-            }
+        @media screen and (max-width: $mobile-width) {
+            text-align: center;
+            margin: 0 auto 5rem auto;
         }
+    }
 
-        .avatar-arrows{
-            display: flex;
-            justify-content: space-between;
+    .avatar-arrows{
+        display: flex;
+        justify-content: space-between;
 
-            @media screen and (max-width: $mobile-width) {
-                flex-direction: column;
-                align-items: center;
-                gap: 2rem;
-            }
+        @media screen and (max-width: $mobile-width) {
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+        }
+    }
 
-            .avatar-wrapper{
-                display: flex;
-                gap: 1rem;
+    .avatar-wrapper{
+        display: flex;
+        gap: 1rem;
+    }
 
-                .avatar{
-                    width: 48px;
-                    height: 48px;
-                    border-radius: 50%
-                }
-    
-                .identity{
-    
-                    .name{
-                        @include heading-24;
-                    }
-    
-                    .location{
-                        color: $mediumGrey;
-                    }
-                }    
+    .avatar{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%
+    }
 
-            }
+    .name{
+        @include heading-24;
+    }
 
-            .arrows{
-                display: flex;
-                gap: 1rem;
+    .location{
+        color: $mediumGrey;
+    }
 
-                .left-arrow{
-                    width: 48px;
-                    height: 48px;
-                    border-radius: 50%;
+    .arrows{
+        display: flex;
+        gap: 1rem;
+    }
 
-                    &:hover{
-                        color: $light;
-                        background-color: $black;
-                        cursor: pointer;
-                    }
-                }
+    .left-arrow{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
 
-                .right-arrow{
-                    width: 48px;
-                    height: 48px;
-                    border-radius: 50%;
+        &:hover{
+            color: $light;
+            background-color: $black;
+            cursor: pointer;
+        }
+    }
 
-                    &:hover{
-                        color: $light;
-                        background-color: $black;
-                        cursor: pointer;
-                    }
-                }
-            }
+    .right-arrow{
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+
+        &:hover{
+            color: $light;
+            background-color: $black;
+            cursor: pointer;
         }
     }
 

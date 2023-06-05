@@ -2,59 +2,59 @@
 
 .authors-section{
     max-width: 1280px;
-    margin: 2rem auto;
+    margin: 128px auto 96px auto;
 
     .title{
         @include heading-36;
         text-align: center;
-        margin-bottom: 3rem;
+        margin-bottom: 48px;
     }
 
     .cards{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 2rem;
+        gap: 32px;
+    }
 
-        .card{
-            width: 216px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: $lightGrey;
-            padding: 2.5rem 2.5rem;
+    .card{
+        width: 216px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $lightGrey;
+        padding: 40px;
 
-            &:hover{
-                cursor: pointer;
-                background-color: $lightYellow;
-            }
+        &:hover{
+            cursor: pointer;
+            background-color: $lightYellow;
+        }
+    }
 
-            .avatar{
-                margin-bottom: 1.25rem
-            }
+    .avatar{
+        margin-bottom: 24px;
+    }
 
-            .name{
-                @include heading-28;
-                letter-spacing: -1px
-            }
+    .name{
+        @include heading-28;
+        letter-spacing: -1px
+    }
 
-            .label{
-                @include body-14;
-                color: $mediumGrey;
-                margin-bottom: 1.25rem;
-            }
+    .label{
+        @include body-14;
+        color: $mediumGrey;
+        margin-bottom: 20px;
+    }
 
-            .social-wrapper{
-                display: flex;
-                gap: 1rem;
+    .social-wrapper{
+        display: flex;
+        gap: 16px;
+    }
 
-                .social-icon{
+    .social-icon{
 
-                    &:hover{
-                        transform: scale(1.3);
-                    }
-                }
-            }
+        &:hover{
+            transform: scale(1.3);
         }
     }
 }

@@ -12,7 +12,7 @@ function WhyWeStarted() {
                 <p className='tag'>Why we started</p>
                 <h1 className='title'>It started out as a simple idea and evolved into our passion</h1>
                 <p className='text'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                <div className='button'><Link to='/#'>Discover our story &#62;</Link></div>
+                <Link to='/about'><div className='button'>Discover our story &#62;</div></Link>
             </div>
         </div>
 

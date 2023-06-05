@@ -24,7 +24,7 @@
     .heading{
         @include heading-36;
         letter-spacing: -2px;
-        margin-bottom: 32px;
+        margin-bottom: 64px;
     }
 
     a{
@@ -54,7 +54,7 @@
     .post-card{
         display: flex;
         flex-direction: column;
-        margin: 32px 116px 50px 32px;
+        padding: 32px 116px 50px 32px;
         cursor: pointer;
 
         @media screen and (max-width: $mobile-width)  {

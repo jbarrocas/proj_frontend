@@ -19,7 +19,7 @@ const Tab = () => {
     }
 
   return (
-    <div className='container'>
+    <div className='tabs-container'>
         <div className='tabs'>
             <div id='aboutUs' className={'tab ' + selectedTab('aboutUs')} onClick={clickListener}>About Us</div>
             <div id='ourMission' className={'tab ' + selectedTab('ourMission')} onClick={clickListener}>Our Mission</div>

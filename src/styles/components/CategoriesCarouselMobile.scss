@@ -27,10 +27,10 @@
 
     .categories-carousel{
         margin-bottom: 8px;
+    }
 
-        .hidden{
-            display: none;
-        }
+    .hidden{
+        display: none;
     }
 
     .card{
@@ -43,19 +43,19 @@
             background-color: $yellow;
             cursor: pointer;
         }
+    }
 
-        .image{
-            margin-bottom: 16px;
-        }
+    .image{
+        margin-bottom: 16px;
+    }
 
-        .category{
-            @include heading-28;
-            margin-bottom: 4px;
-        }
+    .category{
+        @include heading-28;
+        margin-bottom: 4px;
+    }
 
-        .text{
-            color: $mediumGrey;
-        }
+    .text{
+        color: $mediumGrey;
     }
 
     .carousel-buttons{
