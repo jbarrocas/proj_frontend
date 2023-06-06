@@ -59,10 +59,8 @@ const Footer = () => {
         <h2 className='subscribe-heading'>Subscribe to our newsletter to get latest updates and news</h2>
         <div className='subscribe-input'>
           <input className='mail-input' type='mail' placeholder='Enter Your Email' value={email} onChange={handleEmail}></input>
-          <Link to=''>
-            <div className='yellow-button' onClick={validEmail}>Subscribe
-            </div>
-          </Link>
+          <div className='yellow-button' onClick={validEmail}>Subscribe
+          </div>
           <div className='email-messages'>
             <p className={message === 'Subscription succeed.' ? 'success-message' : 'error-message'}>{message}</p>
           </div>

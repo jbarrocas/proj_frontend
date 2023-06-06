@@ -5,6 +5,7 @@
 .footer{
     background-color: $black;
     padding: 60px 80px;
+    margin: 128px 0 0 0;
 
     @media screen and (max-width: $tablet-width) {
         padding: 48px 64px;
@@ -33,7 +34,7 @@
 
     .footer-menu{
         display: flex;
-        gap: 1.5rem;
+        gap: 24px;
 
         @media screen and (max-width: $mobile-width) {
             flex-direction: column;
@@ -149,7 +150,7 @@
 
     .yellow-button{
         @include yellowButton;
-        text-align: center;
+        cursor: pointer;
     }
 
     .address-social{

@@ -2,19 +2,21 @@
 
 .join-section{
     max-width: 414px;
-    margin: 0 auto 8rem auto;
+    margin: 128px auto 128px auto;
     text-align: center;
 
-    .heading{
-        @include heading-36;
-        letter-spacing: -2px;
-        margin-bottom: 1rem;
+    .section-title{
+        margin-bottom: 16px;
     }
 
     .text{
         @include body-16;
         color: $mediumGrey;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
+    }
+
+    a{
+        text-decoration: none;
     }
 
     .button{
