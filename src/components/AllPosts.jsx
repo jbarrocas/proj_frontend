@@ -7,22 +7,22 @@ const AllPosts = ({ data }) => {
     const [posts, setPosts] = useState(4);
 
     function nextPage() {
-        if( posts < data.length - 1 ){
-            setPosts(posts + 5);
-        }
-        else {
-            return
-        }
+      if( posts < data.length - 1 ){
+          setPosts(posts + 5);
+      }
+      else {
+          return;
+      }
     }
 
     function prevPage() {
-        if( posts > 4 ){
-            setPosts(posts - 5);
-        }
-        else {
-            return
-        }
-    }
+      if( posts > 4 ){
+          setPosts(posts - 5);
+      }
+      else {
+          return;
+      }
+    }  
 
   return (
       <div id='allPosts' className='all-posts-blog'>
@@ -32,8 +32,8 @@ const AllPosts = ({ data }) => {
           {data.map((item, id)=>{
             const linkTo = `/blogpost/${id}`;
             return (
-              <div key={id} className={ posts === id || posts === id + 1 || posts === id + 2 || posts === id + 3 || posts === id + 4 ? 'post-wrapper' : 'post-wrapper hidden'}>
-                <img className='image' src={item.url} alt={item.alt}></img>
+              <div key={id} className={ posts === id || posts === id + 1 || posts === id + 2 || posts === id + 3 || posts === id + 4 ? 'all-posts-post-wrapper' : 'all-posts-post-wrapper hidden'}>
+                <img className='image' src={item.urlFh} alt={item.alt}></img>
                 <div className='text-wrapper'>
                     <p className='label'>{item.tag}</p>
                     <Link to={linkTo}><h4 className='title'>{item.title}</h4></Link>

@@ -1,29 +1,31 @@
 @import '../../abstract/main';
 
 .all-posts-blog{
-    padding: 4rem 13.25rem 4rem 5rem;
+    margin: 64px 80px 64px 80px;
 
     @media screen and (max-width: $tablet-width) {
-        padding: 4rem 1rem;
+        padding: 64px 16px;
     }
 
     .section-title{
         @include heading-48;
-        margin-bottom: 2rem;
+        margin-bottom: 32px;
+        text-align: left;
     }
 
-    .horiz-line{
+    .horizontal-line{
+        max-width: 1282px;
         height: 0;
         border: 1px solid $mediumGrey;
         opacity: 0.32;
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
     }
 
-    .post-wrapper{
+    .all-posts-post-wrapper{
         display: flex;
         align-items: center;
-        gap: 2rem;
-        margin-bottom: 4rem;
+        gap: 32px;
+        margin-bottom: 64px;
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
@@ -52,31 +54,31 @@
         @media screen and (max-width: $mobile-width) {
             max-width: 90%;
         }
+    }
 
-        .label{
-            @include heading-16;
-            color: $purple;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            line-height: 20px;
-            margin-bottom: 1.25rem;
-        }
+    .label{
+        @include heading-16;
+        color: $purple;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
 
-        a{
-            text-decoration: none;
-            color: $black;
-        }
+    a{
+        text-decoration: none;
+        color: $black;
+    }
 
-        .title{
-            @include heading-36;
-            margin-bottom: 1rem;
+    .title{
+        @include heading-36;
+        margin-bottom: 16px;
 
 
-        }
+    }
 
-        .text{
-            color: $mediumGrey;
-        }
+    .text{
+        color: $mediumGrey;
     }
 
     .hidden{
@@ -86,7 +88,7 @@
     .buttons{
         display: flex;
         justify-content: center;
-        gap: 1rem;
+        gap: 16px;
         @include heading-24;
         color: $mediumGrey;
     }
