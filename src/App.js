@@ -39,7 +39,7 @@ function App() {
                   title={item.title}
                   icon={item.icon}
                   tag={item.tag}
-                  urlFh={item.urlFh} 
+                  url={item.url} 
                   alt={item.alt}
                   subtitle1={item.subtitle1}
                   subtitle2={item.subtitle2}
