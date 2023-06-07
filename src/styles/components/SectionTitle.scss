@@ -1,8 +1,16 @@
 @import '../../abstract/main';
 
-.section-title{
+.section-title-center{
     @include heading-36;
     letter-spacing: -2px;
-    margin-bottom: 48px;
+    margin: 48px 0;
     text-align: center;
+}
+
+.section-title-left{
+    @include heading-36;
+    letter-spacing: -2px;
+    margin: 48px 0;
+    padding-left: 80px;
+    text-align: left;
 }

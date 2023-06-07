@@ -22,7 +22,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Startup.png"
     },
     {
         id: 1,
@@ -46,7 +47,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Startup.png"
     },
     {
         id: 2,
@@ -71,7 +73,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Business.png"
     },
     {
         id: 3,
@@ -96,7 +99,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Technology.png"
     },
     {
         id: 4,
@@ -121,7 +125,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Startup.png"
     },
     {
         id: 5,
@@ -146,7 +151,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Startup.png",
     },
     {
         id: 6,
@@ -171,7 +177,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Startup.png"
     },
     {
         id: 7,
@@ -196,7 +203,8 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Business.png"
     },
     {
         id: 8,
@@ -221,6 +229,7 @@ export const postsData = [
         text4: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus. Sociis natoque penatibus et magnis dis parturient montes. Ridiculus mus mauris vitae ultricies leo. Neque egestas congue quisque egestas diam. Risus in hendrerit gravida rutrum quisque non.",
         list1: "Lorem ipsum dolor sit amet",
         list2: "Non blandit massa enim nec scelerisque",
-        list3: "Neque egestas congue quisque egestas"
+        list3: "Neque egestas congue quisque egestas",
+        icon: "../images/carousel_icons/Technology.png"
     }
 ];

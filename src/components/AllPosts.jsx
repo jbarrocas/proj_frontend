@@ -32,14 +32,16 @@ const AllPosts = ({ data }) => {
           {data.map((item, id)=>{
             const linkTo = `/blogpost/${id}`;
             return (
-              <div key={id} className={ posts === id || posts === id + 1 || posts === id + 2 || posts === id + 3 || posts === id + 4 ? 'all-posts-post-wrapper' : 'all-posts-post-wrapper hidden'}>
-                <img className='image' src={item.urlFh} alt={item.alt}></img>
-                <div className='text-wrapper'>
-                    <p className='label'>{item.tag}</p>
-                    <Link to={linkTo}><h4 className='title'>{item.title}</h4></Link>
-                    <p className='text'>{item.text}</p>
+              <Link to={linkTo}>
+                <div key={id} className={ posts === id || posts === id + 1 || posts === id + 2 || posts === id + 3 || posts === id + 4 ? 'all-posts-post-wrapper' : 'all-posts-post-wrapper hidden'}>
+                  <img className='image' src={item.urlFh} alt={item.alt}></img>
+                  <div className='text-wrapper'>
+                      <p className='label'>{item.tag}</p>
+                      <h4 className='title'>{item.title}</h4>
+                      <p className='text'>{item.text}</p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             )
           })}
         </div>

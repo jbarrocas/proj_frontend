@@ -16,7 +16,7 @@ const FeaturedPostSection = ({ data }) => {
 
         return (
           <div key={id} className={ featuredPost === id ? 'featured-post-wrapper' : 'featured-post-wrapper hidden'}>
-              <img className='post-image' src={item.url} alt={item.alt}></img>
+              <img className='post-image' src={item.urlFh} alt={item.alt}></img>
               <p className='author-date'>By <span>{item.author}</span> &nbsp; | &nbsp; {item.date}</p>
               <h3 className='title'>{item.title}</h3>
               <p className='text'>{item.text}</p>

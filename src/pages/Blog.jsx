@@ -7,6 +7,7 @@ import CategoriesCarousel from '../components/CategoriesCarousel';
 import { categories } from '../data/CategoriesData';
 import ScrollToTop from '../components/ScrollToTop';
 import JoinOurTeam from '../components/JoinOurTeam';
+import SectionTitle from "../components/SectionTitle";
 
 function Blog() {
     return(
@@ -14,6 +15,7 @@ function Blog() {
             <ScrollToTop></ScrollToTop>
             <FeaturedPostBlog data={ postsData }></FeaturedPostBlog>
             <AllPosts data={ postsData }></AllPosts>
+            <SectionTitle className='section-title-left' title='All Categories'></SectionTitle>
             <CategoriesCarousel data={ categories }></CategoriesCarousel>
             <JoinOurTeam></JoinOurTeam>
         </div>

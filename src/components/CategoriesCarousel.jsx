@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SectionTitle from './SectionTitle';
 
 import '../styles/components/CategoriesCarousel.scss';
 
@@ -27,7 +26,6 @@ const CategoriesCarousel = ({ data }) => {
 
     return (
       <div className='carousel-container'>
-        <SectionTitle title='Choose A Category'></SectionTitle>
         <div className='categories-carousel'>
             {data.map((item, id) => {
                 return (

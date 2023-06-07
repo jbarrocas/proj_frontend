@@ -2,7 +2,7 @@
 
 .post-wrapper{
     max-width: 1280px;
-    margin: 8rem auto;
+    margin: 128px auto;
 
     @media screen and (max-width: $tablet-width) {
         max-width: 80%;
@@ -13,49 +13,60 @@
     }
 
     .post-header-wrapper{
-        max-width: calc(100% - 32rem);
+        max-width: calc(100% - 512px);
         margin: 0 auto;
 
         @media screen and (max-width: $tablet-width) {
             max-width: 90%;
         }
+    }
 
-        .post-author-details{
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
+    .post-author-details{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 24px;
+    }
 
-            .author-image{
-                max-width: 48px;
-                max-height: 48px;
-            }
+    .author-image{
+        max-width: 48px;
+        max-height: 48px;
+    }
 
-            .post-author{
-                @include heading-28;
-                letter-spacing: -1px;
-                color: $purple;
-            }
+    .post-author{
+        @include heading-28;
+        letter-spacing: -1px;
+        color: $purple;
+    }
 
-            .post-date{
-                color: $mediumGrey;
-            }
-        }
+    .post-date{
+        color: $mediumGrey;
+    }
 
-        .post-heading{
-            @include heading-48;
-            letter-spacing: -2px;
-            margin-bottom: 2.125rem;
-        }
+    .post-heading{
+        @include heading-48;
+        letter-spacing: -2px;
+        margin-bottom: 34px;
+    }
 
-        .post-tag{
-            @include heading-24;
-            margin-bottom: 4rem;
-        }
+    .icon-tag-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 64px;
+    }
+
+    .icon{
+        width: 40px;
+        height: 40px;
+    }
+
+    .post-tag{
+        @include heading-24;
     }
 
     .post-hero-image{
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
     }
 
     .post-content{
@@ -65,22 +76,22 @@
         @media screen and (max-width: $tablet-width) {
             max-width: 90%;
         }
+    }
 
-        .post-subtitle{
-            @include heading-36;
-            margin-top: 1.5rem;
-            margin-bottom: 1rem;
-        }
+    .post-subtitle{
+        @include heading-36;
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 
-        .post-text{
-            color: $mediumGrey;
-            margin-bottom: 1.5rem;
-        }
+    .post-text{
+        color: $mediumGrey;
+        margin-bottom: 24px;
+    }
 
-        .post-list{
-            @include heading-24;
-            list-style-position: inside;
-            margin-bottom: 24px;
-        }
+    .post-list{
+        @include heading-24;
+        list-style-position: inside;
+        margin-bottom: 24px;
     }
 }

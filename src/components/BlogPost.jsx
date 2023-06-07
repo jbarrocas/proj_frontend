@@ -24,9 +24,12 @@ const BlogPost = (props) => {
           </div>
         </div>
           <h1 className='post-heading'>{props.title}</h1>
-          <h4 className='post-tag'>{props.tag}</h4>
+          <div className='icon-tag-wrapper'>
+            <img className='icon' src={props.icon} alt='icon' />
+            <h4 className='post-tag'>{props.tag}</h4>
+          </div>
       </div>
-      <img className='post-hero-image' src={props.url} alt={props.alt} />
+      <img className='post-hero-image' src={props.urlFh} alt={props.alt} />
       <div className='post-content'>
         <h2 className='post-subtitle'>{props.subtitle1}</h2>
         <p className='post-text'>{props.text}</p>

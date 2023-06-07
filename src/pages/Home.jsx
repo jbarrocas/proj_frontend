@@ -16,6 +16,7 @@ import Testimonials from '../components/Testimonials';
 import { testimonials } from '../data/Testimonials';
 import JoinOurTeam from '../components/JoinOurTeam';
 import ScrollToTop from '../components/ScrollToTop';
+import SectionTitle from '../components/SectionTitle';
 
 import '../styles/pages/Home.scss';
 import HeroSliderMobile from '../components/HeroSliderMobile';
@@ -31,6 +32,7 @@ function Home() {
         <AllPostsHome data={postsData}></AllPostsHome>
       </div>
       <Tab></Tab>
+      <SectionTitle className='section-title-center' title='Choose A Category'></SectionTitle>
       <CategoriesCarousel data={categories}></CategoriesCarousel>
       <CategoriesCarouselMobile data={categories}></CategoriesCarouselMobile>
       <WhyWeStarted></WhyWeStarted>

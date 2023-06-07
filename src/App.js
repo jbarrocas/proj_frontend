@@ -36,9 +36,10 @@ function App() {
                   authorPhoto={item.authorPhoto}
                   author={item.author}
                   date={item.date}
-                  title={item.title} 
+                  title={item.title}
+                  icon={item.icon}
                   tag={item.tag}
-                  url={item.url} 
+                  urlFh={item.urlFh} 
                   alt={item.alt}
                   subtitle1={item.subtitle1}
                   subtitle2={item.subtitle2}
