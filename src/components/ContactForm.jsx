@@ -11,21 +11,67 @@ const ContactForm = () => {
     const [query, setQuery] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleName = e => {
-        setName(e.target.value);
+    const handleName = event => {
+        setName(event.target.value);
     };
 
-    const handleEmail = e => {
-        setEmail(e.target.value);
+    const validateName = () => {
+        const regex =  /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+        if(regex.test(name)) {
+          setName('');
+        }
+        else {
+          setName('Please, insert your full name.');
+        }
     };
 
-    const handleQuery = e => {
-        setQuery(e.target.value);
+    const handleEmail = event => {
+        setEmail(event.target.value);
     };
 
-    const handleMessage = e => {
-        setMessage(e.target.value);
+    const validateEmail = () => {
+        const regex = /[a-zA-Z0-9.!#$&'*/=?^_`%+-{|}~]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}(.[a-zA-Z{2,8}])?/g;
+        if(regex.test(email)) {
+          setEmail('');
+        }
+        else {
+          setEmail('Please, insert a valid e-mail adress.');
+        }
     };
+
+    const handleQuery = event => {
+        setQuery(event.target.value);
+    };
+
+    const validateQuery = () => {
+        if(query === 'null') {
+            setQuery('Please, choose an option');
+        }
+        else {
+            setQuery('');
+        }
+    }
+
+    const handleMessage = event => {
+        setMessage(event.target.value);
+    };
+
+    const validateMessage = () => {
+        const regex = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
+        if(regex.test(message)) {
+          setMessage('');
+        }
+        else {
+          setMessage('Please, insert your message.');
+        }
+    };
+
+    const inputValidation = () => {
+        validateName();
+        validateEmail();
+        validateQuery();
+        validateMessage();
+    }
 
 
   return (
@@ -43,7 +89,8 @@ const ContactForm = () => {
                 <option value='bananas'>Bananas</option>
             </select>
             <textarea className='input message' type='text-area' id='message' placeholder='Message' value={message} onChange={handleMessage} required ></textarea>
-            <button className='yellowButton' type='submit'>Send Message</button>
+            <div className='submit-button' type='submit'
+            onClick={inputValidation}>Send Message</div>
             <div></div>
         </form>
     </div>

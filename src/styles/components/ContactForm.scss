@@ -31,8 +31,10 @@
 
 }
 
-button{
+.submit-button{
     @include yellowButton;
     @include heading-24;
+    text-align: center;
     border: none;
+    cursor: pointer;
 }
