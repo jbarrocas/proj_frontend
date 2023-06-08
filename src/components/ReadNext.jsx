@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/components/ReadNext.scss';
@@ -13,6 +13,12 @@ const ReadNext = ({ data }) => {
 
   const [post] = useState(randomInt);
 
+  const ref = useRef(null);
+
+  const scrollToPost = () => {
+    ref.current.scrollIntoView();
+  }
+
   return (
     <div className='read-next-wrapper'>
       <h2 className='read-title'>What to read next</h2>
@@ -21,7 +27,7 @@ const ReadNext = ({ data }) => {
           const linkTo = `/blogpost/${id}`;
           return (
             <div key={id} className={ post === id || post === id + 1 || post === id + 2 ? 'read-post-card' : 'read-post-card hidden'}>
-              <Link to={linkTo}>
+              <Link to={linkTo} onClick={ scrollToPost }>
               <img className='read-post-image' src={item.urlFh} alt={item.alt} />
               <p className='read-post-date'>By <span>{item.author}</span>&nbsp; | &nbsp;{item.date}</p>
               <h3 className='read-post-title'>{item.title}</h3>

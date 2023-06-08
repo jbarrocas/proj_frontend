@@ -14,7 +14,7 @@ const BlogPost = (props) => {
   return (
     <>
     <ScrollToTop></ScrollToTop>
-    <div className='post-wrapper'>
+    <div id='post' className='post-wrapper'>
       <div className='post-header-wrapper'>
         <div className='post-author-details'>
           <img className='author-image' src={props.authorPhoto} alt="" />
