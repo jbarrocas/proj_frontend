@@ -7,9 +7,13 @@ import '../styles/components/ContactForm.scss';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
+    const [requiredName, setRequiredName] = useState('');
     const [email, setEmail] = useState('');
+    const [requiredEmail, setRequiredEmail] = useState('');
     const [query, setQuery] = useState('');
+    const [requiredQuery, setRequiredQuery] = useState('');
     const [message, setMessage] = useState('');
+    const [requiredMessage, setRequiredMessage] = useState('');
 
     const handleName = event => {
         setName(event.target.value);
@@ -18,10 +22,10 @@ const ContactForm = () => {
     const validateName = () => {
         const regex =  /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
         if(regex.test(name)) {
-          setName('');
+          setRequiredName('');
         }
         else {
-          setName('Please, insert your full name.');
+          setRequiredName('error-message');
         }
     };
 
@@ -32,10 +36,10 @@ const ContactForm = () => {
     const validateEmail = () => {
         const regex = /[a-zA-Z0-9.!#$&'*/=?^_`%+-{|}~]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,8}(.[a-zA-Z{2,8}])?/g;
         if(regex.test(email)) {
-          setEmail('');
+          setRequiredEmail('');
         }
         else {
-          setEmail('Please, insert a valid e-mail adress.');
+          setRequiredEmail('error-message');
         }
     };
 
@@ -44,11 +48,11 @@ const ContactForm = () => {
     };
 
     const validateQuery = () => {
-        if(query === 'null') {
-            setQuery('Please, choose an option');
+        if(query !== '') {
+            setRequiredQuery('Query Related');
         }
         else {
-            setQuery('');
+            setRequiredQuery('error-message');
         }
     }
 
@@ -59,10 +63,10 @@ const ContactForm = () => {
     const validateMessage = () => {
         const regex = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
         if(regex.test(message)) {
-          setMessage('');
+          setRequiredMessage('');
         }
         else {
-          setMessage('Please, insert your message.');
+          setRequiredMessage('error-message');
         }
     };
 
@@ -78,7 +82,9 @@ const ContactForm = () => {
     <div>
         <form className='form'>
             <input className='input' type='text' placeholder='Full Name' value={name} onChange={handleName} required pattern='([a-zA-Z]+\s){1,}([a-zA-Z]+)'></input>
+            <p className={ requiredName === 'error-message' ? 'error-message' : 'success'}>* Required</p>
             <input className='input' type='text' placeholder='Your Email' value={email} onChange={handleEmail} required pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' ></input>
+            <p className={ requiredEmail === 'error-message' ? 'error-message' : 'success'}>* Required</p>
             <select className='input select' value={query} onChange={handleQuery} required>
                 <option value='' disabled={true}>Query Related</option>
                 <option value='business'>Business</option>
@@ -88,7 +94,9 @@ const ContactForm = () => {
                 <option value='laranjas'>Laranjas</option>
                 <option value='bananas'>Bananas</option>
             </select>
+            <p className={ requiredQuery === 'error-message' ? 'error-message' : 'success'}>* Required</p>
             <textarea className='input message' type='text-area' id='message' placeholder='Message' value={message} onChange={handleMessage} required ></textarea>
+            <p className={ requiredMessage === 'error-message' ? 'error-message' : 'success'}>* Required</p>
             <div className='submit-button' type='submit'
             onClick={inputValidation}>Send Message</div>
             <div></div>

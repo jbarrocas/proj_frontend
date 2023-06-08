@@ -17,6 +17,14 @@
         
     }
 
+    .success{
+        display: none;
+    }
+
+    .error-message{
+        color: red;
+    }
+
     .select{
         background-color: $light;
     }
