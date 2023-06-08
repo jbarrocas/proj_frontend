@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-// import { useForm } from 'react-hook-form'
-
-
 
 import '../styles/components/ContactForm.scss';
 
@@ -61,8 +58,7 @@ const ContactForm = () => {
     };
 
     const validateMessage = () => {
-        const regex = /^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u;
-        if(regex.test(message)) {
+        if(message !== '') {
           setRequiredMessage('');
         }
         else {
@@ -77,31 +73,45 @@ const ContactForm = () => {
         validateMessage();
     }
 
+    const formValidation = () => {
+        if(requiredName !== 'error-message' && requiredEmail !== 'error-message' && requiredQuery !== 'error-message' && requiredMessage !== 'error-message') {
+            setName('');
+            setEmail('');
+            setMessage('');
+        }
+        else {
+            return;
+        }
+    }
 
   return (
-    <div>
-        <form className='form'>
-            <input className='input' type='text' placeholder='Full Name' value={name} onChange={handleName} required pattern='([a-zA-Z]+\s){1,}([a-zA-Z]+)'></input>
-            <p className={ requiredName === 'error-message' ? 'error-message' : 'success'}>* Required</p>
-            <input className='input' type='text' placeholder='Your Email' value={email} onChange={handleEmail} required pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$' ></input>
-            <p className={ requiredEmail === 'error-message' ? 'error-message' : 'success'}>* Required</p>
-            <select className='input select' value={query} onChange={handleQuery} required>
+    <form className='form'>
+        <div className='name-wrapper wrapper'>
+            <input className='input input-name' type='text' placeholder='Full Name' value={name} onChange={handleName} required></input>
+            <p className={ requiredName === 'error-message' ? 'error-message-name' : 'hidden'}>* Required</p>
+        </div>
+        <div className='mail-wrapper wrapper'>
+            <input className='input input-email' type='text' placeholder='Your Email' value={email} onChange={handleEmail} required></input>
+            <p className={ requiredEmail === 'error-message' ? 'error-message-email' : 'hidden'}>* Required</p>
+        </div>
+        <div className='select-wrapper wrapper'>
+            <select className='input input-select' value={query} onChange={handleQuery} required>
                 <option value='' disabled={true}>Query Related</option>
                 <option value='business'>Business</option>
                 <option value='startup'>Startup</option>
                 <option value='economy'>Economy</option>
                 <option value='technology'>Technology</option>
-                <option value='laranjas'>Laranjas</option>
-                <option value='bananas'>Bananas</option>
             </select>
-            <p className={ requiredQuery === 'error-message' ? 'error-message' : 'success'}>* Required</p>
-            <textarea className='input message' type='text-area' id='message' placeholder='Message' value={message} onChange={handleMessage} required ></textarea>
-            <p className={ requiredMessage === 'error-message' ? 'error-message' : 'success'}>* Required</p>
-            <div className='submit-button' type='submit'
-            onClick={inputValidation}>Send Message</div>
-            <div></div>
-        </form>
-    </div>
+            <p className={ requiredQuery === 'error-message' ? 'error-message-query' : 'hidden'}>* Required</p>
+        </div>
+        <div className='message-wrapper wrapper'>
+            <textarea className='input input-message' id='message' type='text-area' placeholder='Message' value={message} onChange={handleMessage} required ></textarea>
+            <p className={ requiredMessage === 'error-message' ? 'error-message' : 'hidden'}>* Required</p>
+        </div>
+        <div className='submit-button' type='submit'
+            onClick={() => {inputValidation(); formValidation()}}>Send Message
+        </div>
+    </form>
   )
 }
 

@@ -2,10 +2,10 @@
 
 .contact-wrapper{
     max-width: 768px;
-    margin: 8rem auto;
+    margin: 128px auto;
 
     @media screen and (max-width: $tablet-width) {
-        margin: 5rem auto;
+        margin: 80px auto;
     }
 
     @media screen and (max-width: $small-tablet-width) {
@@ -14,7 +14,7 @@
 
     @media screen and (max-width: $mobile-width) {
         max-width: 90%;
-        margin: 2rem auto;
+        margin: 32px auto;
     }
 
     .contact-header{
@@ -30,11 +30,11 @@
     .title{
         @include heading-48;
         letter-spacing: -2px;
-        margin-top: 0.75rem;
-        margin-bottom: 2rem;
+        margin-top: 12px;
+        margin-bottom: 32px;
 
         @media screen and (max-width: $tablet-width) {
-            margin-bottom: 1rem;
+            margin-bottom: 16px;
         }
 
         @media screen and (max-width: $mobile-width) {
@@ -48,15 +48,15 @@
 
     .info-wrapper{
         display: flex;
-        gap: 2.65rem;
-        padding: 3rem 4rem;
+        gap: 42px;
+        padding: 48px 64px;
         color: $light;
         background-color: $purple;
-        margin-top: 4rem;
-        margin-bottom: 2rem;
+        margin-top: 64px;
+        margin-bottom: 32px;
 
         @media screen and (max-width: $tablet-width) {
-            margin-top: 3rem;
+            margin-top: 48px;
         }
 
         @media screen and (max-width:$small-tablet-width) {
@@ -65,19 +65,19 @@
         }
 
         @media screen and (max-width: $mobile-width) {
-            margin-top: 2rem;
-            padding: 2rem 3rem;
+            margin-top: 32px;
+            padding: 32px 48px;
         }
+    }
 
-        .info-card{
-            width: 294px;
-        }
+    .info-card{
+        width: 294px;
+    }
 
-        .info-label{
-            @include body-14;
-            opacity: 0.6;
-            margin-bottom: 1rem;
-        }
+    .info-label{
+        @include body-14;
+        opacity: 0.6;
+        margin-bottom: 1rem;
     }
 
     .horizontal-line{
