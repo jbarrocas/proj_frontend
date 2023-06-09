@@ -3,9 +3,10 @@ import React from 'react';
 import { postsData } from '../data/PostsData';
 
 import '../styles/components/BlogPost.scss';
-import ReadNext from './ReadNext';
+
 import JoinOurTeam from './JoinOurTeam';
 import ScrollToTop from './ScrollToTop';
+import WhatToReadNext from './WhatToReadNext';
 
 
 
@@ -47,7 +48,7 @@ const BlogPost = (props) => {
       </div>
     </div>
     
-    <ReadNext data={ postsData }></ReadNext>
+    <WhatToReadNext data={postsData} />
     <JoinOurTeam></JoinOurTeam>
     </>
   )

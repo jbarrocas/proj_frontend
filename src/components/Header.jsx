@@ -5,7 +5,7 @@ import Logo from '../assets/Finsweet-Logo.png';
 
 import '../styles/components/Header.scss';
 
-function Header() {
+const Header = () => {
     const [isMenuExpanded, setIsMenuExpanded] = useState(false);
 
     const location = useLocation();

@@ -29,8 +29,8 @@ const Footer = () => {
   };
 
   return (
-    <footer className='footer'>
-      <div className='footer-navbar' id='footer'>
+    <footer className='footer' id='footer'>
+      <div className='footer-navbar'>
         <Link to='/'><img className='logo' src={Logo} alt='Logo'></img></Link>
         <ul className='footer-menu'>
           <Link to='/'>

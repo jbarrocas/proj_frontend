@@ -1,9 +1,13 @@
 import React from 'react';
+import WhatToReadNext from '../components/WhatToReadNext';
+
+import { postsData } from '../data/PostsData';
+
 
 function About_Us() {
   return (
     <div>
-        <h1>About US</h1>
+        <WhatToReadNext data={postsData} />
     </div>
   )
 }
