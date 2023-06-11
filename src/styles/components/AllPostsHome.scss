@@ -4,13 +4,16 @@
     max-width: 517px;
     margin: 64px 80px 64px 16px;
 
+    @media screen and (max-width: $tablet-width) {
+        margin: 56px 0 56px 16px;
+    }
+
     @media screen and (max-width: $small-tablet-width) {
-        @include smallTabletWidth;
-        margin: 36px auto;
+        @include smallTabletWidthAndMargins;
     }
 
     @media screen and (max-width: $mobile-width) {
-        @include mobileWidth;
+        @include mobileWidthAndMargins;
     }
 
 
@@ -25,6 +28,10 @@
         @include heading-36;
         letter-spacing: -2px;
         margin-bottom: 64px;
+
+        @media screen and (max-width: $mobile-width) {
+            margin-bottom: 32px;
+        }
     }
 
     a{
@@ -41,10 +48,6 @@
         overflow-y: scroll;
         max-height: 724px;
 
-        @media screen and (max-width: $small-tablet-width) {
-            margin-bottom: 24px;
-        }
-
         a{
             text-decoration: none;
             color: $black;
@@ -56,10 +59,6 @@
         flex-direction: column;
         padding: 32px 116px 50px 32px;
         cursor: pointer;
-
-        @media screen and (max-width: $mobile-width)  {
-            margin: 32px 32px 50px 32px;
-        }
 
         &:hover{
             background-color: $lightYellow;

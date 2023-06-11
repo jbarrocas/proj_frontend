@@ -36,14 +36,14 @@ export const categories = [
     },
     {
         id: 5,
-        category: "Laranjas",
+        category: "Design",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         url: "./images/carousel_icons/Startup.png",
         alt: "Laranjas Icon"
     },
     {
         id: 6,
-        category: "Bananas",
+        category: "Nomad",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         url: "./images/carousel_icons/Economy.png",
         alt: "Bananas Icon"

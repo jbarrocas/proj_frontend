@@ -21,7 +21,7 @@ import SectionTitle from '../components/SectionTitle';
 import '../styles/pages/Home.scss';
 import HeroSliderMobile from '../components/HeroSliderMobile';
 
-function Home() {
+const Home = () => {
   return (
     <>
       <ScrollToTop></ScrollToTop>

@@ -12,12 +12,11 @@
 
     .image-wrapper{
         position: relative;
+    }
 
-        .overlay{
-            position: absolute;
-            width: 100%;
-            z-index: 1;
-        }
+    .overlay{
+        position: absolute;
+        z-index: 1;
     }
 
     .hidden{
@@ -29,8 +28,6 @@
         position: absolute;
         z-index: 2;
         color: $light;
-        display: flex;
-        flex-direction: column;
         margin: 128px 16px 192px 80px;
 
         @media screen and (max-width: $tablet-width) {
@@ -50,7 +47,11 @@
         margin-bottom: 24px;
         
         @media screen and (max-width: $tablet-width) {
-            margin-bottom: 0px;
+            margin-bottom: 16px;
+        }
+
+        @media screen and (max-width: $small-tablet-width) {
+            display: none;
         }
 
         strong{
@@ -66,7 +67,7 @@
 
         @media screen and (max-width: $tablet-width) {
             max-width: 720px;
-            margin-bottom: 0;
+            margin-bottom: 16px;
             line-height: 58px;
         }
 
@@ -98,7 +99,7 @@
         margin-bottom: 48px;
 
         @media screen and (max-width: $tablet-width) {
-            margin-bottom: 0;
+            margin-bottom: 16px;
         }
     }
 
@@ -116,11 +117,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 0 64px 0;
+    margin-bottom: 64px;
     padding: 16px;
 
     @media screen and (max-width: $mobile-width) {
         display: none;
+    }
+
+    @media screen and (max-width: $tablet-width) {
+        margin-bottom: 56px;
     }
 
     .slide-btn{        

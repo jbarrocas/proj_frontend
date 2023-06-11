@@ -9,9 +9,17 @@
     margin: 64px 80px;
 
     @media screen and (max-width: $tablet-width) {
-        flex-direction: column;
+        @include tabletWidthAndMargins;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    @media screen and (max-width: $small-tablet-width) {
+        @include smallTabletWidthAndMargins;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        @include mobileWidthAndMargins;
     }
 
     .featured-in{

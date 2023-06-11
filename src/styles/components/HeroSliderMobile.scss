@@ -4,17 +4,17 @@
     display: flex;
     align-items: flex-end;
 
-    @media screen and (min-width: $mobile-width) {
+    @media screen and (min-width: calc($mobile-width + 1px)) {
         display: none;
     }
 
     .image-wrapper{
         position: relative; 
+    }
 
-        .overlay{
-            position: absolute;
-            width: 100%;
-        }
+    .overlay{
+        position: absolute;
+        width: 100%;
     }
 
     .text-wrapper{
@@ -50,6 +50,10 @@
 
     .text{
         margin-bottom: 16px;
+
+        @media screen and (max-width: $small-mobile-width) {
+            display: none;
+        }
     }
 
     a{
@@ -85,6 +89,10 @@
     .slider-indicators{
         display: flex;
         gap: 16px;
+
+        @media screen and (max-width: $small-mobile-width) {
+            gap: 12px;
+        }
     }
 
     .indicator{

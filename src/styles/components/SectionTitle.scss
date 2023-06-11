@@ -3,14 +3,14 @@
 .section-title-center{
     @include heading-36;
     letter-spacing: -2px;
-    margin: 48px 0;
+    margin: 48px 0 0 0;
     text-align: center;
 }
 
 .section-title-left{
     @include heading-36;
     letter-spacing: -2px;
-    margin: 48px 0;
+    margin: 48px 0 0 0;
     padding-left: 80px;
     text-align: left;
 }

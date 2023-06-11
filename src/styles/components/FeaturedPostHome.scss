@@ -4,23 +4,22 @@
     max-width: 733px;
     margin: 64px 16px 64px 80px;
 
+    @media screen and (max-width: $tablet-width) {
+        margin: 56px 16px 56px 0;
+    }
+
     @media screen and (max-width: $small-tablet-width) {
-        @include smallTabletWidth;
-        margin: 48px auto 24px auto;
+        @include smallTabletWidthAndMargins;
     }
 
     @media screen and (max-width: $mobile-width) {
-        @include mobileWidth;
+        @include mobileWidthAndMargins;
     }
 
     .heading{
         @include heading-36;
         letter-spacing: -2px;
         margin-bottom: 32px;
-
-        @media screen and (max-width: $small-tablet-width) {
-            margin-bottom: 32px;
-        }
     }
 
     .featured-post-wrapper{
