@@ -17,7 +17,17 @@
         color: $black;
         position: relative;
 
+        @media screen and (max-width: $small-tablet-width) {
+            width: 452px;
+        }
+
         @media screen and (max-width: $mobile-width) {
+            width: 328px;
+            padding: 16px;
+        }
+
+        @media screen and (max-width: $small-mobile-width) {
+            width: 268px;
             padding: 16px;
         }
         
@@ -29,19 +39,43 @@
         right: 24px;
         color: red;
         z-index: 1;
+
+        @media screen and (max-width: $mobile-width) {
+            top: 16px;
+            right: 16px;
+        }
     }
+
     .error-message-email{
         position: absolute;
         top: 24px;
         right: 24px;
         color: red;
         z-index: 1;
+
+        @media screen and (max-width: $mobile-width) {
+            top: 16px;
+            right: 16px;
+        }
     }
 
     .input-select{
         width: 768px;
         height: 76px;
         background-color: $light;
+
+        @media screen and (max-width: $small-tablet-width) {
+            width: 502px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            width: 362px;
+        }
+
+        @media screen and (max-width: $small-mobile-width) {
+            width: 302px;
+            padding: 16px;
+        }
     }
 
     .error-message-query{
@@ -50,6 +84,11 @@
         right: 24px;
         color: red;
         z-index: 1;
+
+        @media screen and (max-width: $mobile-width) {
+            top: 16px;
+            right: 16px;
+        }
     }
 
     .error-message{
@@ -58,6 +97,11 @@
         right: 24px;
         color: red;
         z-index: 1;
+
+        @media screen and (max-width: $mobile-width) {
+            top: 16px;
+            right: 16px;
+        }
     }
 
     .hidden{

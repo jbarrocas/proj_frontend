@@ -4,16 +4,21 @@
     max-width: 768px;
     margin: 128px auto;
 
-    @media screen and (max-width: $tablet-width) {
-        margin: 80px auto;
-    }
+    // @media screen and (max-width: $tablet-width) {
+    //     margin: 80px auto;
+    // }
 
     @media screen and (max-width: $small-tablet-width) {
-        max-width: 80%;
+        max-width: 500px;
     }
 
     @media screen and (max-width: $mobile-width) {
-        max-width: 90%;
+        max-width: 360px;
+        margin: 32px auto;
+    }
+
+    @media screen and (max-width: $small-mobile-width) {
+        max-width: 300px;
         margin: 32px auto;
     }
 
@@ -66,18 +71,22 @@
 
         @media screen and (max-width: $mobile-width) {
             margin-top: 32px;
-            padding: 32px 48px;
+            padding: 32px 16px;
         }
     }
 
     .info-card{
         width: 294px;
+
+        @media screen and (max-width: $mobile-width) {
+            max-width: 200px;
+        }
     }
 
     .info-label{
         @include body-14;
         opacity: 0.6;
-        margin-bottom: 1rem;
+        margin-bottom: 16px;
     }
 
     .horizontal-line{
@@ -85,7 +94,11 @@
         height: 1px;
         background-color: $light;
         opacity: 0.1;
-        margin-bottom: 1rem;
+        margin-bottom: 16px;
+
+        @media screen and (max-width: $mobile-width) {
+            max-width: 90%;
+        }
     }
 
     .info-detail{
