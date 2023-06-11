@@ -6,11 +6,16 @@
     margin-bottom: 64px;
 
     @media screen and (max-width: $tablet-width) {
-        padding: 48px;
+        padding: 48px 0;
+    }
+
+    @media screen and (max-width: $small-tablet-width) {
+        margin-bottom: 56px;
     }
 
     @media screen and (max-width: $mobile-width) {
-        padding: 16px;
+        margin-bottom: 48px;
+        padding: 32px 0;
     }
 
     .post-content{
@@ -20,11 +25,13 @@
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
+            max-width: 80%;
             margin: 0 auto;
             gap: 64px;
         }
 
-        @media screen and (max-width: $tablet-width) {
+        @media screen and (max-width: $mobile-width) {
+            max-width: 90%;
             gap: 32px;
         }
     }

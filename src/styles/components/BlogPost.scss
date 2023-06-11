@@ -5,11 +5,15 @@
     margin: 128px auto;
 
     @media screen and (max-width: $tablet-width) {
-        max-width: 80%;
+        @include tabletWidthAndMargins;
+    }
+
+    @media screen and (max-width: $small-tablet-width) {
+        @include smallTabletWidthAndMargins;
     }
 
     @media screen and (max-width: $mobile-width) {
-        max-width: 90%;
+        @include mobileWidthAndMargins;
     }
 
     .post-header-wrapper{

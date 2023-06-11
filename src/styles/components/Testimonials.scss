@@ -20,12 +20,17 @@
     }
 
     .testimonials-text{
-        min-width: 350px;
+        max-width: 350px;
         padding: 92px 84px 92px 112px;
 
         @media screen and (max-width: $mobile-width) {
-            min-width: 200px;
+            max-width: 90%;
             padding: 48px 32px;
+        }
+
+        @media screen and (max-width: $small-mobile-width) {
+            max-width: 95%;
+            padding: 32px 16px;
         }
     }
 
@@ -40,6 +45,10 @@
         @include heading-36;
         letter-spacing: -2px;
         margin-bottom: 16px;
+    }
+
+    .text{
+        width: 100%;
     }
 
     .vertical-line{

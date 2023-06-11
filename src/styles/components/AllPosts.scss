@@ -7,6 +7,15 @@
         padding: 64px 16px;
     }
 
+    @media screen and (max-width:$small-tablet-width) {
+        @include smallTabletWidthAndMargins;
+        padding: 0;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        @include mobileWidthAndMargins;
+    }
+
     .section-title{
         @include heading-48;
         margin-bottom: 32px;
@@ -29,6 +38,11 @@
 
         @media screen and (max-width: $tablet-width) {
             flex-direction: column;
+            margin-bottom: 48px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            margin-bottom: 32px;
         }
     }
 

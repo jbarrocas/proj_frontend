@@ -64,6 +64,10 @@
             background-color: $lightYellow;
         }
 
+        @media screen and (max-width: $mobile-width) {
+            padding: 24px 24px;
+        }
+
     }
 
     .author-date{

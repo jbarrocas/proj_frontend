@@ -20,7 +20,8 @@
     .text-wrapper{
         position: absolute;
         color: $light;
-        margin: 24px 16px;
+        max-width: 90%;
+        margin: 24px 24px;
     }
 
     .tag{

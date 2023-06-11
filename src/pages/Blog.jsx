@@ -4,6 +4,7 @@ import FeaturedPostBlog from "../components/FeaturedPostBlog";
 import { postsData } from '../data/PostsData';
 import AllPosts from "../components/AllPosts";
 import CategoriesCarousel from '../components/CategoriesCarousel';
+import CategoriesCarouselMobile from "../components/CategoriesCarouselMobile";
 import { categories } from '../data/CategoriesData';
 import ScrollToTop from '../components/ScrollToTop';
 import JoinOurTeam from '../components/JoinOurTeam';
@@ -17,6 +18,7 @@ function Blog() {
             <AllPosts data={ postsData }></AllPosts>
             <SectionTitle className='section-title-left' title='All Categories'></SectionTitle>
             <CategoriesCarousel data={ categories }></CategoriesCarousel>
+            <CategoriesCarouselMobile data={ categories }></CategoriesCarouselMobile>
             <JoinOurTeam></JoinOurTeam>
         </div>
     )
