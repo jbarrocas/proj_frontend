@@ -4,10 +4,6 @@
     max-width: 768px;
     margin: 128px auto;
 
-    // @media screen and (max-width: $tablet-width) {
-    //     margin: 80px auto;
-    // }
-
     @media screen and (max-width: $small-tablet-width) {
         max-width: 500px;
     }
