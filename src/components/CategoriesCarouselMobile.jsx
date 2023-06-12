@@ -4,11 +4,11 @@ import '../styles/components/CategoriesCarouselMobile.scss';
 
 
 const CategoriesCarouselMobile = ({ data }) => {
-    const [card, setCard] = useState(1);
+    const [card, setCard] = useState(0);
 
     function nextCard() {
         if(card === data.length - 1){
-          return;
+          setCard(0);
         }
         else{
           setCard(card + 1);
@@ -16,8 +16,8 @@ const CategoriesCarouselMobile = ({ data }) => {
       };
     
       function previousCard() {
-        if(card === 1){
-          return;
+        if(card === 0){
+          setCard(data.length - 1);
         }
         else{
           setCard(card - 1);      
