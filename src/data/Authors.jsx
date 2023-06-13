@@ -2,7 +2,7 @@ export const authors = [
     {
         id: 1,
         name: "Floyd Miles",
-        image: "./images/authors/Floyd.png",
+        image: "./images/authors/Floyd.jpg",
         position: "Content Writer @Company",
         icon1: "./assets/social_media_icons/Facebook.svg",
         icon2: "./assets/social_media_icons/Twitter.svg",
@@ -12,7 +12,7 @@ export const authors = [
     {
         id: 2,
         name: "Dianne Russel",
-        image: "./images/authors/Dianne.png",
+        image: "./images/authors/Dianne.jpg",
         position: "Content Writer @Company",
         icon1: "./assets/social_media_icons/Facebook.svg",
         icon2: "./assets/social_media_icons/Twitter.svg",
@@ -22,7 +22,7 @@ export const authors = [
     {
         id: 3,
         name: "Jenny Wilson",
-        image: "./images/authors/Jenny.png",
+        image: "./images/authors/Jenny.jpg",
         position: "Content Writer @Company",
         icon1: "./assets/social_media_icons/Facebook.svg",
         icon2: "./assets/social_media_icons/Twitter.svg",
@@ -32,7 +32,7 @@ export const authors = [
     {
         id: 4,
         name: "Leslie Alexander",
-        image: "./images/authors/Leslie.png",
+        image: "./images/authors/Leslie.jpg",
         position: "Content Writer @Company",
         icon1: "./assets/social_media_icons/Facebook.svg",
         icon2: "./assets/social_media_icons/Twitter.svg",

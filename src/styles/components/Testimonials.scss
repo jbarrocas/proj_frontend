@@ -20,7 +20,7 @@
     }
 
     .testimonials-text{
-        max-width: 350px;
+        min-width: 350px;
         padding: 92px 84px 92px 112px;
 
         @media screen and (max-width: $mobile-width) {
