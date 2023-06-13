@@ -2,7 +2,7 @@ import React from 'react';
 
 import '../styles/components/FeaturedIn.scss';
 
-function FeaturedIn() {
+const FeaturedIn = () => {
   return (
     <div className='featured-in-section'>
         <div className='featured-in'>

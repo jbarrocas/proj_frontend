@@ -1,10 +1,13 @@
 import React from 'react';
 
+import ScrollToTop from '../components/ScrollToTop';
 import HeroSlider from '../components/HeroSlider';
+import HeroSliderMobile from '../components/HeroSliderMobile';
 import { postsData } from '../data/PostsData';
-import Tab from '../components/Tab';
 import FeaturedPostHome from '../components/FeaturedPostHome';
 import AllPostsHome from '../components/AllPostsHome';
+import Tab from '../components/Tab';
+import SectionTitle from '../components/SectionTitle';
 import CategoriesCarousel from '../components/CategoriesCarousel';
 import CategoriesCarouselMobile from '../components/CategoriesCarouselMobile';
 import { categories } from '../data/CategoriesData';
@@ -15,11 +18,8 @@ import FeaturedIn from '../components/FeaturedIn';
 import Testimonials from '../components/Testimonials';
 import { testimonials } from '../data/Testimonials';
 import JoinOurTeam from '../components/JoinOurTeam';
-import ScrollToTop from '../components/ScrollToTop';
-import SectionTitle from '../components/SectionTitle';
 
 import '../styles/pages/Home.scss';
-import HeroSliderMobile from '../components/HeroSliderMobile';
 
 const Home = () => {
   return (

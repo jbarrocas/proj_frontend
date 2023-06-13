@@ -62,7 +62,6 @@ const CategoriesCarouselMobile = ({ data, postsData }) => {
             const linkTo = `/blogpost/${id}`;
             return (
               <div key={id} className={ item.tag === posts ? 'post-wrapper' : 'post-wrapper hidden'}>
-
                   <Link to={linkTo}>
                     <img className='image' src={item.url} alt={item.alt}></img>
                     <div className='text-wrapper'>
@@ -70,7 +69,6 @@ const CategoriesCarouselMobile = ({ data, postsData }) => {
                       <h4 className='title'>{item.title}</h4>
                     </div>
                   </Link>
-
               </div>
             )
           })}

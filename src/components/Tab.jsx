@@ -15,7 +15,7 @@ const Tab = () => {
 
     const selectedTab = (tabId)=>{
         if(tabId === tab)
-        return 'selected-tab'
+        return 'selected-tab';
     }
 
   return (

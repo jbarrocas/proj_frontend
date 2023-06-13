@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../styles/components/HeroSliderMobile.scss';
 
-const HeroSliderMobile = ({data}) => {
+const HeroSliderMobile = ({ data }) => {
     const [image, setImage] = useState(0);
 
   function nextImage() {

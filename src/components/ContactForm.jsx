@@ -11,6 +11,7 @@ const ContactForm = () => {
     const [requiredQuery, setRequiredQuery] = useState('');
     const [message, setMessage] = useState('');
     const [requiredMessage, setRequiredMessage] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
     const handleName = event => {
         setName(event.target.value);
@@ -51,7 +52,7 @@ const ContactForm = () => {
         else {
             setRequiredQuery('error-message');
         }
-    }
+    };
 
     const handleMessage = event => {
         setMessage(event.target.value);
@@ -71,18 +72,19 @@ const ContactForm = () => {
         validateEmail();
         validateQuery();
         validateMessage();
-    }
+    };
 
     const formValidation = () => {
         if(requiredName !== 'error-message' && requiredEmail !== 'error-message' && requiredQuery !== 'error-message' && requiredMessage !== 'error-message') {
             setName('');
             setEmail('');
             setMessage('');
+            successMessage === '' ? setSuccessMessage('error-message') : setSuccessMessage('success-message');     
         }
         else {
             return;
         }
-    }
+    };
 
   return (
     <form className='form' id='form'>
@@ -111,6 +113,7 @@ const ContactForm = () => {
         <div className='submit-button' type='submit'
             onClick={() => {inputValidation(); formValidation()}}>Send Message
         </div>
+        <p className={ (successMessage === '' || successMessage === 'error-message') ? 'hidden' : 'success-message' }>Your message has been received. Thank you.</p>
     </form>
   )
 }

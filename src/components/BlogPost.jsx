@@ -1,14 +1,11 @@
 import React from 'react';
 
-import { postsData } from '../data/PostsData';
-
-import '../styles/components/BlogPost.scss';
-
 import JoinOurTeam from './JoinOurTeam';
 import ScrollToTop from './ScrollToTop';
 import WhatToReadNext from './WhatToReadNext';
+import { postsData } from '../data/PostsData';
 
-
+import '../styles/components/BlogPost.scss';
 
 const BlogPost = (props) => {
 

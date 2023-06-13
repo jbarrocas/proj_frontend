@@ -1,18 +1,16 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Home from './pages/Home';
 import Blog from './pages/Blog';
 import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import BlogPost from './components/BlogPost';
-
 import { postsData } from './data/PostsData';
+import Footer from './components/Footer';
 
 import './App.scss';
-
 
 function App() {
 

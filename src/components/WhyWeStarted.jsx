@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../styles/components/WhyWeStarted.scss';
 
-function WhyWeStarted() {
+const WhyWeStarted = () => {
   return (
     <div className='why-section'>
         <div className='section-wrapper'>

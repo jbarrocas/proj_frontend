@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../styles/components/AllPostsHome.scss';
 
-const AllPostsHome = ({data}) => {
+const AllPostsHome = ({ data }) => {
 
   return (
     <div className='all-posts-home'>
@@ -19,10 +19,10 @@ const AllPostsHome = ({data}) => {
         return (
           <div key={id} className='post-card-container'>
             <Link to={linkTo}>
-            <div className='post-card'>
-              <p className='author-date'>By <span>{item.author}</span>&nbsp; | &nbsp;{item.date}</p>
-              <h4 className='title'>{item.title}</h4>
-            </div>
+              <div className='post-card'>
+                <p className='author-date'>By <span>{item.author}</span>&nbsp; | &nbsp;{item.date}</p>
+                <h4 className='title'>{item.title}</h4>
+              </div>
             </Link>
           </div>
         )

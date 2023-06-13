@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import '../styles/components/WhatToReadNext.scss';
 
-function WhatToReadNext( { data } ) {
+const WhatToReadNext = ({ data }) => {
     let min = 2;
     let max = data.length;
     let random = Math.random() * (max - min) + min;

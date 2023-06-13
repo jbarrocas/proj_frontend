@@ -1,12 +1,11 @@
 import React from 'react';
 
+import ScrollToTop from '../components/ScrollToTop';
 import ContactForm from '../components/ContactForm';
 
 import '../styles/pages/ContactUs.scss';
-import ScrollToTop from '../components/ScrollToTop';
 
-
-function ContactUs() {
+const ContactUs = () => {
     return(
         <>
         <ScrollToTop></ScrollToTop>
