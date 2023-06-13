@@ -17,8 +17,8 @@ function Blog() {
             <FeaturedPostBlog data={ postsData }></FeaturedPostBlog>
             <AllPosts data={ postsData }></AllPosts>
             <SectionTitle className='section-title-left' title='All Categories'></SectionTitle>
-            <CategoriesCarousel data={ categories } postsData={postsData}></CategoriesCarousel>
-            <CategoriesCarouselMobile data={ categories }></CategoriesCarouselMobile>
+            <CategoriesCarousel data={ categories } postsData={ postsData }></CategoriesCarousel>
+            <CategoriesCarouselMobile data={ categories } postsData={ postsData }></CategoriesCarouselMobile>
             <JoinOurTeam></JoinOurTeam>
         </div>
     )
