@@ -20,6 +20,10 @@
         @include heading-48;
         margin-bottom: 32px;
         text-align: left;
+
+        @media screen and (max-width: $mobile-width) {
+            @include heading-36;
+        }
     }
 
     .horizontal-line{
@@ -88,7 +92,9 @@
         @include heading-36;
         margin-bottom: 16px;
 
-
+        @media screen and (max-width: $mobile-width) {
+            @include heading-28;
+        }
     }
 
     .text{

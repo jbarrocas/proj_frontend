@@ -1,10 +1,12 @@
 import React from 'react';
 
+import '../styles/pages/AboutUs.scss';
+
 
 const AboutUs = () => {
   return (
     <div>
-        About Us
+        <h1 className='working-on-progress'>Página em construção</h1>
     </div>
   )
 }

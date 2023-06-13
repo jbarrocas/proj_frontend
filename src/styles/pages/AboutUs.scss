@@ -1,0 +1,7 @@
+@import '../../abstract/main';
+
+.working-on-progress{
+    @include heading-48;
+    text-align: center;
+    margin: 200px auto;
+}

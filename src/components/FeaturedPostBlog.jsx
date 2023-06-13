@@ -24,7 +24,7 @@ const FeaturedPostBlog = ({ data }) => {
                           </div>
                         </Link>
                     </div>
-                    <img className={ featuredPost === id ? 'image' : 'image hidden' } src={item.url} alt={item.alt}></img> 
+                    <img className={ featuredPost === id ? 'image' : 'image hidden' } src={item.urlFh} alt={item.alt}></img> 
                 </div>
               )
             })}

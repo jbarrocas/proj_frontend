@@ -3,14 +3,44 @@
 .section-title-center{
     @include heading-36;
     letter-spacing: -2px;
-    margin: 48px 0 0 0;
+    margin: 128px 0 0 0;
     text-align: center;
+
+    @media screen and (max-width: $tablet-width) {
+        margin-top: 96px;
+    }
+
+    @media screen and (max-width: $small-tablet-width) {
+        margin-top: 80px;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        @include heading-28;
+        letter-spacing: -1px;
+        margin-top: 48px;
+    }
 }
 
 .section-title-left{
     @include heading-36;
     letter-spacing: -2px;
-    margin: 48px 0 0 0;
+    margin: 128px 0 0 0;
     padding-left: 80px;
     text-align: left;
+
+    @media screen and (max-width: $tablet-width) {
+        margin-top: 96px;
+    }
+
+    @media screen and (max-width: $small-tablet-width) {
+        margin-top: 80px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    @media screen and (max-width: $mobile-width) {
+        @include heading-28;
+        letter-spacing: -1px;
+        margin-top: 48px;
+    }
 }

@@ -3,6 +3,10 @@
 .featured-post-section{
     display: flex;
 
+    @media screen and (max-width: $tablet-width) {
+        @include tabletWidthAndMargins;
+    }
+
     @media screen and (max-width: $small-tablet-width) {
         flex-direction: column;
     }

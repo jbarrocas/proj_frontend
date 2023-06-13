@@ -28,7 +28,7 @@
     }
 
     .text-wrapper{
-        max-width: 546px;
+        max-width: 706px;
         padding: 80px;
         position: absolute;
         top: 121px;
@@ -62,6 +62,10 @@
         @include heading-48;
         letter-spacing: -2px;
         margin-bottom: 16px;
+
+        @media screen and (max-width: $mobile-width) {
+            @include heading-36;
+        }
     }
 
     .text{
@@ -75,7 +79,7 @@
 
     .button{
         @include yellowButton;
-        width: 173px;
+        width: 269px;
     }
 }
 

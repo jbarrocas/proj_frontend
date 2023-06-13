@@ -25,6 +25,10 @@
         padding: 6px 32px;
     }
 
+    @media screen and (max-width: $small-mobile-width) {
+        padding: 6px 16px;
+    }
+
     a{
         display: inline;
     }

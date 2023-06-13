@@ -42,6 +42,10 @@
         @include heading-28;
         letter-spacing: -1px;
         color: $purple;
+
+        @media screen and (max-width: $mobile-width) {
+            @include heading-24;
+        }
     }
 
     .post-date{
@@ -52,6 +56,10 @@
         @include heading-48;
         letter-spacing: -2px;
         margin-bottom: 34px;
+
+        @media screen and (max-width: $mobile-width) {
+            @include heading-36;
+        }
     }
 
     .icon-tag-wrapper{
@@ -87,6 +95,10 @@
         @include heading-36;
         margin-top: 24px;
         margin-bottom: 24px;
+
+        @media screen and (max-width: $mobile-width) {
+            @include heading-28;
+        }
     }
 
     .post-text{
@@ -98,5 +110,9 @@
         @include heading-24;
         list-style-position: inside;
         margin-bottom: 24px;
+
+        @media screen and (max-width: $mobile-width) {
+            @include heading-20;
+        }
     }
 }

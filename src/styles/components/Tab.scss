@@ -99,6 +99,7 @@
         max-width: 494px;
 
         @media screen and (max-width: $mobile-width) {
+            @include heading-28;
             line-height: 40px;
         }
     }

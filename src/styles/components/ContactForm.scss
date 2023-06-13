@@ -9,7 +9,7 @@
     }
 
     .input{
-        width: 720px;
+        width: 768px;
         padding: 24px;
         margin-bottom: 16px;
         border-style: solid;
@@ -18,16 +18,16 @@
         position: relative;
 
         @media screen and (max-width: $small-tablet-width) {
-            width: 452px;
+            width: 500px;
         }
 
         @media screen and (max-width: $mobile-width) {
-            width: 328px;
+            width: 360px;
             padding: 16px;
         }
 
         @media screen and (max-width: $small-mobile-width) {
-            width: 268px;
+            width: 300px;
             padding: 16px;
         }
         
@@ -65,16 +65,16 @@
         background-color: $light;
 
         @media screen and (max-width: $small-tablet-width) {
-            width: 502px;
+            width: 500px;
         }
 
         @media screen and (max-width: $mobile-width) {
+            width: 360px;
             height: 60px;
-            width: 362px;
         }
 
         @media screen and (max-width: $small-mobile-width) {
-            width: 302px;
+            width: 300px;
             padding: 16px;
         }
     }
@@ -110,7 +110,7 @@
     }
 
     .input-message{
-        height: 96px;
+        height: 144px;
 
         @media screen and (max-width: $mobile-width) {
             height: 100px;

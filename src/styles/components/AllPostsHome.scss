@@ -64,8 +64,12 @@
             background-color: $lightYellow;
         }
 
+        @media screen and (max-width: $tablet-width) {
+            padding: 48px;
+        }
+
         @media screen and (max-width: $mobile-width) {
-            padding: 24px 24px;
+            padding: 24px;
         }
 
     }

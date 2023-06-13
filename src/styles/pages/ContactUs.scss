@@ -39,7 +39,7 @@
         }
 
         @media screen and (max-width: $mobile-width) {
-            line-height: normal;
+            @include heading-36;
         }
     }
 

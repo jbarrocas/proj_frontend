@@ -153,6 +153,10 @@
     .yellow-button{
         @include yellowButton;
         cursor: pointer;
+
+        @media screen and (max-width: $tablet-width) {
+            text-align: center;
+        }
     }
 
     .address-social{
