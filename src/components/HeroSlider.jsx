@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/components/HeroSlider.scss';
@@ -23,6 +23,16 @@ const ImageSlider = ({ data }) => {
       setImage(image - 1);      
     }
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextImage();
+    }, 3500);
+
+    return() => {
+      clearInterval(timer);
+    };
+  });
 
   return (
     <div className='slider'>

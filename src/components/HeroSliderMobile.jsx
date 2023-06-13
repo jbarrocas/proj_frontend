@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../styles/components/HeroSliderMobile.scss';
@@ -23,6 +23,16 @@ const HeroSliderMobile = ({ data }) => {
       setImage(image - 1);      
     }
   };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      nextImage();
+    }, 3500);
+
+    return() => {
+      clearInterval(timer);
+    };
+  });
 
   return (
     <div className='slider-mobile'>
