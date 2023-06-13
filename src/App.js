@@ -26,10 +26,10 @@ function App() {
           <Route path='/about' exact element={<AboutUs></AboutUs>}></Route>
           <Route path='/contact' exact element={<ContactUs></ContactUs>}></Route>
           <Route path='/privacy' exact element={<PrivacyPolicy></PrivacyPolicy>}></Route>
+
           <>
             { postsData.map((item, id) => {
-              const linkTo = `/BlogPost/${id}`;
-
+              const linkTo = `/blogpost/${id}`;
               return (
                 <Route key={id} path={linkTo} exact element={
                   <BlogPost 

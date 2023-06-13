@@ -63,4 +63,64 @@
         margin: 16px 16px;
         cursor: pointer;
     }
+
+    .posts{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .post-wrapper{
+        max-width: 400px;
+        margin: 64px auto;
+
+        @media screen and (max-width: $tablet-width) {
+            flex-direction: column;
+            margin-bottom: 48px;
+        }
+
+        @media screen and (max-width: $mobile-width) {
+            margin-bottom: 32px;
+        }
+    }
+
+    .image{
+        max-width: 400px;
+
+        @media screen and (max-width: $mobile-width) {
+            max-width: 90%;
+        }
+    }
+
+    .text-wrapper{
+
+        @media screen and (max-width: $mobile-width) {
+            max-width: 90%;
+        }
+    }
+
+    .label{
+        @include heading-16;
+        color: $purple;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+
+    .title{
+        @include heading-36;
+        margin-bottom: 16px;
+
+
+    }
+
+    .text{
+        color: $mediumGrey;
+    }
 }

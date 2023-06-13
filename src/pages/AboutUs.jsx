@@ -4,7 +4,7 @@ import React from 'react';
 const About_Us = () => {
   return (
     <div>
-        About US
+        About Us
     </div>
   )
 }

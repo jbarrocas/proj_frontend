@@ -31,21 +31,21 @@ export const categories = [
         id: 4,
         category: "Travel",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-        url: "./images/carousel_icons/Business.png",
+        url: "./images/carousel_icons/Startup.png",
         alt: "Travel Icon"
     },
     {
         id: 5,
         category: "Design",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-        url: "./images/carousel_icons/Startup.png",
-        alt: "Laranjas Icon"
+        url: "./images/carousel_icons/Technology.png",
+        alt: "Design Icon"
     },
     {
         id: 6,
         category: "Nomad",
         text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
         url: "./images/carousel_icons/Economy.png",
-        alt: "Bananas Icon"
+        alt: "Nomad Icon"
     }
 ]

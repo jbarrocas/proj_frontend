@@ -33,7 +33,7 @@ const Home = () => {
       </div>
       <Tab></Tab>
       <SectionTitle className='section-title-center' title='Choose A Category'></SectionTitle>
-      <CategoriesCarousel data={categories}></CategoriesCarousel>
+      <CategoriesCarousel data={categories} postsData={postsData}></CategoriesCarousel>
       <CategoriesCarouselMobile data={categories}></CategoriesCarouselMobile>
       <WhyWeStarted></WhyWeStarted>
       <ListOfAuthors data={authors}></ListOfAuthors>
