@@ -54,4 +54,44 @@
     .button{
         width: 26px;
     }
+
+    .post-wrapper{
+        max-width: 360px;
+        margin: 48px auto;
+
+        @media screen and (max-width: $small-mobile-width) {
+            max-width: 280px;
+        }
+    }
+
+    .image{
+        max-width: 360px;
+
+        @media screen and (max-width: $small-mobile-width) {
+            max-width: 280px;
+        }
+    }
+
+    .label{
+        @include heading-16;
+        color: $purple;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    a{
+        text-decoration: none;
+        color: $black;
+    }
+
+    .title{
+        @include heading-28;
+        margin-bottom: 16px;
+    }
+
+    .text{
+        color: $mediumGrey;
+    }
 }

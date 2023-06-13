@@ -34,7 +34,7 @@ const Home = () => {
       <Tab></Tab>
       <SectionTitle className='section-title-center' title='Choose A Category'></SectionTitle>
       <CategoriesCarousel data={categories} postsData={postsData}></CategoriesCarousel>
-      <CategoriesCarouselMobile data={categories}></CategoriesCarouselMobile>
+      <CategoriesCarouselMobile data={categories} postsData={postsData}></CategoriesCarouselMobile>
       <WhyWeStarted></WhyWeStarted>
       <ListOfAuthors data={authors}></ListOfAuthors>
       <FeaturedIn></FeaturedIn>
