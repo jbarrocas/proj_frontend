@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import SectionTitle from './SectionTitle';
 
@@ -17,10 +18,10 @@ const ListOfAuthors = ({ data }) => {
                       <h3 className='name'>{item.name}</h3>
                       <p className='label'>{item.position}</p>
                       <div className='social-wrapper'>
-                          <img className='social-icon' src={item.icon1} alt='Facebook Icon'></img>
-                          <img className='social-icon' src={item.icon2} alt='Twitter Icon'></img>
-                          <img className='social-icon' src={item.icon3} alt='Instagram Icon'></img>
-                          <img className='social-icon' src={item.icon4} alt='LinkedIn Icon'></img>
+                          <Link to={item.face} target='blank'><img className='social-icon' src={item.icon1} alt='Facebook Icon'></img></Link>
+                          <Link to={item.twitter} target='blank'><img className='social-icon' src={item.icon2} alt='Twitter Icon'></img></Link>
+                          <Link to={item.insta} target='blank'><img className='social-icon' src={item.icon3} alt='Instagram Icon'></img></Link>
+                          <Link to={item.linkedin} target='blank'><img className='social-icon' src={item.icon4} alt='LinkedIn Icon'></img></Link>
                       </div>
                   </div>
               )

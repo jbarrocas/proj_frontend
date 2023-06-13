@@ -37,7 +37,6 @@
         padding: 40px;
 
         &:hover{
-            cursor: pointer;
             background-color: $lightYellow;
         }
     }
@@ -68,6 +67,7 @@
 
         &:hover{
             transform: scale(1.3);
+            cursor: pointer;
         }
     }
 }
