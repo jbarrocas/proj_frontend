@@ -87,7 +87,7 @@ const ContactForm = () => {
     };
 
   return (
-    <form className='form' id='form'>
+    <form className='form' id='form' action='' method='get'>
         <div className='name-wrapper wrapper'>
             <input className='input input-name' type='text' placeholder='Full Name' value={name} onChange={handleName} required></input>
             <p className={ requiredName === 'error-message' ? 'error-message-name' : 'hidden'}>* Required</p>
